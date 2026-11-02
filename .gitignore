@@ -25,7 +25,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Design tool working output
-.taste-skill/inspect/
+.taste-skill/inspect*/
 .taste-skill/before/
 .taste-skill/after/
 .impeccable/config.local.json
