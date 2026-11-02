@@ -7,13 +7,15 @@ Status as of 2 Nov 2026. Items marked ☐ need a person.
 - ☐ Approve and apply `supabase/migrations/20261102000001_website_content.sql`: site tables, editor list, leads, media bucket, website fields on profiles.
 - ☐ Apply `supabase/migrations/20261102000002_seed_website_team.sql`: shows the six people already public on the old site.
 - ☐ First publish from the editor. Until then the live site shows the built-in content, which is identical.
-- ☐ Auth → URL configuration: add `https://zion4commerce.com/auth/callback` (and the Vercel preview domain) to the redirect URLs, so Google sign-in works on the website.
+- ☐ Auth → URL configuration: add `https://zion4commerce.com/auth/callback` and `https://zion4commerce-one.vercel.app/auth/callback` to the redirect URLs, so Google sign-in works on the website.
 
 ## Hosting (Vercel)
 
-- ☐ Import the repo, branch `claude/zealous-sagan-1y1j37` (or merge it to `main` first).
-- ☐ Environment variables: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `NEXT_PUBLIC_SITE_URL=https://zion4commerce.com`. Never set `EDITOR_DEMO_MODE` in production.
-- ☐ Point the zion4commerce.com domain to Vercel. This replaces the bolt.new site.
+- ☑ Project `zion4commerce` in the Zion4Tiktok team, linked to the GitHub repo.
+- ☑ Environment variables set: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `NEXT_PUBLIC_SITE_URL`. Demo mode is off.
+- ☑ Production deployment live at https://zion4commerce-one.vercel.app (built from branch `claude/zealous-sagan-1y1j37`). Preview builds stay behind Vercel login.
+- ☐ Merge the branch into `main` (or set the production branch in Vercel) so future pushes deploy to production automatically.
+- ☐ Point the zion4commerce.com domain to Vercel (Vercel → Project → Domains, then update DNS at the registrar). This replaces the bolt.new site.
 
 ## Images
 
