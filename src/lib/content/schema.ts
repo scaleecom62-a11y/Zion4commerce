@@ -24,6 +24,7 @@ export type Field =
   | { key: string; label: string; type: "image"; help?: string }
   | { key: string; label: string; type: "link"; help?: string }
   | { key: string; label: string; type: "color"; help?: string }
+  | { key: string; label: string; type: "hex"; help?: string }
   | {
       key: string;
       label: string;
