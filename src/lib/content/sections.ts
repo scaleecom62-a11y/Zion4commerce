@@ -7,7 +7,7 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
   {
     type: "hero_waterline",
     label: "Hero: waterline headline",
-    description: "Two-line headline cut by the seam between two colour fields.",
+    description: "Two-line headline: line 1 above the waterline, line 2 below it, on two colour fields.",
     fields: [
       { key: "line1", label: "Headline line 1", type: "text", maxLength: 12, help: "Short. One or two words." },
       { key: "line2", label: "Headline line 2", type: "text", maxLength: 12 },
@@ -45,7 +45,7 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
         "TikTok Shop US",
         "15+ countries in all",
       ],
-      image: { src: "", alt: "" },
+      image: { src: "https://d8j0ntlcm91z4.cloudfront.net/user_38cFHiiAnnFDOVtYYDJ4B0v5TyJ/hf_20261102_084334_1d830701-f938-41b4-ab2f-9ea78272c675.png", alt: "Shipping parcels with labels stacked on a packing table" },
       field: "sky",
     },
   },
@@ -76,21 +76,21 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
           verb: "Audit",
           sentence:
             "We go through your ads, listings, pricing, competitors and unit economics, then show you where margin leaks and where growth is.",
-          image: { src: "", alt: "" },
+          image: { src: "https://d8j0ntlcm91z4.cloudfront.net/user_38cFHiiAnnFDOVtYYDJ4B0v5TyJ/hf_20261102_084334_0a783c05-3ec6-4783-9fca-a3d651044dc5.png", alt: "Foot of a red sandstone canyon wall in morning light, a trail starting at its base" },
           field: "night",
         },
         {
           verb: "Fix",
           sentence:
             "We rebuild listings, A+ content and the PPC structure, and launch TikTok Shop next to Amazon so each channel feeds the other.",
-          image: { src: "", alt: "" },
+          image: { src: "https://d8j0ntlcm91z4.cloudfront.net/user_38cFHiiAnnFDOVtYYDJ4B0v5TyJ/hf_20261102_084335_373d6e88-c278-4cee-8836-ec64151b6e6c.png", alt: "A narrow sandstone ridge trail with a safety chain, climbing between two canyon drops" },
           field: "sky",
         },
         {
           verb: "Scale",
           sentence:
             "As organic rank climbs and TACoS falls, we open the next marketplace: the UK, Canada, Germany or the UAE.",
-          image: { src: "", alt: "" },
+          image: { src: "https://d8j0ntlcm91z4.cloudfront.net/user_38cFHiiAnnFDOVtYYDJ4B0v5TyJ/hf_20261102_084334_5271a8e1-3d1f-4698-9022-87a0f64209bf.png", alt: "View from a summit over layered red canyon ridges and a green river valley" },
           field: "lime",
         },
       ],
@@ -103,20 +103,18 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
     fields: [
       { key: "heading", label: "Heading", type: "text" },
       { key: "paragraph", label: "Paragraph", type: "textarea", rows: 4 },
-      { key: "leftCaption", label: "Left caption", type: "text" },
       { key: "leftWord", label: "Left word", type: "text", maxLength: 9 },
-      { key: "rightCaption", label: "Right caption", type: "text" },
       { key: "rightWord", label: "Right word", type: "text", maxLength: 9 },
+      { key: "strikeLeft", label: "Strike through the left word", type: "toggle" },
       color(),
     ],
     defaults: {
       heading: "What we report",
       paragraph:
-        "Revenue can rise while you lose money on every order. So we don't report revenue on its own. We report TACoS and contribution margin, the two numbers that show whether growth pays for itself.",
-      leftCaption: "What most agencies report",
+        "Most agencies report revenue. Revenue can rise while you lose money on every order, so we report TACoS and contribution margin: the two numbers that show whether growth pays for itself.",
       leftWord: "Revenue",
-      rightCaption: "What we report",
       rightWord: "Margin",
+      strikeLeft: true,
       field: "paper",
     },
   },
@@ -190,7 +188,7 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
       colMeasure: "Judged by",
       rows: [
         { service: "Amazon advertising", where: "Amazon", includes: "Sponsored Products, Brands, Display, bids, budgets", measure: "TACoS" },
-        { service: "TikTok Shop", where: "TikTok Shop US", includes: "Shop setup, listings, ads, the Halo Effect with Amazon", measure: "Amazon organic rank" },
+        { service: "TikTok Shop", where: "TikTok Shop US", includes: "Shop setup, listings, ads, Halo Effect", measure: "Amazon organic rank" },
         { service: "Listing optimisation", where: "Amazon, TikTok Shop", includes: "Titles, bullets, images, keywords", measure: "Conversion rate" },
         { service: "A+ content and Brand Store", where: "Amazon", includes: "A+ modules, Brand Store design", measure: "Conversion rate" },
         { service: "Marketplace expansion", where: "UK, CA, DE, UAE", includes: "Setup, localisation, compliance, logistics", measure: "New-market sales" },
@@ -262,8 +260,8 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
         {
           name: "Skincare brand",
           category: "Beauty and personal care · Amazon US",
-          headline: "$50K to $192K a month in 6 months",
-          text: "A premium skincare brand grew monthly Amazon revenue by 285% in six months through PPC restructuring and listing optimisation, with TACoS held at 12%.",
+          headline: "$50K to $192K a month",
+          text: "In six months, a premium skincare brand grew monthly Amazon revenue by 285% through PPC restructuring and listing optimisation, with TACoS held at 12%.",
           quote: "",
           metrics: [
             { label: "Revenue", value: "+285%" },
@@ -275,20 +273,6 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
           field: "lime",
         },
         {
-          name: "Linen brand, international",
-          category: "Home and kitchen · Amazon UK, DE, CA",
-          headline: "+420% international sales",
-          text: "A designer linen brand launched on three new Amazon marketplaces with localised listings and targeted advertising across 45+ SKUs.",
-          quote: "",
-          metrics: [
-            { label: "Marketplaces", value: "3" },
-            { label: "SKUs", value: "45+" },
-            { label: "Growth", value: "420%" },
-          ],
-          image: { src: "", alt: "" },
-          field: "orange",
-        },
-        {
           name: "Supplement brand",
           category: "Health and wellness · Amazon",
           headline: "Profit margin up 65%",
@@ -297,10 +281,10 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
           metrics: [
             { label: "Margin", value: "+65%" },
             { label: "Sales", value: "+180%" },
-            { label: "Rating", value: "4.8★" },
+            { label: "Rating", value: "4.8 of 5" },
           ],
           image: { src: "", alt: "" },
-          field: "paper",
+          field: "orange",
         },
       ],
     },
@@ -438,10 +422,6 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
         {
           q: "What is the Halo Effect?",
           a: "Shoppers who find you on TikTok Shop go on to search for you on Amazon. That extra search demand lifts your Amazon organic rank, so you need less paid traffic. We run both channels together to get it.",
-        },
-        {
-          q: "Which marketplaces do you run?",
-          a: "Amazon in the US, UK, Canada, Germany and the UAE, and TikTok Shop in the US. We have worked in 15+ countries in all.",
         },
         {
           q: "We have never sold on Amazon. Can you help?",

@@ -30,7 +30,6 @@ const home: PageContent = {
     section("service_table"),
     section("case_folders"),
     section("big_figure"),
-    section("about_facts"),
     section("faq_bands"),
     section("cta_choice"),
   ],
@@ -51,14 +50,21 @@ const about: PageContent = {
       field: "sky",
     }),
     section("about_facts"),
+    section("printed_list", {
+      heading: "Where we sell for you",
+      image: {
+        src: "https://d8j0ntlcm91z4.cloudfront.net/user_38cFHiiAnnFDOVtYYDJ4B0v5TyJ/hf_20261102_084335_296d5730-592a-4b34-8a66-4ac87900c400.png",
+        alt: "Container port at dawn with cranes loading a cargo ship",
+      },
+      field: "orange",
+    }),
     section("two_words", {
       heading: "Two channels, one system",
       paragraph:
         "TikTok Shop creates demand. Amazon catches it: shoppers who saw you on TikTok search for you on Amazon, and that lifts your organic rank. We call it the Halo Effect, and it is why we run both channels together.",
-      leftCaption: "Where demand starts",
       leftWord: "TikTok",
-      rightCaption: "Where it converts",
       rightWord: "Amazon",
+      strikeLeft: false,
       field: "lime",
     }),
     section("verb_panels"),

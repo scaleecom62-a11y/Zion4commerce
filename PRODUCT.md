@@ -66,9 +66,9 @@ All figures confirmed as verified by the client on 2 Nov 2026:
 - $50M+ revenue managed. 50+ brands scaled. 500+ projects delivered. 15+ countries.
 - Named client: Maison d'Hermine (premium designer table and kitchen linen), Amazon global marketplaces + TikTok Shop US. TACoS dropped within 90 days, ROAS grew weekly. Logo: `docs/old-site/assets/client-maison-dhermine.jpeg`.
 - Case: anonymous premium skincare brand, $50K → $192K monthly Amazon revenue in 6 months (+285%), ROAS 4.8x, TACoS 12%, CVR 18.2%.
-- Case: premium designer table and kitchen linen brand, +420% international sales, launched UK, DE, CA (3 marketplaces), 45+ SKUs.
 - Case: anonymous supplement company, profit margin +65%, sales +180%, 4.8★ reviews.
 - Anonymous client: +156% revenue growth, 4.2x ROAS.
+- Removed by client on 2 Nov 2026: the "+420% international sales" linen case. Do not use.
 - Partner status claimed on old site: TikTok Shop Partner, Amazon Ads verified partner, Amazon Seller Central Partner Network. Official badge files not on hand.
 - Team: 9 active people in Tasqr. Only one has a photo.
 

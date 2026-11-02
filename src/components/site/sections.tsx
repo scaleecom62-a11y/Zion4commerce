@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Settings } from "@/lib/content/schema";
 import { Calculator } from "./Calculator";
 import { ContactForm } from "./ContactForm";
-import { H, RidgeArt, ed, field, img, link, list, num, str, type SectionProps } from "./shared";
+import { H, Pic, RidgeArt, ed, field, img, link, list, num, str, type SectionProps } from "./shared";
 
 function Btn({ href, children, variant, className, ...rest }: { href: string; children: React.ReactNode; variant?: "ink"; className?: string } & React.HTMLAttributes<HTMLAnchorElement>) {
   const cls = `btn${variant ? ` btn--${variant}` : ""}${className ? ` ${className}` : ""}`;
@@ -24,24 +24,20 @@ function HeroWaterline({ section, isFirst }: SectionProps) {
   const s = section.settings;
   const lines = [str(s, "line1"), str(s, "line2")];
   const action = link(s, "action");
-  const headline = (hidden: boolean) => (
-    <H first={isFirst && !hidden} className="hero-w__h display" aria-hidden={hidden || undefined} {...(hidden ? {} : ed("line1"))}>
-      {lines.map((l, i) => (
-        <span key={i} className="hero-w__line">
-          <span style={{ ["--i" as string]: i }} {...(hidden ? {} : ed(i === 0 ? "line1" : "line2"))}>
-            {l}
-          </span>
-        </span>
-      ))}
-    </H>
-  );
   return (
     <section className="hero-w">
       <div className="hero-w__field hero-w__field--top" />
       <div className={`hero-w__field hero-w__field--bottom ${field(s, "lower", "orange")}`} />
-      <div className="hero-w__copy hero-w__copy--top">{headline(false)}</div>
-      <div className="hero-w__copy hero-w__copy--bottom" aria-hidden="true">
-        {headline(true)}
+      <div className="hero-w__copy">
+        <H first={isFirst} className="hero-w__h display">
+          {lines.map((l, i) => (
+            <span key={i} className="hero-w__line">
+              <span style={{ ["--i" as string]: i }} {...ed(i === 0 ? "line1" : "line2")}>
+                {l}
+              </span>
+            </span>
+          ))}
+        </H>
       </div>
       <div className="hero-w__foot">
         <p {...ed("sentence")}>{str(s, "sentence")}</p>
@@ -64,8 +60,9 @@ function PrintedList({ section, isFirst }: SectionProps) {
           {str(s, "heading")}
         </H>
         {picture.src && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img className="plist__img" src={picture.src} alt={picture.alt} width={1600} height={900} loading="lazy" {...ed("image")} />
+          <div {...ed("image")}>
+            <Pic className="plist__img" src={picture.src} alt={picture.alt} width={1600} height={900} sizes="(max-width: 768px) 92vw, 50vw" />
+          </div>
         )}
         <p className="plist__names" {...ed("names")}>
           {names.map((n, i) => (
@@ -90,8 +87,7 @@ function VerbPanels({ section, isFirst }: SectionProps) {
           <div key={i} className={`verb ${field(p, "field", "night")}`} data-field={`panels.${i}`}>
             <div className="verb__pic">
               {picture.src ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={picture.src} alt={picture.alt} width={1600} height={1000} loading="lazy" />
+                <Pic src={picture.src} alt={picture.alt} fill sizes="100vw" />
               ) : (
                 <RidgeArt stage={i} title={`Mountain ridge, stage ${i + 1} of the climb`} />
               )}
@@ -101,7 +97,7 @@ function VerbPanels({ section, isFirst }: SectionProps) {
                 {str(p, "verb")}
               </H>
             </div>
-            <p className="verb__sentence" data-reveal>
+            <p className="verb__sentence" data-reveal style={{ ["--d" as string]: 1 }}>
               {str(p, "sentence")}
             </p>
           </div>
@@ -114,8 +110,8 @@ function VerbPanels({ section, isFirst }: SectionProps) {
 function TwoWords({ section, isFirst }: SectionProps) {
   const s = section.settings;
   const words = [
-    { caption: str(s, "leftCaption"), word: str(s, "leftWord"), key: "left" },
-    { caption: str(s, "rightCaption"), word: str(s, "rightWord"), key: "right" },
+    { word: str(s, "leftWord"), key: "left", struck: s.strikeLeft === true },
+    { word: str(s, "rightWord"), key: "right", struck: false },
   ];
   const longest = Math.max(...words.map((w) => w.word.length), 4);
   return (
@@ -128,14 +124,11 @@ function TwoWords({ section, isFirst }: SectionProps) {
           {str(s, "paragraph")}
         </p>
       </div>
-      <div className="twowords__specimens">
-        {words.map((w) => (
-          <div key={w.key} className="twowords__spec">
-            <p className="twowords__caption" {...ed(`${w.key}Caption`)}>
-              {w.caption}
-            </p>
-            <p className="twowords__word display" style={{ ["--len" as string]: longest }} {...ed(`${w.key}Word`)}>
-              {w.word}
+      <div className="twowords__specimens" style={{ ["--len" as string]: longest }}>
+        {words.map((w, i) => (
+          <div key={w.key} className="twowords__spec" data-reveal style={{ ["--d" as string]: i + 1 }}>
+            <p className={`twowords__word display${w.struck ? " twowords__word--struck" : ""}`} {...ed(`${w.key}Word`)}>
+              {w.struck ? <del>{w.word}</del> : w.word}
             </p>
           </div>
         ))}
@@ -182,7 +175,7 @@ function ServiceTable({ section, isFirst }: SectionProps) {
           </span>
         </div>
         {rows.map((r, i) => (
-          <div role="row" key={i} className="stable__row" data-field={`rows.${i}`}>
+          <div role="row" key={i} className="stable__row" data-field={`rows.${i}`} data-reveal style={{ ["--d" as string]: i % 6 }}>
             <span role="cell" className="stable__service">
               {str(r, "service")}
             </span>
@@ -218,12 +211,9 @@ function CaseFolders({ section, isFirst }: SectionProps) {
             <div className={`folder__band ${fc}`}>
               <p className="folder__strip">{str(c, "category")}</p>
               <div className="folder__body">
-                <div className="folder__report" data-ui>
+                <div className="folder__report" data-ui data-reveal>
                   <p className="folder__report-head">{str(c, "headline")}</p>
-                  {logo.src && (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img className="folder__logo" src={logo.src} alt={logo.alt} width={1600} height={520} loading="lazy" />
-                  )}
+                  {logo.src && <Pic className="folder__logo" src={logo.src} alt={logo.alt} width={1600} height={520} sizes="(max-width: 768px) 90vw, 360px" />}
                   {metrics.length > 0 && (
                     <dl className="folder__metrics">
                       {metrics.map((m, j) => (
@@ -235,7 +225,7 @@ function CaseFolders({ section, isFirst }: SectionProps) {
                     </dl>
                   )}
                 </div>
-                <div className="folder__text">
+                <div className="folder__text" data-reveal style={{ ["--d" as string]: 2 }}>
                   <p>{str(c, "text")}</p>
                   {str(c, "quote") && <blockquote className="folder__quote">“{str(c, "quote")}”</blockquote>}
                 </div>
@@ -256,11 +246,11 @@ function BigFigure({ section, isFirst }: SectionProps) {
         {str(s, "claim")}
       </H>
       <div>
-        <p className="bigfig__figure display nums" {...ed("figure")}>
+        <p className="bigfig__figure display nums" {...ed("figure")} data-reveal>
           {str(s, "figure")}
           {str(s, "unit") && <sup>{str(s, "unit")}</sup>}
         </p>
-        <p className="bigfig__caption" {...ed("caption")}>
+        <p className="bigfig__caption" {...ed("caption")} data-reveal style={{ ["--d" as string]: 2 }}>
           {str(s, "caption")}
         </p>
       </div>
@@ -279,7 +269,7 @@ function AboutFacts({ section, isFirst }: SectionProps) {
         {str(s, "heading")}
       </H>
       <div className="afacts__row">
-        <dl className="afacts__facts" {...ed("facts")}>
+        <dl className="afacts__facts" {...ed("facts")} data-reveal style={{ ["--d" as string]: 2 }}>
           {facts.map((f, i) => (
             <div key={i}>
               <dt>{str(f, "label")}</dt>
@@ -305,7 +295,7 @@ function AboutFacts({ section, isFirst }: SectionProps) {
           </p>
           <div className="afacts__lists" {...ed("lists")}>
             {lists.map((l, i) => (
-              <div key={i} className="afacts__list">
+              <div key={i} className="afacts__list" data-reveal style={{ ["--d" as string]: i + 1 }}>
                 <h3>{str(l, "title")}</h3>
                 <ul>
                   {list<Settings>(l, "items").map((it, j) => (
@@ -338,8 +328,10 @@ function FaqBands({ section, isFirst }: SectionProps) {
       </div>
       {items.map((it, i) => (
         <div key={i} className={`faq__band ${i % 2 === 0 ? b : a}`} data-field={`items.${i}`}>
-          <h3>{str(it, "q")}</h3>
-          <p>{str(it, "a")}</p>
+          <h3 data-reveal>{str(it, "q")}</h3>
+          <p data-reveal style={{ ["--d" as string]: 1 }}>
+            {str(it, "a")}
+          </p>
         </div>
       ))}
     </section>
@@ -358,7 +350,7 @@ function CtaChoice({ section, isFirst }: SectionProps) {
       <p className="ctachoice__line display" aria-hidden="true" {...ed("line1")}>
         {str(s, "line1")}
       </p>
-      <div className="ctachoice__mid">
+      <div className="ctachoice__mid" data-reveal>
         <div className="ctachoice__row">
           <Btn href={p.href} {...ed("primary")}>
             {p.label}
@@ -386,7 +378,9 @@ function PageIntro({ section, isFirst }: SectionProps) {
       <H first={isFirst} className="display" {...ed("title")}>
         {str(s, "title")}
       </H>
-      <p {...ed("sentence")}>{str(s, "sentence")}</p>
+      <p {...ed("sentence")} data-reveal style={{ ["--d" as string]: 1 }}>
+        {str(s, "sentence")}
+      </p>
     </section>
   );
 }
@@ -416,8 +410,7 @@ function TeamGrid({ section, isFirst, data }: SectionProps) {
             <li key={m.id} className="team__tile" data-reveal style={{ ["--d" as string]: i % 4 }}>
               <div className={`team__pic ${TILE_FIELDS[i % TILE_FIELDS.length]}`}>
                 {m.photo ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={m.photo} alt={`Portrait of ${m.name}`} width={800} height={1000} loading="lazy" />
+                  <Pic src={m.photo} alt={`Portrait of ${m.name}`} width={800} height={1000} sizes="(max-width: 768px) 50vw, 25vw" />
                 ) : (
                   <span className="team__initials" aria-hidden="true">
                     {initials}
