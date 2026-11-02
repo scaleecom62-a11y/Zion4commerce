@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Big_Shoulders, Public_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://zion4commerce.com"),
   icons: { icon: "/brand/zion4commerce-logo.png" },
 };
+
+export const viewport: Viewport = { themeColor: "#f2f2ef" };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (

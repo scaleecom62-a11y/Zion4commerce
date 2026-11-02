@@ -7,9 +7,9 @@ New website for Zion4Commerce, built from scratch. It replaces the current site 
 | # | Phase | Status | Output |
 |---|---|---|---|
 | 1 | Audit the current site | Done, except database-driven content (team profiles, live About copy) | `docs/old-site/` |
-| 2 | Sitemap, content plan, design direction | Not started | `docs/plan/` |
-| 3 | Build the new site | Not started | app code |
-| 4 | QA, SEO redirects from old URLs, launch | Not started | `docs/launch/` |
+| 2 | Sitemap, content plan, design direction | Done | `docs/plan/`, `PRODUCT.md`, `DESIGN.md` |
+| 3 | Build the new site and editor | Done, pending database approval | `src/` |
+| 4 | QA, redirects, launch | Checks done, launch steps open | `docs/launch-checklist.md` |
 
 ## Phase 1 scope
 
@@ -35,6 +35,18 @@ Capture every page, tab, menu and submenu on the current site:
 | awesome-design-md ([VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md)) | Reference library | `docs/design-references/awesome-design-md` | 84 DESIGN.md files from known brands |
 
 `skills-lock.json` pins the skill sources. Restore with `npx skills experimental_install`.
+
+## Run it
+
+```bash
+npm install
+cp .env.example .env.local   # fill in the Supabase URL and publishable key
+npm run build && npm start   # production build on http://localhost:3000
+```
+
+- Website editor: `/admin` (Tasqr login; only people on the website editors list get in).
+- Without a database, set `EDITOR_DEMO_MODE=1` in `.env.local` to try the editor locally. Nothing saves in demo mode.
+- End-to-end tests: start the app in demo mode, then `npm run test:e2e`.
 
 ## Rules
 

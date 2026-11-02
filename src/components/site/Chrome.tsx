@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { SiteSettings } from "@/lib/content/schema";
+import { MobileMenu } from "./MobileMenu";
 import { HexMark, Pic } from "./shared";
 
 function A({ href, className, children }: { href: string; className?: string; children: React.ReactNode }) {
@@ -19,7 +20,7 @@ export function SiteHeader({ site }: { site: SiteSettings }) {
     <header className="site-header" data-region="header">
       <Link href="/" className="wordmark" aria-label={`${site.siteName} home`}>
         <Pic src={site.logo.src} alt="" width={88} height={88} sizes="44px" priority />
-        <span>{site.siteName}</span>
+        <span translate="no">{site.siteName}</span>
       </Link>
       <nav className="site-nav" aria-label="Main">
         <ul className="site-nav__links">
@@ -29,16 +30,7 @@ export function SiteHeader({ site }: { site: SiteSettings }) {
             </li>
           ))}
         </ul>
-        <details className="site-menu">
-          <summary>Menu</summary>
-          <ul>
-            {site.nav.map((n) => (
-              <li key={n.href + n.label}>
-                <A href={n.href}>{n.label}</A>
-              </li>
-            ))}
-          </ul>
-        </details>
+        <MobileMenu items={site.nav} />
         <A href={site.headerAction.href} className="btn btn--small">
           {site.headerAction.label}
         </A>
@@ -52,7 +44,9 @@ export function SiteFooter({ site }: { site: SiteSettings }) {
     <footer className="site-footer f-lime" data-region="footer">
       <div className="site-footer__mark" aria-hidden="true">
         <HexMark />
-        <p className="site-footer__name display">{site.siteName}</p>
+        <p className="site-footer__name display" translate="no">
+          {site.siteName}
+        </p>
       </div>
       <div className="site-footer__cols">
         {site.footer.columns.map((c) => (

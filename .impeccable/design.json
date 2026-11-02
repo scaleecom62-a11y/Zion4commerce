@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T09:20:14.243918+00:00",
+  "title": "Design System: Zion4Commerce",
+  "extensions": {
+    "colorMeta": {
+      "accent-crimson": {
+        "role": "primary",
+        "displayName": "Signal Crimson",
+        "tonalRamp": [
+          "oklch(15% 0.105 16)",
+          "oklch(25% 0.131 16)",
+          "oklch(35% 0.157 16)",
+          "oklch(48% 0.190 16)",
+          "oklch(60% 0.221 16)",
+          "oklch(72% 0.190 16)",
+          "oklch(84% 0.159 16)",
+          "oklch(95% 0.131 16)"
+        ],
+        "canonical": "oklch(57.9% 0.221 16)"
+      },
+      "accent-ink": {
+        "role": "neutral",
+        "displayName": "Accent Ink White",
+        "tonalRamp": [
+          "oklch(15% 0.000 0)",
+          "oklch(25% 0.000 0)",
+          "oklch(35% 0.000 0)",
+          "oklch(48% 0.000 0)",
+          "oklch(60% 0.000 0)",
+          "oklch(72% 0.000 0)",
+          "oklch(84% 0.000 0)",
+          "oklch(95% 0.000 0)"
+        ],
+        "canonical": "oklch(100% 0 0)"
+      },
+      "field-orange": {
+        "role": "secondary",
+        "displayName": "Hazard Orange",
+        "tonalRamp": [
+          "oklch(15% 0.086 50.4)",
+          "oklch(25% 0.106 50.4)",
+          "oklch(35% 0.127 50.4)",
+          "oklch(48% 0.155 50.4)",
+          "oklch(60% 0.180 50.4)",
+          "oklch(72% 0.155 50.4)",
+          "oklch(84% 0.130 50.4)",
+          "oklch(95% 0.106 50.4)"
+        ],
+        "canonical": "oklch(73.5% 0.180 50.4)"
+      },
+      "field-sky": {
+        "role": "secondary",
+        "displayName": "Pool Sky",
+        "tonalRamp": [
+          "oklch(15% 0.069 244.3)",
+          "oklch(25% 0.086 244.3)",
+          "oklch(35% 0.103 244.3)",
+          "oklch(48% 0.125 244.3)",
+          "oklch(60% 0.145 244.3)",
+          "oklch(72% 0.125 244.3)",
+          "oklch(84% 0.104 244.3)",
+          "oklch(95% 0.086 244.3)"
+        ],
+        "canonical": "oklch(74% 0.145 244.3)"
+      },
+      "field-lime": {
+        "role": "secondary",
+        "displayName": "Acid Lime",
+        "tonalRamp": [
+          "oklch(15% 0.097 123.6)",
+          "oklch(25% 0.121 123.6)",
+          "oklch(35% 0.145 123.6)",
+          "oklch(48% 0.176 123.6)",
+          "oklch(60% 0.205 123.6)",
+          "oklch(72% 0.176 123.6)",
+          "oklch(84% 0.148 123.6)",
+          "oklch(95% 0.121 123.6)"
+        ],
+        "canonical": "oklch(90.5% 0.205 123.6)"
+      },
+      "field-night": {
+        "role": "secondary",
+        "displayName": "Night",
+        "tonalRamp": [
+          "oklch(15% 0.002 106.6)",
+          "oklch(25% 0.002 106.6)",
+          "oklch(35% 0.003 106.6)",
+          "oklch(48% 0.003 106.6)",
+          "oklch(60% 0.004 106.6)",
+          "oklch(72% 0.003 106.6)",
+          "oklch(84% 0.003 106.6)",
+          "oklch(95% 0.002 106.6)"
+        ],
+        "canonical": "oklch(20% 0.002 106.6)"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Poster Paper",
+        "tonalRamp": [
+          "oklch(15% 0.004 106.5)",
+          "oklch(25% 0.005 106.5)",
+          "oklch(35% 0.006 106.5)",
+          "oklch(48% 0.007 106.5)",
+          "oklch(60% 0.008 106.5)",
+          "oklch(72% 0.007 106.5)",
+          "oklch(84% 0.006 106.5)",
+          "oklch(95% 0.005 106.5)"
+        ],
+        "canonical": "oklch(96% 0.004 106.5)"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Print Black",
+        "tonalRamp": [
+          "oklch(15% 0.000 0)",
+          "oklch(25% 0.000 0)",
+          "oklch(35% 0.000 0)",
+          "oklch(48% 0.000 0)",
+          "oklch(60% 0.000 0)",
+          "oklch(72% 0.000 0)",
+          "oklch(84% 0.000 0)",
+          "oklch(95% 0.000 0)"
+        ],
+        "canonical": "oklch(17.8% 0 0)"
+      },
+      "soft-on-paper": {
+        "role": "neutral",
+        "displayName": "Soft Ink on Paper",
+        "tonalRamp": [
+          "oklch(15% 0.005 106.5)",
+          "oklch(25% 0.006 106.5)",
+          "oklch(35% 0.007 106.5)",
+          "oklch(48% 0.009 106.5)",
+          "oklch(60% 0.010 106.5)",
+          "oklch(72% 0.009 106.5)",
+          "oklch(84% 0.007 106.5)",
+          "oklch(95% 0.006 106.5)"
+        ]
+      },
+      "soft-on-orange": {
+        "role": "neutral",
+        "displayName": "Soft Ink on Orange",
+        "tonalRamp": [
+          "oklch(15% 0.043 50.4)",
+          "oklch(25% 0.053 50.4)",
+          "oklch(35% 0.064 50.4)",
+          "oklch(48% 0.077 50.4)",
+          "oklch(60% 0.090 50.4)",
+          "oklch(72% 0.077 50.4)",
+          "oklch(84% 0.065 50.4)",
+          "oklch(95% 0.053 50.4)"
+        ]
+      },
+      "soft-on-sky": {
+        "role": "neutral",
+        "displayName": "Soft Ink on Sky",
+        "tonalRamp": [
+          "oklch(15% 0.038 244.3)",
+          "oklch(25% 0.047 244.3)",
+          "oklch(35% 0.057 244.3)",
+          "oklch(48% 0.069 244.3)",
+          "oklch(60% 0.080 244.3)",
+          "oklch(72% 0.069 244.3)",
+          "oklch(84% 0.058 244.3)",
+          "oklch(95% 0.047 244.3)"
+        ]
+      },
+      "soft-on-lime": {
+        "role": "neutral",
+        "displayName": "Soft Ink on Lime",
+        "tonalRamp": [
+          "oklch(15% 0.043 123.6)",
+          "oklch(25% 0.053 123.6)",
+          "oklch(35% 0.064 123.6)",
+          "oklch(48% 0.077 123.6)",
+          "oklch(60% 0.090 123.6)",
+          "oklch(72% 0.077 123.6)",
+          "oklch(84% 0.065 123.6)",
+          "oklch(95% 0.053 123.6)"
+        ]
+      },
+      "soft-on-night": {
+        "role": "neutral",
+        "displayName": "Soft Ink on Night",
+        "tonalRamp": [
+          "oklch(15% 0.005 106.5)",
+          "oklch(25% 0.006 106.5)",
+          "oklch(35% 0.007 106.5)",
+          "oklch(48% 0.009 106.5)",
+          "oklch(60% 0.010 106.5)",
+          "oklch(72% 0.009 106.5)",
+          "oklch(84% 0.007 106.5)",
+          "oklch(95% 0.006 106.5)"
+        ]
+      },
+      "input-white": {
+        "role": "neutral",
+        "displayName": "Input White",
+        "tonalRamp": [
+          "oklch(15% 0.000 0)",
+          "oklch(25% 0.000 0)",
+          "oklch(35% 0.000 0)",
+          "oklch(48% 0.000 0)",
+          "oklch(60% 0.000 0)",
+          "oklch(72% 0.000 0)",
+          "oklch(84% 0.000 0)",
+          "oklch(95% 0.000 0)"
+        ],
+        "canonical": "oklch(100% 0 0)"
+      },
+      "error-crimson-deep": {
+        "role": "primary",
+        "displayName": "Deep Crimson",
+        "tonalRamp": [
+          "oklch(15% 0.083 18.6)",
+          "oklch(25% 0.104 18.6)",
+          "oklch(35% 0.124 18.6)",
+          "oklch(48% 0.150 18.6)",
+          "oklch(60% 0.175 18.6)",
+          "oklch(72% 0.150 18.6)",
+          "oklch(84% 0.126 18.6)",
+          "oklch(95% 0.104 18.6)"
+        ],
+        "canonical": "oklch(46% 0.175 18.6)"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Poster words, single verbs, big figures; sized to the viewport per section."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section heads."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Heads inside paper objects, folder tabs, metric values."
+      },
+      "title-text": {
+        "displayName": "Title (text face)",
+        "purpose": "FAQ questions and rich-text subheads."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Sentence after a headline."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, max 62ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Definition terms, footer column titles, metric names."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Notes and table column heads."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Headline line reveal, rise-ins, button press."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.76, 0, 0.24, 1)",
+        "purpose": "Declared for symmetric transitions."
+      },
+      {
+        "name": "ease-soft",
+        "value": "cubic-bezier(0.33, 1, 0.68, 1)",
+        "purpose": "Slow photo drift and ridge-art hover scale."
+      },
+      {
+        "name": "line-reveal",
+        "value": "700ms ease-out, 90ms stagger per line",
+        "purpose": "Hero lines rising from behind their baselines."
+      },
+      {
+        "name": "reveal",
+        "value": "opacity 700ms, translateY(24px) 900ms, 80ms stagger",
+        "purpose": "Blocks entering the viewport."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.97) over 140ms",
+        "purpose": "Button active state."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "47.99em"
+      },
+      {
+        "name": "tablet",
+        "value": "63.99em"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one crimson action per panel.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Get a free audit</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 3.25rem; padding: 0 1.5rem; background: #de194b; color: #ffffff; font-family: 'Public Sans', system-ui, sans-serif; font-weight: 600; font-size: 1.0625rem; text-decoration: none; border-radius: 0; white-space: nowrap; transition: transform 140ms cubic-bezier(0.22, 1, 0.36, 1), background-color 180ms ease; } .ds-btn:hover { background: color-mix(in srgb, #de194b 86%, #000); } .ds-btn:active { transform: scale(0.97); } .ds-btn:focus-visible { outline: 3px solid #111111; outline-offset: 3px; }"
+    },
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Secondary action where crimson would compete; inverts to paper on Night.",
+      "html": "<a class=\"ds-btn-ink\" href=\"#\">See the calculator</a>",
+      "css": ".ds-btn-ink { display: inline-flex; align-items: center; justify-content: center; min-height: 3.25rem; padding: 0 1.5rem; background: #111111; color: #f2f2ef; font-family: 'Public Sans', system-ui, sans-serif; font-weight: 600; font-size: 1.0625rem; text-decoration: none; border-radius: 0; transition: transform 140ms cubic-bezier(0.22, 1, 0.36, 1), background-color 180ms ease; } .ds-btn-ink:hover { background: #000; } .ds-btn-ink:active { transform: scale(0.97); } .ds-btn-ink:focus-visible { outline: 3px solid #111111; outline-offset: 3px; }"
+    },
+    {
+      "name": "Contact Input",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "White square field; focus swaps the transparent border to ink, invalid to crimson.",
+      "html": "<label class=\"ds-field\"><span>Work email</span><input class=\"ds-input\" type=\"email\" placeholder=\"you@brand.com\"></label>",
+      "css": ".ds-field { display: grid; gap: 0.4rem; font-family: 'Public Sans', system-ui, sans-serif; font-weight: 600; color: #111111; background: #f2f2ef; padding: 1.5rem; } .ds-input { width: 100%; min-height: 3.25rem; padding: 0.7rem 0.9rem; background: #ffffff; color: #111111; border: 2px solid transparent; border-radius: 0; font: inherit; font-weight: 400; } .ds-input:focus, .ds-input:focus-visible { border-color: #111111; outline: none; } .ds-input[aria-invalid=\"true\"] { border-color: #de194b; }"
+    },
+    {
+      "name": "Header and Menu",
+      "kind": "nav",
+      "refersTo": "menu-panel",
+      "description": "Wordmark left, text links and small crimson action right; ink menu block on phones.",
+      "html": "<header class=\"ds-nav\"><span class=\"ds-nav__mark\">Zion4Commerce</span><nav class=\"ds-nav__links\"><a href=\"#\">Services</a><a href=\"#\">Results</a><a href=\"#\">About</a><a class=\"ds-nav__btn\" href=\"#\">Free audit</a></nav></header>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.25rem 1.75rem; background: #f2f2ef; color: #111111; font-family: 'Public Sans', system-ui, sans-serif; } .ds-nav__mark { font-family: 'Big Shoulders', 'Arial Narrow', sans-serif; font-weight: 800; text-transform: uppercase; font-size: 1.6rem; line-height: 1; } .ds-nav__links { display: flex; align-items: center; gap: 1.75rem; font-weight: 600; } .ds-nav__links a { color: inherit; text-decoration: none; transition: transform 140ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-nav__links a:hover { text-decoration: underline; text-underline-offset: 0.25em; transform: translateY(-1px); } .ds-nav__links a:focus-visible { outline: 3px solid #111111; outline-offset: 3px; } .ds-nav__links .ds-nav__btn { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 1.1rem; background: #de194b; color: #ffffff; } .ds-nav__links .ds-nav__btn:hover { text-decoration: none; background: color-mix(in srgb, #de194b 86%, #000); }"
+    },
+    {
+      "name": "Caption Plate",
+      "kind": "card",
+      "refersTo": "caption-plate",
+      "description": "Paper plate on a full-bleed verb panel carrying the explanatory sentence.",
+      "html": "<div class=\"ds-verb\"><p class=\"ds-verb__word\">Audit</p><p class=\"ds-plate\">We read your ads, listings, pricing and margin before we touch anything.</p></div>",
+      "css": ".ds-verb { position: relative; min-height: 22rem; background: #161615; overflow: hidden; } .ds-verb__word { margin: 0; padding-top: 2rem; text-align: center; font-family: 'Big Shoulders', 'Arial Narrow', sans-serif; font-weight: 800; text-transform: uppercase; font-size: 9rem; line-height: 0.95; color: #f2f2ef; } .ds-plate { position: absolute; left: 1.75rem; bottom: 1.75rem; max-width: 34rem; margin: 0; padding: 1.1rem 1.25rem; background: #f2f2ef; color: #111111; font-family: 'Public Sans', system-ui, sans-serif; font-size: 1.125rem; line-height: 1.45; }"
+    },
+    {
+      "name": "Case Folder",
+      "kind": "custom",
+      "refersTo": "report-card",
+      "description": "Coloured band with a chamfered display-face tab and a paper report card of metrics.",
+      "html": "<article class=\"ds-folder\"><h3 class=\"ds-folder__tab\">Skincare</h3><div class=\"ds-folder__band\"><div class=\"ds-folder__report\"><p class=\"ds-folder__head\">$50K to $192K a month</p><dl class=\"ds-folder__metrics\"><div><dt>ROAS</dt><dd>4.8x</dd></div><div><dt>TACoS</dt><dd>12%</dd></div></dl></div></div></article>",
+      "css": ".ds-folder { position: relative; padding-top: 44px; font-family: 'Public Sans', system-ui, sans-serif; color: #111111; } .ds-folder__tab { position: absolute; top: 0; left: 1.75rem; height: 44px; min-width: 15rem; margin: 0; padding: 0 2.25rem 0 1.25rem; display: flex; align-items: center; background: #4db3ff; font-family: 'Big Shoulders', 'Arial Narrow', sans-serif; font-weight: 800; text-transform: uppercase; font-size: 1.6rem; line-height: 1; clip-path: polygon(0 100%, 0 14px, 14px 0, calc(100% - 26px) 0, 100% 100%); } .ds-folder__band { background: #4db3ff; padding: 1.25rem 1.75rem 3rem; } .ds-folder__report { background: #f2f2ef; padding: 2rem; display: grid; gap: 2rem; } .ds-folder__head { margin: 0; font-family: 'Big Shoulders', 'Arial Narrow', sans-serif; font-weight: 800; text-transform: uppercase; font-size: 3rem; line-height: 0.9; } .ds-folder__metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 1.5rem; margin: 0; } .ds-folder__metrics dt { font-weight: 600; color: #55554f; font-size: 0.9375rem; } .ds-folder__metrics dd { margin: 0.25rem 0 0; font-family: 'Big Shoulders', 'Arial Narrow', sans-serif; font-weight: 800; text-transform: uppercase; font-size: 3rem; line-height: 1; font-variant-numeric: tabular-nums lining-nums; }"
+    },
+    {
+      "name": "Waterline Hero",
+      "kind": "custom",
+      "description": "Paper over a loud field at half height, two-line headline across the seam, first line crimson.",
+      "html": "<section class=\"ds-hero\"><div class=\"ds-hero__low\"></div><h1 class=\"ds-hero__h\"><span class=\"ds-hero__a\">Grow on</span><span class=\"ds-hero__b\">profit</span></h1></section>",
+      "css": ".ds-hero { position: relative; height: 22rem; background: #f2f2ef; overflow: hidden; } .ds-hero__low { position: absolute; inset: 50% 0 0 0; background: #ff8126; } .ds-hero__h { position: absolute; left: 0; right: 0; top: calc(50% - 6.2rem); margin: 0; text-align: center; font-family: 'Big Shoulders', 'Arial Narrow', sans-serif; font-weight: 800; text-transform: uppercase; font-size: 7rem; line-height: 0.86; letter-spacing: -0.005em; } .ds-hero__h span { display: block; } .ds-hero__a { color: #de194b; } .ds-hero__b { color: #111111; margin-top: 0.06em; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Street Poster With a Ledger Underneath",
+    "overview": "The public site talks like a poster pasted on a wall: flat saturated fields, one tall condensed gothic at full weight, and statements short enough to read from across the street. Each section is a single solid panel of colour, and panels meet edge to edge, so the page reads as a stack of posters rather than a document with sections. The volume is the surface. Underneath it the grid is strict (12 columns, one margin, one gutter) and the numbers are exact, because the product is profit: TACoS, margin, organic rank. Loud type carries the claim and quiet text carries the evidence.\n\nDensity is low. A panel holds one idea: one verb, one figure, one question, one comparison. Display type is sized to the viewport, not to a scale. Body text stays plain and readable at 17 to 19px. Depth comes only from colour change and from the occasional overlap: the printed card cut off by its panel's bottom edge, a caption plate sitting on a photograph, a folder tab rising off its band.\n\nThe direction is \"Loud and flat\" (taste-skill seed 790916004), palette \"Orange, sky, lime\", type \"Big Shoulders / Public Sans\". Site editors can change every field colour in settings, so the roles below matter more than the exact hexes.",
+    "keyCharacteristics": [
+      "Flat, full-strength colour fields, one per panel, butted edge to edge",
+      "One condensed heavy uppercase display face at poster scale; one plain grotesk for everything else",
+      "Square corners everywhere; separation by colour and space, never by lines",
+      "Crimson is the one accent, and it belongs to actions",
+      "No shadows, gradients, glass or outlines on the public site",
+      "Motion is one masked headline reveal plus quiet rise-ins, and every bit of it is optional"
+    ],
+    "rules": [
+      {
+        "name": "The One Field, One Ink Rule",
+        "body": "Every panel is one flat colour and its text is one other colour (ink, or paper on Night), plus that field's soft ink for quiet text. No tints, no washes, no second background inside a panel except a paper object sitting on it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Crimson Means Act Rule",
+        "body": "Crimson is for things you press: buttons, and the error and selection states that belong to controls. The build carries exactly two typographic uses, and they come from the direction itself: the first line of the waterline hero is set in crimson, and the strike through the rejected word in the Two Words section is crimson. Those two stay as they are. No new surface adds a crimson headline, crimson link, crimson icon or crimson panel.",
+        "section": "colors"
+      },
+      {
+        "name": "The Editable Palette Rule",
+        "body": "Field colours come from site settings (`--c-paper`, `--c-orange`, `--c-sky`, `--c-lime`, `--c-night`, `--c-accent`, `--c-ink`). Components reference those variables, never the hex. A new section picks a field by role (paper, orange, sky, lime, night), not by value.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Faces Rule",
+        "body": "Big Shoulders 800 and Public Sans 400/600. No third face, no other weights, no italics, no monospace on the public site.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two-Line Rule",
+        "body": "No headline runs past two lines at its set size. At poster scale that means three to six words; the copy gets shorter, the type never gets smaller to fit.",
+        "section": "typography"
+      },
+      {
+        "name": "The Shout or Speak Rule",
+        "body": "Big Shoulders is always uppercase and always a statement, a word or a figure. Public Sans is always sentence case (column heads excepted) and carries every sentence, question and label.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat At Rest Rule",
+        "body": "No shadow, gradient, blur, glass or glow on the public site. A floating menu is the only element allowed to take a shadow, and the current build ships none, so there is no shadow value to reuse.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Overlap Not Shadow Rule",
+        "body": "To lift something, put a paper object on a loud field, or let a panel edge cut it. Never draw a shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do give every new section exactly one field colour from settings and let it meet its neighbours edge to edge.",
+      "Do set statements, single words and big figures in Big Shoulders 800 uppercase at viewport scale, and keep them to two lines.",
+      "Do put quiet text in that field's own soft ink, and evidence (numbers) in tabular lining figures.",
+      "Do lift content by placing a paper object on a loud field, or by letting the panel edge cut it.",
+      "Do keep the 1 to 5 / 7 to 12 split for heading-plus-text panels, and collapse to one column below 48em.",
+      "Do reference colours through the settings variables so site editors can recolour the site."
+    ],
+    "donts": [
+      "Don't use crimson for anything but actions and their states (the hero's first line and the struck word are the only typographic exceptions, and they are not a pattern to extend).",
+      "Don't add eyebrow labels or kickers above headlines.",
+      "Don't number sections, steps or items as decoration (01, 02, 03).",
+      "Don't draw thin rules, hairlines or divider lines; separate with colour and space.",
+      "Don't use gradients, glass, blur or glow, or any shadow at rest.",
+      "Don't round a corner. Radius is 0.",
+      "Don't add a third typeface, an italic, another weight, or monospace on the public site.",
+      "Don't rotate text, buttons or panels; tilt only the printed card and, at most, two or three photographs.",
+      "Don't outline type, add offset shadows or scatter stickers."
+    ]
+  }
+}

@@ -442,10 +442,14 @@ function ContactFormSection({ section, isFirst }: SectionProps) {
         <H first={isFirst} className="display" {...ed("heading")}>
           {str(s, "heading")}
         </H>
-        <p {...ed("intro")}>{str(s, "intro")}</p>
+        <p {...ed("intro")} data-reveal style={{ ["--d" as string]: 1 }}>
+          {str(s, "intro")}
+        </p>
         <ol className="cform__steps" {...ed("steps")}>
           {list<string>(s, "steps").map((step, i) => (
-            <li key={i}>{step}</li>
+            <li key={i} data-reveal style={{ ["--d" as string]: i + 2 }}>
+              {step}
+            </li>
           ))}
         </ol>
       </div>

@@ -503,8 +503,8 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
       color(),
     ],
     defaults: {
-      heading: "Request your free audit",
-      intro: "Tell us about your brand. We reply within 24 hours.",
+      heading: "Free audit",
+      intro: "Tell us about your brand and request your free Amazon and TikTok Shop audit. We reply within 24 hours.",
       steps: [
         "We read your request and look at your listings.",
         "We send the audit: where margin leaks and where growth is.",

@@ -1,0 +1,2373 @@
+{
+ "url": "http://localhost:3000/about",
+ "at": "2026-11-02T09:20:42.052Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 18,
+    "css": 3,
+    "transitions": 15,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 6945,
+     "screens": 7.7,
+     "words": 341,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [
+      "http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf",
+      "http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf",
+      "http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf",
+      "http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf"
+     ],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "PROFIT FIRST",
+     "words": 2,
+     "chars": 12,
+     "lines": 2,
+     "size": 216,
+     "vw": 15,
+     "font": "Big Shoulders",
+     "weight": 800,
+     "tracking": -0.005,
+     "leading": 0.88,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.63,
+     "top": 208,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "PROFIT FIRST",
+     "words": 2,
+     "lines": 2,
+     "size": 216,
+     "font": "Big Shoulders"
+    },
+    "headings": [
+     {
+      "text": "PROFIT FIRST",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 216,
+      "vw": 15,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.88,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 208,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "ABOUT ZION4COMMERCE",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 88,
+      "vw": 6.1,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 873,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "WHERE WE SELL FOR YOU",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 51.2,
+      "vw": 3.6,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.52,
+      "top": 2050,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Amazon.com · Amazon.co.uk · Amazon.ca · Amazon.de · Amazon.ae · TikTok Shop US · 15+ countries in all",
+      "words": 18,
+      "chars": 101,
+      "lines": 2,
+      "size": 27.5,
+      "vw": 1.9,
+      "font": "Public Sans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.7,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.52,
+      "top": 2585,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "TWO CHANNELS, ONE SYSTEM",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 88,
+      "vw": 6.1,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 2855,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "TIKTOK",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 216,
+      "vw": 15,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 3103,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "AMAZON",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 216,
+      "vw": 15,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.49,
+      "top": 3103,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "AUDIT",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 374.4,
+      "vw": 26,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.56,
+      "top": 3529,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "FIX",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 374.4,
+      "vw": 26,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.29,
+      "top": 4231,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "SCALE",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 374.4,
+      "vw": 26,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.59,
+      "top": 4933,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "WHERE IS YOUR",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 187.2,
+      "vw": 13,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 5530,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "MARGIN GOING?",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 187.2,
+      "vw": 13,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 6080,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "ZION4COMMERCE",
+      "words": 1,
+      "chars": 13,
+      "lines": 1,
+      "size": 164.2,
+      "vw": 11.4,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.78,
+      "top": 6487,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 13,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 6,
+     "centered": 7,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Public Sans",
+       "share": 0.92,
+       "mono": false
+      },
+      {
+       "family": "Big Shoulders",
+       "share": 0.08,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      26,
+      28,
+      51,
+      88,
+      164,
+      187,
+      216,
+      374
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Public Sans",
+      "size": 18,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.8
+     },
+     "measureChars": 76,
+     "max": {
+      "size": 374.4,
+      "vw": 26,
+      "font": "Big Shoulders",
+      "text": "Audit"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.08,
+     "centerShare": 0.12,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f2f2ef",
+       "top": 0,
+       "hsl": {
+        "h": 60,
+        "s": 0.1,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#4db3ff",
+       "top": 0,
+       "hsl": {
+        "h": 206,
+        "s": 1,
+        "l": 0.65
+       }
+      },
+      {
+       "color": "#ff8126",
+       "top": 1898,
+       "hsl": {
+        "h": 25,
+        "s": 1,
+        "l": 0.57
+       }
+      },
+      {
+       "color": "#c5f53d",
+       "top": 2743,
+       "hsl": {
+        "h": 76,
+        "s": 0.9,
+        "l": 0.6
+       }
+      },
+      {
+       "color": "#161615",
+       "top": 3392,
+       "hsl": {
+        "h": 60,
+        "s": 0.02,
+        "l": 0.08
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111111",
+       "share": 0.84
+      },
+      {
+       "color": "#55554f",
+       "share": 0.07
+      },
+      {
+       "color": "#f2f2ef",
+       "share": 0.03
+      },
+      {
+       "color": "#b4b4ad",
+       "share": 0.03
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#111111",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.07
+      },
+      "fg": "#f2f2ef"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 2,
+     "radius": 0,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Free audit"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 6,
+     "fixed": false,
+     "height": 84,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "big shoulders",
+     "public sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 6945,
+    "margins": {
+     "left": 28,
+     "right": 46
+    },
+    "sections": [
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 0,
+      "height": 700,
+      "words": 25,
+      "media": 0,
+      "middle": 395,
+      "heading": {
+       "text": "Profit first",
+       "size": 216,
+       "tag": "h1"
+      },
+      "left": 28,
+      "right": 67,
+      "textLeft": 28,
+      "textRight": 67,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 700,
+      "height": 1197,
+      "words": 116,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "About Zion4Commerce",
+       "size": 88,
+       "tag": "h2"
+      },
+      "left": 28,
+      "right": 49,
+      "textLeft": 28,
+      "textRight": 49,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 1898,
+      "height": 845,
+      "words": 17,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Where we sell for you",
+       "size": 51,
+       "tag": "h2"
+      },
+      "left": 344,
+      "right": 344,
+      "textLeft": 355,
+      "textRight": 375,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 2743,
+      "height": 649,
+      "words": 41,
+      "media": 0,
+      "middle": 123,
+      "heading": {
+       "text": "TikTok",
+       "size": 216,
+       "tag": "p"
+      },
+      "left": 28,
+      "right": 28,
+      "textLeft": 28,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 3392,
+      "height": 2106,
+      "words": 65,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Audit",
+       "size": 374,
+       "tag": "h2"
+      },
+      "left": 48,
+      "right": 294,
+      "textLeft": 48,
+      "textRight": 294,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 5498,
+      "height": 774,
+      "words": 21,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Where is your",
+       "size": 187,
+       "tag": "p"
+      },
+      "left": 184,
+      "right": 184,
+      "textLeft": 184,
+      "textRight": 184,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer.f-lime",
+      "tag": "footer",
+      "top": 6272,
+      "height": 673,
+      "words": 28,
+      "media": 1,
+      "middle": 5,
+      "heading": {
+       "text": "Zion4Commerce",
+       "size": 164,
+       "tag": "p"
+      },
+      "left": 28,
+      "right": 46,
+      "textLeft": 28,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 1720,
+      "height": 320
+     }
+    ],
+    "h1s": [
+     {
+      "text": "PROFIT FIRST",
+      "size": 216,
+      "top": 208,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 28,
+      "n": 3
+     },
+     {
+      "x": 48,
+      "n": 3
+     },
+     {
+      "x": 527,
+      "n": 2
+     },
+     {
+      "x": 734,
+      "n": 1
+     },
+     {
+      "x": 879,
+      "n": 1
+     },
+     {
+      "x": 970,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 11,
+    "bodySize": 28,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.2,
+    "voidBox": {
+     "x": 0,
+     "y": 660,
+     "w": 1440,
+     "h": 180
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 18,
+    "css": 3,
+    "transitions": 15,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 6609,
+     "screens": 6.5,
+     "words": 341,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [
+      "http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf",
+      "http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf",
+      "http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf",
+      "http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf"
+     ],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "PROFIT FIRST",
+     "words": 2,
+     "chars": 12,
+     "lines": 2,
+     "size": 115.2,
+     "vw": 15,
+     "font": "Big Shoulders",
+     "weight": 800,
+     "tracking": -0.005,
+     "leading": 0.88,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.63,
+     "top": 158,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "PROFIT FIRST",
+     "words": 2,
+     "lines": 2,
+     "size": 115.2,
+     "font": "Big Shoulders"
+    },
+    "headings": [
+     {
+      "text": "PROFIT FIRST",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 115.2,
+      "vw": 15,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.88,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 158,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "ABOUT ZION4COMMERCE",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 7.5,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 521,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "WHERE WE SELL FOR YOU",
+      "words": 5,
+      "chars": 21,
+      "lines": 2,
+      "size": 37.8,
+      "vw": 4.9,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.45,
+      "top": 1732,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "TWO CHANNELS, ONE SYSTEM",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 7.5,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2342,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "TIKTOK",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 115.2,
+      "vw": 15,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 2649,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "AMAZON",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 115.2,
+      "vw": 15,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.49,
+      "top": 2649,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "AUDIT",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 199.7,
+      "vw": 26,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.56,
+      "top": 3071,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "FIX",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 199.7,
+      "vw": 26,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.29,
+      "top": 3870,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "SCALE",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 199.7,
+      "vw": 26,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.59,
+      "top": 4668,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "WHERE IS YOUR",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 99.8,
+      "vw": 13,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 5235,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "MARGIN GOING?",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 99.8,
+      "vw": 13,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 5970,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "ZION4COMMERCE",
+      "words": 1,
+      "chars": 13,
+      "lines": 1,
+      "size": 87.6,
+      "vw": 11.4,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.78,
+      "top": 6211,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 6,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Public Sans",
+       "share": 0.92,
+       "mono": false
+      },
+      {
+       "family": "Big Shoulders",
+       "share": 0.08,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      16,
+      17,
+      18,
+      22,
+      23,
+      26,
+      38,
+      58,
+      88,
+      100,
+      115,
+      200
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Public Sans",
+      "size": 22.1,
+      "leading": 1.35,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.8
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 199.7,
+      "vw": 26,
+      "font": "Big Shoulders",
+      "text": "Audit"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.08,
+     "centerShare": 0.12,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f2f2ef",
+       "top": 0,
+       "hsl": {
+        "h": 60,
+        "s": 0.1,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#4db3ff",
+       "top": 0,
+       "hsl": {
+        "h": 206,
+        "s": 1,
+        "l": 0.65
+       }
+      },
+      {
+       "color": "#ff8126",
+       "top": 1612,
+       "hsl": {
+        "h": 25,
+        "s": 1,
+        "l": 0.57
+       }
+      },
+      {
+       "color": "#c5f53d",
+       "top": 2278,
+       "hsl": {
+        "h": 76,
+        "s": 0.9,
+        "l": 0.6
+       }
+      },
+      {
+       "color": "#161615",
+       "top": 2807,
+       "hsl": {
+        "h": 60,
+        "s": 0.02,
+        "l": 0.08
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111111",
+       "share": 0.84
+      },
+      {
+       "color": "#55554f",
+       "share": 0.07
+      },
+      {
+       "color": "#f2f2ef",
+       "share": 0.03
+      },
+      {
+       "color": "#b4b4ad",
+       "share": 0.03
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#111111",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.07
+      },
+      "fg": "#f2f2ef"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 2,
+     "radius": 0,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Free audit"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 6,
+     "fixed": false,
+     "height": 84,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "big shoulders",
+     "public sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 6609,
+    "margins": {
+     "left": 16,
+     "right": 22
+    },
+    "sections": [
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 0,
+      "height": 425,
+      "words": 25,
+      "media": 0,
+      "middle": 210,
+      "heading": {
+       "text": "Profit first",
+       "size": 115,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 25,
+      "textLeft": 16,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 425,
+      "height": 1187,
+      "words": 116,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "About Zion4Commerce",
+       "size": 58,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 22,
+      "textLeft": 16,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 1612,
+      "height": 666,
+      "words": 17,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Where we sell for you",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 210,
+      "right": 210,
+      "textLeft": 226,
+      "textRight": 238,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 2278,
+      "height": 529,
+      "words": 41,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "TikTok",
+       "size": 115,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 2807,
+      "height": 2396,
+      "words": 65,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Audit",
+       "size": 200,
+       "tag": "h2"
+      },
+      "left": 36,
+      "right": 111,
+      "textLeft": 36,
+      "textRight": 111,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 5203,
+      "height": 881,
+      "words": 23,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Where is your",
+       "size": 100,
+       "tag": "p"
+      },
+      "left": 78,
+      "right": 78,
+      "textLeft": 78,
+      "textRight": 78,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer.f-lime",
+      "tag": "footer",
+      "top": 6084,
+      "height": 525,
+      "words": 28,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Zion4Commerce",
+       "size": 88,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 19,
+      "textLeft": 16,
+      "textRight": 19,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "PROFIT FIRST",
+      "size": 115,
+      "top": 158,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 4
+     },
+     {
+      "x": 36,
+      "n": 3
+     },
+     {
+      "x": 282,
+      "n": 3
+     },
+     {
+      "x": 517,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 11,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.96,
+    0.96,
+    0.96,
+    0.97,
+    0.96,
+    0.96,
+    0.96,
+    0.96
+   ],
+   "motion": {
+    "elements": 18,
+    "css": 3,
+    "transitions": 15,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 400,
+     "h": 866
+    },
+    "page": {
+     "height": 6467,
+     "screens": 7.5,
+     "words": 337,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [
+      "http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf",
+      "http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf",
+      "http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf",
+      "http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf"
+     ],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "PROFIT FIRST",
+     "words": 2,
+     "chars": 12,
+     "lines": 2,
+     "size": 85.8,
+     "vw": 21.5,
+     "font": "Big Shoulders",
+     "weight": 800,
+     "tracking": -0.005,
+     "leading": 0.88,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 144,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "PROFIT FIRST",
+     "words": 2,
+     "lines": 2,
+     "size": 85.8,
+     "font": "Big Shoulders"
+    },
+    "headings": [
+     {
+      "text": "PROFIT FIRST",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 85.8,
+      "vw": 21.5,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.88,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 144,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "ABOUT ZION4COMMERCE",
+      "words": 2,
+      "chars": 19,
+      "lines": 2,
+      "size": 40,
+      "vw": 10,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 576,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "WHERE WE SELL FOR YOU",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 32,
+      "vw": 8,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 1923,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "TWO CHANNELS, ONE SYSTEM",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 40,
+      "vw": 10,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2415,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "TIKTOK",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 117,
+      "vw": 29.3,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2706,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "AMAZON",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 117,
+      "vw": 29.3,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2826,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "AUDIT",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 117,
+      "vw": 29.3,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.63,
+      "top": 3167,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "FIX",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 117,
+      "vw": 29.3,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.33,
+      "top": 3825,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "SCALE",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 117,
+      "vw": 29.3,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.67,
+      "top": 4484,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "WHERE IS YOUR",
+      "words": 3,
+      "chars": 13,
+      "lines": 2,
+      "size": 74.1,
+      "vw": 18.5,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4993,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "MARGIN GOING?",
+      "words": 2,
+      "chars": 13,
+      "lines": 2,
+      "size": 74.1,
+      "vw": 18.5,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5530,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "ZION4COMMERCE",
+      "words": 1,
+      "chars": 13,
+      "lines": 1,
+      "size": 49.1,
+      "vw": 12.3,
+      "font": "Big Shoulders",
+      "weight": 800,
+      "tracking": -0.005,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5871,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 6,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Public Sans",
+       "share": 0.93,
+       "mono": false
+      },
+      {
+       "family": "Big Shoulders",
+       "share": 0.07,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      32,
+      40,
+      49,
+      74,
+      86,
+      117
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Public Sans",
+      "size": 19,
+      "leading": 1.35,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.8
+     },
+     "measureChars": 38,
+     "max": {
+      "size": 117,
+      "vw": 29.3,
+      "font": "Big Shoulders",
+      "text": "TikTok"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.07,
+     "centerShare": 0.12,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f2f2ef",
+       "top": 0,
+       "hsl": {
+        "h": 60,
+        "s": 0.1,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#4db3ff",
+       "top": 0,
+       "hsl": {
+        "h": 206,
+        "s": 1,
+        "l": 0.65
+       }
+      },
+      {
+       "color": "#ff8126",
+       "top": 1831,
+       "hsl": {
+        "h": 25,
+        "s": 1,
+        "l": 0.57
+       }
+      },
+      {
+       "color": "#c5f53d",
+       "top": 2351,
+       "hsl": {
+        "h": 76,
+        "s": 0.9,
+        "l": 0.6
+       }
+      },
+      {
+       "color": "#161615",
+       "top": 2986,
+       "hsl": {
+        "h": 60,
+        "s": 0.02,
+        "l": 0.08
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111111",
+       "share": 0.83
+      },
+      {
+       "color": "#55554f",
+       "share": 0.07
+      },
+      {
+       "color": "#f2f2ef",
+       "share": 0.05
+      },
+      {
+       "color": "#b4b4ad",
+       "share": 0.03
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#111111",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.07
+      },
+      "fg": "#f2f2ef"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 5,
+     "inHero": 2,
+     "radius": 0,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Free audit"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 84,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "big shoulders",
+     "public sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 400,
+     "h": 866
+    },
+    "pageH": 6467,
+    "margins": {
+     "left": 16,
+     "right": 26
+    },
+    "sections": [
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 0,
+      "height": 480,
+      "words": 25,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Profit first",
+       "size": 86,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 58,
+      "textLeft": 16,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 480,
+      "height": 1351,
+      "words": 116,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "About Zion4Commerce",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 26,
+      "textLeft": 16,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 1831,
+      "height": 520,
+      "words": 17,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Where we sell for you",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 44,
+      "right": 54,
+      "textLeft": 45,
+      "textRight": 55,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 2351,
+      "height": 635,
+      "words": 41,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "TikTok",
+       "size": 117,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 0,
+      "textLeft": 16,
+      "textRight": 0,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 2986,
+      "height": 1975,
+      "words": 65,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Audit",
+       "size": 117,
+       "tag": "h2"
+      },
+      "left": 36,
+      "right": 63,
+      "textLeft": 36,
+      "textRight": 63,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div",
+      "tag": "div",
+      "top": 4961,
+      "height": 726,
+      "words": 23,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Where is your",
+       "size": 74,
+       "tag": "p"
+      },
+      "left": 38,
+      "right": 48,
+      "textLeft": 38,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer.f-lime",
+      "tag": "footer",
+      "top": 5687,
+      "height": 780,
+      "words": 28,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Zion4Commerce",
+       "size": 49,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 44,
+      "textLeft": 16,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "PROFIT FIRST",
+      "size": 86,
+      "top": 144,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 8
+     },
+     {
+      "x": 36,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 11,
+    "bodySize": 19,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "13 different font sizes (15, 16, 17, 18, 19, 26, 28, 51, 88, 164, 187, 216, 374).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "broken-image",
+   "width": 1440,
+   "message": "Broken image(s): http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf, http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf, http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf, http://localhost:3000/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38cFHiiAnnFDOVtYYDJ4B0v5TyJ%2Fhf",
+   "fix": "Fix the URL or replace the asset.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 28px on the left, 46px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/user/Zion4commerce/.taste-skill/inspect-about/desktop-fold.jpg",
+   "pages": [
+    "/home/user/Zion4commerce/.taste-skill/inspect-about/desktop-page-01.jpg",
+    "/home/user/Zion4commerce/.taste-skill/inspect-about/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/user/Zion4commerce/.taste-skill/inspect-about/tablet-fold.jpg",
+   "pages": [
+    "/home/user/Zion4commerce/.taste-skill/inspect-about/tablet-page-01.jpg",
+    "/home/user/Zion4commerce/.taste-skill/inspect-about/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/user/Zion4commerce/.taste-skill/inspect-about/mobile-fold.jpg",
+   "pages": [
+    "/home/user/Zion4commerce/.taste-skill/inspect-about/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

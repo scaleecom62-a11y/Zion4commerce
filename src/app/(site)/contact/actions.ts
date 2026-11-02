@@ -7,7 +7,9 @@ import { publicClient } from "@/lib/supabase/public";
 export type LeadState =
   | { status: "idle" }
   | { status: "ok" }
-  | { status: "error"; message?: string; fieldErrors?: Partial<Record<"name" | "email", string>> };
+  | { status: "error"; message?: string; fieldErrors?: Partial<Record<"name" | "email", string>>; values?: LeadValues };
+
+export type LeadValues = Partial<Record<"name" | "email" | "company" | "website" | "phone" | "country" | "spend" | "message", string>> & { services?: string[] };
 
 const Lead = z.object({
   name: z.string().trim().min(1, "Please enter your name.").max(200),
@@ -39,19 +41,31 @@ export async function submitLead(_prev: LeadState, form: FormData): Promise<Lead
     message: opt(form.get("message")),
   });
 
+  const values: LeadValues = {
+    name: opt(form.get("name")),
+    email: opt(form.get("email")),
+    company: opt(form.get("company")),
+    website: opt(form.get("website")),
+    phone: opt(form.get("phone")),
+    country: opt(form.get("country")),
+    spend: opt(form.get("spend")),
+    message: opt(form.get("message")),
+    services: form.getAll("services").filter((v): v is string => typeof v === "string"),
+  };
+
   if (!parsed.success) {
     const fieldErrors: Partial<Record<"name" | "email", string>> = {};
     for (const issue of parsed.error.issues) {
       const key = issue.path[0];
       if ((key === "name" || key === "email") && !fieldErrors[key]) fieldErrors[key] = issue.message;
     }
-    return { status: "error", message: "Please check the highlighted fields.", fieldErrors };
+    return { status: "error", message: "Please check the highlighted fields.", fieldErrors, values };
   }
 
   const supabase = publicClient();
   if (!supabase) {
     console.error("[lead] Supabase is not configured; lead not stored", { email: parsed.data.email });
-    return { status: "error", message: "We couldn't send your request. Please email us instead." };
+    return { status: "error", message: "We couldn't send your request. Please email us instead.", values };
   }
 
   const h = await headers();
@@ -61,7 +75,7 @@ export async function submitLead(_prev: LeadState, form: FormData): Promise<Lead
   });
   if (error) {
     console.error("[lead] insert failed", error.message);
-    return { status: "error", message: "We couldn't send your request. Please try again, or email us." };
+    return { status: "error", message: "We couldn't send your request. Please try again, or email us.", values };
   }
 
   // Email delivery (to the lead inbox with CC) is added once the provider is chosen.
