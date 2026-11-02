@@ -6,7 +6,7 @@ New website for Zion4Commerce, built from scratch. It replaces the current site 
 
 | # | Phase | Status | Output |
 |---|---|---|---|
-| 1 | Audit the current site | Blocked: domain not reachable from the build environment | `docs/old-site/` |
+| 1 | Audit the current site | Done, except database-driven content (team profiles, live About copy) | `docs/old-site/` |
 | 2 | Sitemap, content plan, design direction | Not started | `docs/plan/` |
 | 3 | Build the new site | Not started | app code |
 | 4 | QA, SEO redirects from old URLs, launch | Not started | `docs/launch/` |
