@@ -34,4 +34,6 @@ The form code will keep the provider behind one function, so switching later is 
 
 ## Team data
 
-Team members will come from Tasqr. Integration method pending: product URL and export/API options not yet confirmed.
+Team members will come from Tasqr (repo `scaleecom62-a11y/folwture`). Proposed sync design: `docs/plan/team-sync.md`.
+
+Contact form email provider: deferred, to be decided later.
