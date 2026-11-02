@@ -13,6 +13,9 @@ dist/
 build/
 *.tsbuildinfo
 
+# Browser automation output
+.playwright-cli/
+
 # Platform
 .vercel
 .DS_Store
