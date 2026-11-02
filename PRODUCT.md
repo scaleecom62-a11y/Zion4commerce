@@ -55,7 +55,7 @@ Core offer is Amazon + TikTok Shop only. Walmart and Target+ are not offered on 
 
 - Name: Zion4Commerce.
 - Logo: keep the hexagon mountain badge. Best source: `scaleecom62-a11y/folwture` → `public/zion4commerce-logo.png` (256×256, transparent). No vector exists yet.
-- Colors and typography: open. The old navy and sky-blue palette is not binding.
+- Colours: taken from the logo (deep navy #002845, steel blue #9cbccd, near-white), confirmed by the client on 2 Nov 2026. No orange, lime or crimson. Typography: Big Shoulders + Public Sans.
 - Voice: direct operator language, numbers over adjectives. No hype.
 
 ## Evidence on Hand

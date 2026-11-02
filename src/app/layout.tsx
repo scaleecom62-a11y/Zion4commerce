@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   icons: { icon: "/brand/zion4commerce-logo.png" },
 };
 
-export const viewport: Viewport = { themeColor: "#f2f2ef" };
+export const viewport: Viewport = { themeColor: "#f5f7f8" };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (

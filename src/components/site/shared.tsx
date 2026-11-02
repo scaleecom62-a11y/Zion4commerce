@@ -49,9 +49,14 @@ export function img(s: Settings, key: string): ImageValue {
   return { src: v?.src ?? "", alt: v?.alt ?? "" };
 }
 
+// Colour names used before the palette moved to the logo's colours.
+const LEGACY_FIELD: Record<string, FieldColor> = { orange: "navy", sky: "steel", lime: "mist" };
+const FIELDS: FieldColor[] = ["paper", "mist", "steel", "navy", "night"];
+
 export function field(s: Settings, key = "field", fallback: FieldColor = "paper"): string {
   const v = s[key];
-  return `f-${typeof v === "string" ? v : fallback}`;
+  const name = typeof v === "string" ? (LEGACY_FIELD[v] ?? v) : fallback;
+  return `f-${FIELDS.includes(name as FieldColor) ? name : fallback}`;
 }
 
 /** Marks an element so the editor can select its field when clicked in the preview. */
@@ -99,7 +104,7 @@ export function HexMark({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 240 260" className={className} role="img" aria-label="Zion4Commerce mark">
       <polygon points="120,0 240,65 240,195 120,260 0,195 0,65" fill="currentColor" />
-      <polygon points="120,14 226,72 226,128 14,128 14,72" fill="var(--c-sky)" />
+      <polygon points="120,14 226,72 226,128 14,128 14,72" fill="var(--c-steel)" />
       <polygon points="14,128 60,84 88,108 128,52 168,104 196,82 226,112 226,132 14,132" fill="var(--c-paper)" />
       <polygon points="14,136 226,136 226,187 120,246 14,187" fill="var(--c-paper)" />
     </svg>

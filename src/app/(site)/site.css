@@ -1,10 +1,10 @@
-/* Public site. Direction: "Loud and flat" (tasteskill seed 790916004).
+/* Public site. Direction: "Loud and flat" (tasteskill seed 790916004), palette taken from the Zion4Commerce logo.
    Tokens come from site settings (colors) and the dealt type system. Everything is scoped to .site. */
 
 .site {
-  --ink: var(--c-ink, #111111);
-  --paper: var(--c-paper, #f2f2ef);
-  --accent: var(--c-accent, #de194b);
+  --ink: var(--c-ink, #0b1620);
+  --paper: var(--c-paper, #f5f7f8);
+  --accent: var(--c-accent, #002845);
   --accent-ink: #ffffff;
   --font-display: var(--font-big-shoulders), "Arial Narrow", sans-serif;
   --font-text: var(--font-public-sans), system-ui, sans-serif;
@@ -46,12 +46,12 @@
 .site p { max-width: 62ch; text-wrap: pretty; }
 
 /* ---------- colour fields ---------- */
-.f-paper { background: var(--c-paper); color: var(--ink); --soft: #55554f; }
-.f-orange { background: var(--c-orange); color: var(--ink); --soft: #5c2a05; }
-.f-sky { background: var(--c-sky); color: var(--ink); --soft: #0b3557; }
-.f-lime { background: var(--c-lime); color: var(--ink); --soft: #3d4d0b; }
-.f-night { background: var(--c-night); color: #f2f2ef; --soft: #b4b4ad; }
-.f-night :focus-visible { outline-color: #f2f2ef; }
+.f-paper { background: var(--c-paper); color: var(--ink); --soft: #44535f; }
+.f-mist { background: var(--c-mist); color: var(--ink); --soft: #33495a; }
+.f-steel { background: var(--c-steel); color: var(--ink); --soft: #16344b; }
+.f-navy { background: var(--c-navy); color: #f5f7f8; --soft: #b6cbd8; }
+.f-night { background: var(--c-night); color: #f5f7f8; --soft: #a9bfcc; }
+.f-navy :focus-visible, .f-night :focus-visible { outline-color: #f5f7f8; }
 
 /* ---------- type ---------- */
 .display {
@@ -92,8 +92,11 @@
 .btn:active { transform: scale(0.97); }
 .btn--ink { background: var(--ink); color: var(--paper); }
 .btn--ink:hover { background: #000; }
-.f-night .btn--ink { background: #f2f2ef; color: #111; }
-.f-night .btn--ink:hover { background: #fff; }
+/* On dark panels the action is the logo's steel blue with navy text. */
+.f-navy .btn, .f-night .btn { background: var(--c-steel); color: var(--c-navy); }
+.f-navy .btn:hover, .f-night .btn:hover { background: #b7cfdc; }
+.f-navy .btn--ink, .f-night .btn--ink { background: #f5f7f8; color: var(--c-navy); }
+.f-navy .btn--ink:hover, .f-night .btn--ink:hover { background: #fff; }
 .btn--small { min-height: 2.75rem; padding: 0 1.1rem; font-size: 1rem; }
 .link {
   text-decoration: underline;
@@ -159,6 +162,10 @@
 .hero-w__line { display: block; overflow: hidden; padding-bottom: 0.04em; margin-bottom: -0.04em; }
 .hero-w__line:first-child { color: var(--accent); }
 .hero-w__line + .hero-w__line { margin-top: 0.06em; color: var(--ink); }
+.hero-w--dark .hero-w__line + .hero-w__line { color: var(--c-steel); }
+.hero-w--dark .hero-w__foot { color: #f5f7f8; }
+.hero-w--dark .hero-w__foot .btn { background: var(--c-steel); color: var(--c-navy); }
+.hero-w--dark .hero-w__foot .btn:hover { background: #b7cfdc; }
 .hero-w__line > span { display: block; }
 .hero-w__foot {
   position: absolute;
@@ -208,7 +215,7 @@
 .verb__pic img, .verb__pic svg { width: 100%; height: 100%; object-fit: cover; }
 .verb__pic::after { content: ""; position: absolute; inset: 0; background: rgb(0 0 0 / 0.28); }
 .verb__pic:has(svg)::after { display: none; }
-.verb:has(.verb__pic img) .verb__word { color: #f2f2ef; }
+.verb:has(.verb__pic img) .verb__word { color: #f5f7f8; }
 .verb__word-wrap { position: absolute; inset: 0; display: grid; place-items: center; padding-bottom: 8svh; }
 .verb__word {
   text-align: center;
@@ -216,7 +223,7 @@
   font-size: clamp(7rem, 26vw, 24rem);
   color: var(--ink);
 }
-.f-night .verb__word { color: #f2f2ef; }
+.f-navy .verb__word, .f-night .verb__word { color: #f5f7f8; }
 .verb__sentence {
   position: absolute;
   left: var(--margin);
@@ -342,7 +349,7 @@
 .folder__report { grid-column: 1 / span 7; background: var(--c-paper); color: var(--ink); padding: clamp(1.5rem, 3vw, 2.5rem); min-height: 26rem; display: flex; flex-direction: column; justify-content: space-between; gap: 2rem; }
 .folder__report-head { font-family: var(--font-display); font-weight: 800; text-transform: uppercase; font-size: clamp(2.25rem, 1.2rem + 3vw, 4.5rem); line-height: 0.9; text-wrap: balance; }
 .folder__metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 1.5rem; }
-.folder__metric dt { font-weight: 600; color: #55554f; font-size: 0.9375rem; }
+.folder__metric dt { font-weight: 600; color: #44535f; font-size: 0.9375rem; }
 .folder__metric dd { font-family: var(--font-display); font-weight: 800; font-size: clamp(2.25rem, 1.5rem + 2vw, 3.5rem); line-height: 1; margin-top: 0.25rem; }
 .folder__logo { width: 100%; max-width: 22rem; height: auto; background: transparent; }
 .folder__text { grid-column: 9 / span 4; }
@@ -362,7 +369,7 @@
 .bigfig h2 { font-family: var(--font-display); font-weight: 800; text-transform: uppercase; font-size: clamp(2.25rem, 1.6rem + 1.6vw, 2.75rem); line-height: 1; }
 .bigfig__figure { font-size: clamp(11rem, 28vw, 26rem); line-height: 0.92; letter-spacing: -0.01em; }
 .bigfig__figure sup { font-size: 0.33em; vertical-align: top; position: relative; top: 0.06em; margin-left: 0.04em; }
-.bigfig__caption { margin-top: 2rem; max-width: 32ch; font-size: 1.125rem; }
+.bigfig__caption { margin-top: 3.25rem; max-width: 32ch; font-size: 1.125rem; }
 @media (max-width: 47.99em) {
   .bigfig { min-height: 80svh; gap: 3rem; }
   .bigfig__figure { font-size: 31vw; }
@@ -474,7 +481,7 @@
 .cform__check { display: flex; align-items: center; gap: 0.6rem; min-height: 2.75rem; padding: 0 0.9rem; background: #ffffff; cursor: pointer; }
 .cform__check input { width: 1.15rem; height: 1.15rem; accent-color: var(--ink); }
 .cform__submit { grid-column: 1 / -1; justify-self: start; }
-.cform__done { grid-column: 7 / span 6; background: var(--c-lime); padding: 2.5rem; align-self: start; }
+.cform__done { grid-column: 7 / span 6; background: var(--c-mist); padding: 2.5rem; align-self: start; }
 .cform__done h2 { font-size: clamp(3rem, 6vw, 5rem); margin-bottom: 1rem; }
 .cform__hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; } /* taste-skill-ignore: off-screen honeypot, not a rule */
 @media (max-width: 47.99em) {

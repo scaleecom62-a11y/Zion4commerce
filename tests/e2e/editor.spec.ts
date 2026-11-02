@@ -36,10 +36,10 @@ test("sections can be added, hidden and removed", async ({ page }) => {
 test("site colours change the preview", async ({ page }) => {
   await page.getByRole("tab", { name: "Site" }).click();
   await page.getByRole("button", { name: "Colours" }).click();
-  await page.getByRole("textbox", { name: "Orange", exact: true }).fill("#00aa66");
+  await page.getByRole("textbox", { name: "Navy (logo outline)", exact: true }).fill("#123456");
   await expect
-    .poll(() => preview(page).locator(".site").evaluate((el) => getComputedStyle(el).getPropertyValue("--c-orange").trim()))
-    .toBe("#00aa66");
+    .poll(() => preview(page).locator(".site").evaluate((el) => getComputedStyle(el).getPropertyValue("--c-navy").trim()))
+    .toBe("#123456");
 });
 
 test("clicking the footer opens footer settings", async ({ page }) => {

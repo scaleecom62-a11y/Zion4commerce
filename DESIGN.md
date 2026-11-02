@@ -2,21 +2,22 @@
 name: Zion4Commerce
 description: Marketplace growth agency site, set as a loud flat street poster held in check by a strict grid.
 colors:
-  accent-crimson: "#de194b"
+  accent-navy: "#002845"
   accent-ink: "#ffffff"
-  field-orange: "#ff8126"
-  field-sky: "#4db3ff"
-  field-lime: "#c5f53d"
-  field-night: "#161615"
-  paper: "#f2f2ef"
-  ink: "#111111"
-  soft-on-paper: "#55554f"
-  soft-on-orange: "#5c2a05"
-  soft-on-sky: "#0b3557"
-  soft-on-lime: "#3d4d0b"
-  soft-on-night: "#b4b4ad"
+  accent-on-dark: "#9cbccd"
+  field-mist: "#dce8ef"
+  field-steel: "#9cbccd"
+  field-navy: "#002845"
+  field-night: "#001a2e"
+  paper: "#f5f7f8"
+  ink: "#0b1620"
+  soft-on-paper: "#44535f"
+  soft-on-mist: "#33495a"
+  soft-on-steel: "#16344b"
+  soft-on-navy: "#b6cbd8"
+  soft-on-night: "#a9bfcc"
   input-white: "#ffffff"
-  error-crimson-deep: "#a3112f"
+  error-red: "#a3112f"
 typography:
   display:
     fontFamily: "Big Shoulders, Arial Narrow, sans-serif"
@@ -70,13 +71,13 @@ spacing:
   tile-gap: "12px"
 components:
   button-primary:
-    backgroundColor: "{colors.accent-crimson}"
+    backgroundColor: "{colors.accent-navy}"
     textColor: "{colors.accent-ink}"
     rounded: "{rounded.none}"
     padding: "0 1.5rem"
     height: "3.25rem"
   button-small:
-    backgroundColor: "{colors.accent-crimson}"
+    backgroundColor: "{colors.accent-navy}"
     textColor: "{colors.accent-ink}"
     rounded: "{rounded.none}"
     padding: "0 1.1rem"
@@ -133,42 +134,41 @@ The public site talks like a poster pasted on a wall: flat saturated fields, one
 
 Density is low. A panel holds one idea: one verb, one figure, one question, one comparison. Display type is sized to the viewport, not to a scale. Body text stays plain and readable at 17 to 19px. Depth comes only from colour change and from the occasional overlap: the printed card cut off by its panel's bottom edge, a caption plate sitting on a photograph, a folder tab rising off its band.
 
-The direction is "Loud and flat" (taste-skill seed 790916004), palette "Orange, sky, lime", type "Big Shoulders / Public Sans". Site editors can change every field colour in settings, so the roles below matter more than the exact hexes.
+The direction is "Loud and flat" (taste-skill seed 790916004), type "Big Shoulders / Public Sans". The dealt orange/sky/lime palette was replaced on 2 Nov 2026, at the client's request, by the colours of the Zion4Commerce logo: deep navy, steel blue and near-white, plus two tints. The composition, type and rules are unchanged. Site editors can change every colour in settings, so the roles below matter more than the exact hexes.
 
 **Key Characteristics:**
-- Flat, full-strength colour fields, one per panel, butted edge to edge
+- Flat colour fields from the logo, one per panel, butted edge to edge
 - One condensed heavy uppercase display face at poster scale; one plain grotesk for everything else
 - Square corners everywhere; separation by colour and space, never by lines
-- Crimson is the one accent, and it belongs to actions
+- Navy is the action colour on light panels; steel is the action colour on dark panels
 - No shadows, gradients, glass or outlines on the public site
 - Motion is one masked headline reveal plus quiet rise-ins, and every bit of it is optional
 
 ## Colors
 
-Four loud fields plus paper and near-black, black type on every field except night, and one crimson for actions.
+Two light fields, two dark fields and paper, all taken from the logo badge. Ink type on light fields, paper type on dark fields.
 
 ### Primary
-- **Signal Crimson** (accent-crimson): the fill of every primary button, the text-selection colour, and the border of an invalid input. Its text is always pure white (accent-ink). On hover it darkens by mixing 14% black (`color-mix(in srgb, accent 86%, #000)`).
+- **Logo Navy** (accent-navy, field-navy): the badge outline. Primary buttons on light panels (white text), the hero's lower field and first headline line, the services table panel, the footer.
+- **Logo Steel** (field-steel, accent-on-dark): the badge sky. Buttons on navy and night panels (navy text), the second hero line on navy, the printed-list panel, page intros, question bands.
 
 ### Secondary
-- **Hazard Orange** (field-orange): the default lower field of the hero, the services table panel, page intros. The loudest ground.
-- **Pool Sky** (field-sky): the printed-list panel and the sky inside the hex mark.
-- **Acid Lime** (field-lime): the calculator panel, the footer, and the contact form's sent message.
-- **Night** (field-night): the verb panels, the big-figure panel, the closing CTA. Text on Night switches to paper.
+- **Mist** (field-mist): a light tint of steel. The calculator panel, the "sent" message, light folders and team tiles.
+- **Night** (field-night): the deepest navy. The big-figure panel and the closing question.
 
 ### Neutral
-- **Poster Paper** (paper): the site ground, the upper hero field, and the surface for anything that sits on a loud field: the printed card, the caption plate, the case report, the calculator inputs.
-- **Print Black** (ink): all type on paper, orange, sky and lime; the ink button; the mobile menu; the focus ring.
-- **Soft inks** (soft-on-paper, soft-on-orange, soft-on-sky, soft-on-lime, soft-on-night): one darker or paler tone per field, used for secondary text such as notes, table heads, list metadata and footer column titles. A field always uses its own soft ink, never another field's.
-- **Input White** (input-white): the contact form's inputs and checkboxes, the only pure white surface.
-- **Deep Crimson** (error-crimson-deep): error text under contact fields only. Never decorative.
+- **Paper** (paper): the near-white of the badge. The site ground, the upper hero field, and every object sitting on a coloured field: the printed card, the caption plate, the case report.
+- **Ink** (ink): a navy-black for all type on paper, mist and steel; the focus ring on light fields.
+- **Soft inks** (soft-on-*): one quieter tone per field for secondary text such as notes, table heads, list metadata and footer column titles. A field always uses its own soft ink.
+- **Input White** (input-white): the contact form's inputs, the only pure white surface.
+- **Error Red** (error-red): error text under contact fields only. The one non-logo colour, kept because errors must not look like brand.
 
 ### Named Rules
-**The One Field, One Ink Rule.** Every panel is one flat colour and its text is one other colour (ink, or paper on Night), plus that field's soft ink for quiet text. No tints, no washes, no second background inside a panel except a paper object sitting on it.
+**The One Field, One Ink Rule.** Every panel is one flat colour and its text is one other colour (ink on light fields, paper on navy and night), plus that field's soft ink. No tints or washes inside a panel except a paper object sitting on it.
 
-**The Crimson Means Act Rule.** Crimson is for things you press: buttons, and the error and selection states that belong to controls. The build carries exactly two typographic uses, and they come from the direction itself: the first line of the waterline hero is set in crimson, and the strike through the rejected word in the Two Words section is crimson. Those two stay as they are. No new surface adds a crimson headline, crimson link, crimson icon or crimson panel.
+**The Act Colour Rule.** Navy marks what you press on light panels; steel marks it on dark panels (`.f-navy .btn`, `.f-night .btn`). The hero's navy first line and the navy strike through the rejected word are the only typographic uses of the action colour.
 
-**The Editable Palette Rule.** Field colours come from site settings (`--c-paper`, `--c-orange`, `--c-sky`, `--c-lime`, `--c-night`, `--c-accent`, `--c-ink`). Components reference those variables, never the hex. A new section picks a field by role (paper, orange, sky, lime, night), not by value.
+**The Editable Palette Rule.** Field colours come from site settings (`--c-paper`, `--c-mist`, `--c-steel`, `--c-navy`, `--c-night`, `--c-accent`, `--c-ink`). Components reference those variables, never the hex. A new section picks a field by role (paper, mist, steel, navy, night). Old names in stored content (orange, sky, lime) are mapped to navy, steel and mist.
 
 ## Typography
 
@@ -211,11 +211,11 @@ The public site is flat. There are no box shadows anywhere, including on the mob
 ### Named Rules
 **The Flat At Rest Rule.** No shadow, gradient, blur, glass or glow on the public site. A floating menu is the only element allowed to take a shadow, and the current build ships none, so there is no shadow value to reuse.
 
-**The Overlap Not Shadow Rule.** To lift something, put a paper object on a loud field, or let a panel edge cut it. Never draw a shadow.
+**The Overlap Not Shadow Rule.** To lift something, put a paper object on a coloured field, or let a panel edge cut it. Never draw a shadow.
 
 ## Shapes
 
-Every corner is square (`rounded.none`): buttons, inputs, cards, menu, photographs, tiles. Borders appear only as a control state (a 2px ink border on a focused contact input, crimson when invalid), and a 3px ink focus outline, offset 3px, marks keyboard focus everywhere (paper on Night).
+Every corner is square (`rounded.none`): buttons, inputs, cards, menu, photographs, tiles. Borders appear only as a control state (a 2px ink border on a focused contact input, error red when invalid), and a 3px ink focus outline, offset 3px, marks keyboard focus everywhere (paper on Night).
 
 Three shapes break the rectangle, and each is tied to the brand or an object:
 - **The hexagon mark**: the Zion mountain badge, rebuilt from flat polygons with 4px gaps, set large beside the footer wordmark.
@@ -229,30 +229,30 @@ Tilt is reserved for objects. The printed card turns -1.5deg (-1deg on phones), 
 ### Buttons
 Solid, blunt rectangles with no border and no icon.
 - **Shape:** square corners (0px); height 3.25rem, small 2.75rem.
-- **Primary:** Signal Crimson fill, white Public Sans 600 at 1.0625rem, 1.5rem side padding. One per panel at most.
-- **Ink:** Print Black fill with paper text (paper fill with ink text on Night). Used as the second choice in the CTA and in the footer where crimson would compete with lime.
-- **Hover / Active:** fill darkens (crimson mixed with 14% black; ink goes to pure black, paper to white) over 180ms; press scales to 0.97 over 140ms.
+- **Primary:** Logo Navy fill with white Public Sans 600 at 1.0625rem, 1.5rem side padding, on light panels. On navy and night panels the fill is Logo Steel with navy text. One per panel at most.
+- **Ink:** Ink fill with paper text on light panels; paper fill with navy text on navy and night. Used as the second choice in the CTA and in the footer.
+- **Hover / Active:** fill darkens (navy mixed with 14% black; steel lightens to #b7cfdc; paper goes to white) over 180ms; press scales to 0.97 over 140ms.
 - **Links:** text links underline at 0.08em thickness, 0.2em offset; on fine pointers the underline appears only on hover.
 
 ### Cards / Containers (paper objects)
 - **Corner Style:** square.
-- **Background:** Poster Paper on a loud field; never a card on paper.
+- **Background:** Paper on a coloured field; never a card on paper.
 - **Shadow Strategy:** none (see Elevation & Depth).
 - **Border:** none.
 - **Internal Padding:** 56px for the printed card, `clamp(1.5rem, 3vw, 2.5rem)` for the case report, 1.1rem by 1.25rem for the caption plate.
 
 ### Inputs / Fields
-- **Style:** contact inputs are white, square, 3.25rem tall, with a 2px transparent border; calculator inputs are paper on lime at 1.25rem tabular figures, no border. Range sliders and checkboxes take ink as their accent colour.
+- **Style:** contact inputs are white, square, 3.25rem tall, with a 2px transparent border; calculator inputs are paper on mist at 1.25rem tabular figures, no border. Range sliders and checkboxes take ink as their accent colour.
 - **Focus:** the 2px border turns ink, replacing the outline.
-- **Error:** border turns crimson; message below in Deep Crimson, 600, 0.9375rem.
+- **Error:** border turns error red; message below in Error Red, 600, 0.9375rem. Focus moves to the first invalid field, and typed values are kept.
 
 ### Navigation
-- **Header:** sits over the first panel, absolute, with the logo and wordmark (Big Shoulders 1.6rem) top-left and Public Sans 600 links plus a small crimson button top-right, on the page margin.
+- **Header:** sits over the first panel, absolute, with the logo and wordmark (Big Shoulders 1.6rem) top-left and Public Sans 600 links plus a small navy button top-right, on the page margin.
 - **Hover:** links underline at 0.25em offset and rise 1px.
 - **Mobile:** below 48em the links become a "Menu" summary in an ink block; it opens a 13rem ink panel with paper links, 0.75rem by 0.9rem padding, no shadow. The wordmark text hides, the badge stays.
 
 ### Waterline Hero (signature)
-Two flat fields meet at half height (46% on phones): paper above, a chosen loud field below. A two-line uppercase headline is centred across the seam, the first line in crimson and the second in ink, with one lead sentence and one crimson button centred near the bottom. No image.
+Two flat fields meet at half height (46% on phones): paper above, a chosen field below (navy by default). A two-line uppercase headline is centred across the seam, the first line in navy on paper and the second in steel on navy (ink if the lower field is light), with one lead sentence and one steel button centred near the bottom. No image.
 
 ### Verb Panels (signature)
 Each step of the process is one full-height panel holding one huge verb, centred, over a photograph with a scrim or a flat ridge drawing, with a paper caption plate at the bottom-left margin carrying the explanatory sentence.
@@ -269,12 +269,12 @@ On load, each hero line rises from behind its own baseline (700ms, `cubic-bezier
 - **Do** give every new section exactly one field colour from settings and let it meet its neighbours edge to edge.
 - **Do** set statements, single words and big figures in Big Shoulders 800 uppercase at viewport scale, and keep them to two lines.
 - **Do** put quiet text in that field's own soft ink, and evidence (numbers) in tabular lining figures.
-- **Do** lift content by placing a paper object on a loud field, or by letting the panel edge cut it.
+- **Do** lift content by placing a paper object on a coloured field, or by letting the panel edge cut it.
 - **Do** keep the 1 to 5 / 7 to 12 split for heading-plus-text panels, and collapse to one column below 48em.
 - **Do** reference colours through the settings variables so site editors can recolour the site.
 
 ### Don't:
-- **Don't** use crimson for anything but actions and their states (the hero's first line and the struck word are the only typographic exceptions, and they are not a pattern to extend).
+- **Don't** use the action colour for anything but actions and their states (the hero's first line and the struck word are the only typographic exceptions, and they are not a pattern to extend). Don't add colours from outside the logo palette, except error red for errors.
 - **Don't** add eyebrow labels or kickers above headlines.
 - **Don't** number sections, steps or items as decoration (01, 02, 03).
 - **Don't** draw thin rules, hairlines or divider lines; separate with colour and space.
@@ -289,7 +289,7 @@ On load, each hero line rises from behind its own baseline (700ms, `cubic-bezier
 The editor at `/admin` (`src/components/editor/*`, Tailwind) is a work tool for site editors and deliberately does not wear the poster. It is quiet so the live preview carries the brand.
 
 - **Type:** Public Sans only (Tailwind `font-sans`), small and dense: 13px for controls, 12px for secondary controls and tabs, 11px for hints, 14px for primary actions. Weights 500 and 600. Hex colour values use a monospace input, the one place monospace appears, because a hex is code.
-- **Colour:** neutral greys on white and neutral-100 (`#f5f5f5`) chrome; neutral-900 for primary buttons, active tabs and toasts (hover to black); blue-50 fill with a blue-300 ring for the selected section or field; blue-700 for add actions; red-700 for destructive actions and error toasts; amber-50 and amber-900 for warnings. Crimson and the field colours appear only inside the preview.
+- **Colour:** neutral greys on white and neutral-100 (`#f5f5f5`) chrome; neutral-900 for primary buttons, active tabs and toasts (hover to black); blue-50 fill with a blue-300 ring for the selected section or field; blue-700 for add actions; red-700 for destructive actions and error toasts; amber-50 and amber-900 for warnings. The publish button is Logo Navy. Field colours appear only inside the preview.
 - **Shape:** small rounding (6px on controls, 12px on the media dialog), 1px neutral-200 or neutral-300 borders, dashed borders for "add" targets.
 - **Depth:** a small shadow on the selected device toggle and a large shadow on the floating toast; the media dialog uses a 40% black backdrop. No other shadows.
 - **Rule:** never import site classes (`.site`, `.btn`, `.f-*`) into editor chrome, and never bring editor rounding, borders or greys into the public site.

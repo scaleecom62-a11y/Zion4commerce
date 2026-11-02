@@ -41,7 +41,7 @@ export function SiteHeader({ site }: { site: SiteSettings }) {
 
 export function SiteFooter({ site }: { site: SiteSettings }) {
   return (
-    <footer className="site-footer f-lime" data-region="footer">
+    <footer className="site-footer f-navy" data-region="footer">
       <div className="site-footer__mark" aria-hidden="true">
         <HexMark />
         <p className="site-footer__name display" translate="no">
@@ -84,9 +84,9 @@ export function colorVars(site: SiteSettings): React.CSSProperties {
   const c = site.colors;
   return {
     ["--c-paper" as string]: c.paper,
-    ["--c-orange" as string]: c.orange,
-    ["--c-sky" as string]: c.sky,
-    ["--c-lime" as string]: c.lime,
+    ["--c-mist" as string]: c.mist,
+    ["--c-steel" as string]: c.steel,
+    ["--c-navy" as string]: c.navy,
     ["--c-night" as string]: c.night,
     ["--c-accent" as string]: c.accent,
     ["--c-ink" as string]: c.ink,

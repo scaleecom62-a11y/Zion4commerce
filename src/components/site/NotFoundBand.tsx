@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function NotFoundBand() {
   return (
-    <section className="pintro f-sky">
+    <section className="pintro f-steel">
       <h1 className="display">Not found</h1>
       <p>
         This page doesn&apos;t exist, or it has moved.{" "}

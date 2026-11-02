@@ -6,7 +6,7 @@
  * both the renderer and the editor read that declaration.
  */
 
-export type FieldColor = "paper" | "orange" | "sky" | "lime" | "night";
+export type FieldColor = "paper" | "mist" | "steel" | "navy" | "night";
 
 export interface ImageValue {
   src: string;
@@ -110,11 +110,11 @@ export interface SectionDefinition {
 }
 
 export const FIELD_COLOR_OPTIONS: { value: FieldColor; label: string }[] = [
-  { value: "orange", label: "Orange" },
-  { value: "sky", label: "Sky" },
-  { value: "lime", label: "Lime" },
-  { value: "night", label: "Night" },
   { value: "paper", label: "Paper" },
+  { value: "mist", label: "Mist" },
+  { value: "steel", label: "Steel" },
+  { value: "navy", label: "Navy" },
+  { value: "night", label: "Night" },
 ];
 
 export function pagePath(slug: string): string {

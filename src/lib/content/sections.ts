@@ -21,7 +21,7 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
       sentence:
         "Zion4Commerce runs Amazon and TikTok Shop for brands that want growth they can keep: lower TACoS, higher organic rank, healthier margins.",
       action: { label: "Get a free audit", href: "/contact" },
-      lower: "orange",
+      lower: "navy",
     },
   },
   {
@@ -46,7 +46,7 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
         "15+ countries in all",
       ],
       image: { src: "https://d8j0ntlcm91z4.cloudfront.net/user_38cFHiiAnnFDOVtYYDJ4B0v5TyJ/hf_20261102_084334_1d830701-f938-41b4-ab2f-9ea78272c675.png", alt: "Shipping parcels with labels stacked on a packing table" },
-      field: "sky",
+      field: "steel",
     },
   },
   {
@@ -84,14 +84,14 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
           sentence:
             "We rebuild listings, A+ content and the PPC structure, and launch TikTok Shop next to Amazon so each channel feeds the other.",
           image: { src: "https://d8j0ntlcm91z4.cloudfront.net/user_38cFHiiAnnFDOVtYYDJ4B0v5TyJ/hf_20261102_084335_373d6e88-c278-4cee-8836-ec64151b6e6c.png", alt: "A narrow sandstone ridge trail with a safety chain, climbing between two canyon drops" },
-          field: "sky",
+          field: "navy",
         },
         {
           verb: "Scale",
           sentence:
             "As organic rank climbs and TACoS falls, we open the next marketplace: the UK, Canada, Germany or the UAE.",
           image: { src: "https://d8j0ntlcm91z4.cloudfront.net/user_38cFHiiAnnFDOVtYYDJ4B0v5TyJ/hf_20261102_084334_5271a8e1-3d1f-4698-9022-87a0f64209bf.png", alt: "View from a summit over layered red canyon ridges and a green river valley" },
-          field: "lime",
+          field: "steel",
         },
       ],
     },
@@ -152,7 +152,7 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
       spend: 30000,
       target: 15,
       note: "This is arithmetic on your own numbers, not a forecast. The audit tells you what is realistic for your category.",
-      field: "lime",
+      field: "mist",
     },
   },
   {
@@ -200,7 +200,7 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
         { service: "Retention", where: "Amazon, TikTok Shop", includes: "Retention campaigns", measure: "Repeat orders" },
         { service: "Account management", where: "All channels", includes: "Account health, weekly reporting", measure: "Account health" },
       ],
-      field: "orange",
+      field: "navy",
     },
   },
   {
@@ -255,7 +255,7 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
             { label: "ROAS", value: "Up every week" },
           ],
           image: { src: "/brand/clients/maison-dhermine.jpeg", alt: "Maison d'Hermine logo" },
-          field: "sky",
+          field: "steel",
         },
         {
           name: "Skincare brand",
@@ -270,7 +270,7 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
             { label: "Conversion", value: "18.2%" },
           ],
           image: { src: "", alt: "" },
-          field: "lime",
+          field: "mist",
         },
         {
           name: "Supplement brand",
@@ -284,7 +284,7 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
             { label: "Rating", value: "4.8 of 5" },
           ],
           image: { src: "", alt: "" },
-          field: "orange",
+          field: "navy",
         },
       ],
     },
@@ -432,7 +432,7 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
           a: "No. We run ads, listings, A+ content, pricing, inventory, reviews and reporting, because TACoS and margin depend on all of them.",
         },
       ],
-      field: "sky",
+      field: "steel",
       field2: "paper",
     },
   },
@@ -469,7 +469,7 @@ export const SECTION_DEFINITIONS: SectionDefinition[] = [
     defaults: {
       title: "Page title",
       sentence: "One sentence that says what this page is for.",
-      field: "orange",
+      field: "steel",
     },
   },
   {

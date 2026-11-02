@@ -450,7 +450,7 @@ export function Editor({
         <a href={pagePath(page.slug)} target="_blank" rel="noreferrer" className={btn}>
           View live
         </a>
-        <button type="button" onClick={() => void publish()} disabled={demo || publishing || saveState === "saving"} className="rounded-md bg-[#de194b] px-3.5 py-1.5 text-[13px] font-semibold text-white hover:bg-[#c3123f] disabled:cursor-not-allowed disabled:opacity-50">
+        <button type="button" onClick={() => void publish()} disabled={demo || publishing || saveState === "saving"} className="rounded-md bg-[#002845] px-3.5 py-1.5 text-[13px] font-semibold text-white hover:bg-[#001a2e] disabled:cursor-not-allowed disabled:opacity-50">
           {publishing ? "Publishing…" : "Publish"}
         </button>
         <form action={signOut}>

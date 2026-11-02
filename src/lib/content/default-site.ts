@@ -47,7 +47,7 @@ const about: PageContent = {
       title: "Profit first",
       sentence:
         "We grow brands on Amazon and TikTok Shop, and we judge every month by TACoS and contribution margin, not by revenue alone.",
-      field: "sky",
+      field: "steel",
     }),
     section("about_facts"),
     section("printed_list", {
@@ -56,7 +56,7 @@ const about: PageContent = {
         src: "https://d8j0ntlcm91z4.cloudfront.net/user_38cFHiiAnnFDOVtYYDJ4B0v5TyJ/hf_20261102_084335_296d5730-592a-4b34-8a66-4ac87900c400.png",
         alt: "Container port at dawn with cranes loading a cargo ship",
       },
-      field: "orange",
+      field: "navy",
     }),
     section("two_words", {
       heading: "Two channels, one system",
@@ -65,7 +65,7 @@ const about: PageContent = {
       leftWord: "TikTok",
       rightWord: "Amazon",
       strikeLeft: false,
-      field: "lime",
+      field: "mist",
     }),
     section("verb_panels"),
     section("cta_choice"),
@@ -83,7 +83,7 @@ const team: PageContent = {
     section("page_intro", {
       title: "The team",
       sentence: "Marketplace operators, ad specialists and content leads who run your Amazon and TikTok Shop accounts.",
-      field: "lime",
+      field: "mist",
     }),
     section("team_grid", { heading: "Who runs your account", intro: "" }),
     section("cta_choice"),
@@ -166,13 +166,13 @@ export const DEFAULT_SITE: SiteContent = {
     ],
     headerAction: { label: "Free audit", href: "/contact" },
     colors: {
-      paper: "#f2f2ef",
-      orange: "#ff8126",
-      sky: "#4db3ff",
-      lime: "#c5f53d",
-      night: "#161615",
-      accent: "#de194b",
-      ink: "#111111",
+      paper: "#f5f7f8",
+      mist: "#dce8ef",
+      steel: "#9cbccd",
+      navy: "#002845",
+      night: "#001a2e",
+      accent: "#002845",
+      ink: "#0b1620",
     },
     contact: {
       email: "zion4commerce@gmail.com",

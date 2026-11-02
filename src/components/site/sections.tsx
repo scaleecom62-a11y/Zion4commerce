@@ -24,10 +24,12 @@ function HeroWaterline({ section, isFirst }: SectionProps) {
   const s = section.settings;
   const lines = [str(s, "line1"), str(s, "line2")];
   const action = link(s, "action");
+  const lower = field(s, "lower", "navy");
+  const dark = lower === "f-navy" || lower === "f-night";
   return (
-    <section className="hero-w">
+    <section className={`hero-w${dark ? " hero-w--dark" : ""}`}>
       <div className="hero-w__field hero-w__field--top" />
-      <div className={`hero-w__field hero-w__field--bottom ${field(s, "lower", "orange")}`} />
+      <div className={`hero-w__field hero-w__field--bottom ${lower}`} />
       <div className="hero-w__copy">
         <H first={isFirst} className="hero-w__h display">
           {lines.map((l, i) => (
@@ -54,7 +56,7 @@ function PrintedList({ section, isFirst }: SectionProps) {
   const names = list<string>(s, "names");
   const picture = img(s, "image");
   return (
-    <section className={`plist ${field(s, "field", "sky")}`}>
+    <section className={`plist ${field(s, "field", "steel")}`}>
       <div className="plist__card" data-reveal>
         <H first={isFirst} {...ed("heading")}>
           {str(s, "heading")}
@@ -140,7 +142,7 @@ function TwoWords({ section, isFirst }: SectionProps) {
 function TacosCalculator({ section, isFirst }: SectionProps) {
   const s = section.settings;
   return (
-    <section className={`calc wrap ${field(s, "field", "lime")}`} id="calculator">
+    <section className={`calc wrap ${field(s, "field", "mist")}`} id="calculator">
       <Calculator
         first={isFirst}
         heading={str(s, "heading")}
@@ -159,7 +161,7 @@ function ServiceTable({ section, isFirst }: SectionProps) {
   const s = section.settings;
   const rows = list<Settings>(s, "rows");
   return (
-    <section className={`stable wrap ${field(s, "field", "orange")}`} id="services">
+    <section className={`stable wrap ${field(s, "field", "navy")}`} id="services">
       <H first={isFirst} className="head" {...ed("heading")} data-reveal>
         {str(s, "heading")}
       </H>
@@ -204,7 +206,7 @@ function CaseFolders({ section, isFirst }: SectionProps) {
       {cases.map((c, i) => {
         const metrics = list<Settings>(c, "metrics");
         const logo = img(c, "image");
-        const fc = field(c, "field", "sky");
+        const fc = field(c, "field", "steel");
         return (
           <article key={i} className="folder" style={{ ["--i" as string]: i }} data-field={`cases.${i}`}>
             <h3 className={`folder__tab ${fc}`}>{str(c, "name")}</h3>
@@ -317,7 +319,7 @@ function AboutFacts({ section, isFirst }: SectionProps) {
 function FaqBands({ section, isFirst }: SectionProps) {
   const s = section.settings;
   const items = list<Settings>(s, "items");
-  const a = field(s, "field", "sky");
+  const a = field(s, "field", "steel");
   const b = field(s, "field2", "paper");
   return (
     <section id="questions">
@@ -374,7 +376,7 @@ function CtaChoice({ section, isFirst }: SectionProps) {
 function PageIntro({ section, isFirst }: SectionProps) {
   const s = section.settings;
   return (
-    <section className={`pintro ${field(s, "field", "orange")}`}>
+    <section className={`pintro ${field(s, "field", "steel")}`}>
       <H first={isFirst} className="display" {...ed("title")}>
         {str(s, "title")}
       </H>
@@ -385,7 +387,7 @@ function PageIntro({ section, isFirst }: SectionProps) {
   );
 }
 
-const TILE_FIELDS = ["f-orange", "f-sky", "f-lime", "f-night"];
+const TILE_FIELDS = ["f-navy", "f-steel", "f-mist", "f-night"];
 
 function TeamGrid({ section, isFirst, data }: SectionProps) {
   const s = section.settings;
