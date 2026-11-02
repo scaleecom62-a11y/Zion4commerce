@@ -10,6 +10,7 @@ type RenderState = Extract<ToPreview, { type: "z-render" }>;
 
 export function PreviewFrame() {
   const [state, setState] = useState<RenderState | null>(null);
+  const hasState = state !== null;
   const [selected, setSelected] = useState<string | null>(null);
   const rootRef = useRef<HTMLDivElement>(null);
 
@@ -43,13 +44,21 @@ export function PreviewFrame() {
     window.addEventListener("message", onMessage);
     window.addEventListener("click", onClick, true);
     window.addEventListener("submit", onSubmit, true);
-    post({ type: "z-ready" });
     return () => {
       window.removeEventListener("message", onMessage);
       window.removeEventListener("click", onClick, true);
       window.removeEventListener("submit", onSubmit, true);
     };
   }, []);
+
+  // Announce readiness until the editor answers: the editor may start listening after this frame loads.
+  useEffect(() => {
+    if (hasState) return;
+    const send = () => window.parent.postMessage({ type: "z-ready" } satisfies FromPreview, window.location.origin);
+    send();
+    const t = window.setInterval(send, 250);
+    return () => window.clearInterval(t);
+  }, [hasState]);
 
   if (!state) {
     return <p style={{ padding: 24, fontFamily: "system-ui" }}>Loading preview…</p>;

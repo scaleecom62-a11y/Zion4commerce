@@ -29,3 +29,7 @@ yarn-error.log*
 .taste-skill/before/
 .taste-skill/after/
 .impeccable/config.local.json
+
+# Playwright output
+/test-results/
+/playwright-report/
