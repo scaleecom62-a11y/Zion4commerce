@@ -77,28 +77,6 @@ export function H({ first, className, children, ...rest }: { first: boolean; cla
   );
 }
 
-/** Drawn stand-in for a missing photograph: Zion's mountain ridge in flat palette colours. */
-export function RidgeArt({ stage = 0, title }: { stage?: number; title: string }) {
-  const peaks = [
-    "0,620 180,470 330,540 520,380 700,500 880,420 1080,520 1260,430 1440,510 1600,450 1600,1000 0,1000",
-    "0,640 200,420 360,500 560,250 760,430 940,300 1120,460 1300,320 1460,420 1600,360 1600,1000 0,1000",
-    "0,660 220,520 420,380 640,120 800,300 960,220 1160,420 1340,300 1600,460 1600,1000 0,1000",
-  ];
-  const front = [
-    "0,780 240,640 470,720 700,600 980,740 1220,620 1600,760 1600,1000 0,1000",
-    "0,800 260,600 520,700 760,520 1020,690 1300,560 1600,720 1600,1000 0,1000",
-    "0,820 300,640 560,560 820,700 1100,580 1380,700 1600,620 1600,1000 0,1000",
-  ];
-  const i = Math.max(0, Math.min(2, stage));
-  return (
-    <svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMax slice" role="img" aria-label={title}>
-      <polygon points={peaks[i]} fill="var(--c-night)" opacity="0.92" />
-      <polygon points={front[i]} fill="var(--c-paper)" />
-      {i === 2 && <polygon points="640,120 700,205 665,195 640,230 610,190 585,200" fill="var(--c-paper)" />}
-    </svg>
-  );
-}
-
 export function HexMark({ className }: { className?: string }) {
   // The Zion4Commerce badge, rebuilt from flat shapes with 4px gaps.
   return (

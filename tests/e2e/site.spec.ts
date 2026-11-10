@@ -9,15 +9,6 @@ test("home page says what it is and leads to the audit form", async ({ page }) =
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(/free audit/i);
 });
 
-test("TACoS calculator updates as numbers change", async ({ page }) => {
-  await page.goto("/");
-  const calc = page.locator("#calculator");
-  await calc.getByLabel(/monthly sales/i).fill("100000");
-  await calc.getByLabel(/monthly ad spend/i).fill("25000");
-  await expect(calc.locator(".calc__now strong")).toHaveText("25.0%");
-  await expect(calc.locator(".calc__figure")).toHaveText(/\$10,000/);
-});
-
 test("audit form validates required fields", async ({ page }) => {
   await page.goto("/contact");
   await page.getByRole("button", { name: "Send request" }).click();

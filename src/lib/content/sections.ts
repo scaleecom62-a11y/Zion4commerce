@@ -381,9 +381,8 @@ export const SECTION_MAP: Record<string, SectionDefinition> = Object.fromEntries
 
 export { FIELD_COLOR_OPTIONS };
 export const IMAGES = {
-  parcels: `${B}parcels.jpg`,
-  port: `${B}container-port.jpg`,
-  summit: `${B}climb-summit.jpg`,
-  ridge: `${B}climb-ridge.jpg`,
-  base: `${B}climb-base.jpg`,
+  workspace: `${B}brand-workspace.jpg`,
+  fulfilment: `${B}fulfilment-centre.jpg`,
+  packing: `${B}order-packing.jpg`,
+  teamReview: `${B}team-review.jpg`,
 };
