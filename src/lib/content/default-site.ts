@@ -1,4 +1,4 @@
-import { SECTION_MAP } from "./sections";
+import { IMAGES, SECTION_MAP } from "./sections";
 import type { PageContent, SectionInstance, Settings, SiteContent } from "./schema";
 
 let counter = 0;
@@ -6,11 +6,7 @@ function section(type: string, overrides: Settings = {}): SectionInstance {
   const def = SECTION_MAP[type];
   if (!def) throw new Error(`Unknown section type ${type}`);
   counter += 1;
-  return {
-    id: `${type}-${counter}`,
-    type,
-    settings: structuredClone({ ...def.defaults, ...overrides }),
-  };
+  return { id: `${type}-${counter}`, type, settings: structuredClone({ ...def.defaults, ...overrides }) };
 }
 
 const home: PageContent = {
@@ -22,16 +18,27 @@ const home: PageContent = {
       "Zion4Commerce runs Amazon and TikTok Shop for brands: lower TACoS, higher organic rank, healthier margins. Amazon US, UK, CA, DE, UAE and TikTok Shop US.",
   },
   sections: [
-    section("hero_waterline"),
-    section("printed_list"),
-    section("verb_panels"),
-    section("two_words"),
+    section("hero"),
+    section("stats"),
+    section("pill_strip"),
+    section("feature_grid"),
+    section("split"),
+    section("steps"),
     section("tacos_calculator"),
-    section("service_table"),
-    section("case_folders"),
-    section("big_figure"),
-    section("faq_bands"),
-    section("cta_choice"),
+    section("case_studies"),
+    section("split", {
+      eyebrow: "Global marketplaces",
+      heading: "One partner for every marketplace you sell on",
+      text: "We run Amazon in the US, UK, Canada, Germany and the UAE, and TikTok Shop in the US, from listings and ads to compliance and logistics. Brands going global keep one team and one set of numbers.",
+      bullets: ["Localised listings and A+ content", "Marketplace compliance and logistics", "One report across every marketplace"],
+      link: { label: "Talk to us about expansion", href: "/contact" },
+      visual: "image",
+      image: { src: IMAGES.port, alt: "Container port at dawn with cranes loading a cargo ship" },
+      flip: true,
+      field: "paper",
+    }),
+    section("faq"),
+    section("cta_band"),
   ],
 };
 
@@ -44,59 +51,47 @@ const about: PageContent = {
   },
   sections: [
     section("page_intro", {
-      title: "Profit first",
-      sentence:
-        "We grow brands on Amazon and TikTok Shop, and we judge every month by TACoS and contribution margin, not by revenue alone.",
-      field: "steel",
+      eyebrow: "About us",
+      title: "A marketplace growth partner that answers to your margin",
+      sentence: "We grow brands on Amazon and TikTok Shop, and we judge every month by TACoS and contribution margin, not by revenue alone.",
     }),
-    section("about_facts"),
-    section("printed_list", {
-      heading: "Where we sell for you",
-      image: {
-        src: "https://d8j0ntlcm91z4.cloudfront.net/user_38cFHiiAnnFDOVtYYDJ4B0v5TyJ/hf_20261102_084335_296d5730-592a-4b34-8a66-4ac87900c400.png",
-        alt: "Container port at dawn with cranes loading a cargo ship",
-      },
-      field: "navy",
+    section("split", {
+      eyebrow: "Who we are",
+      heading: "Led by operators, not account managers",
+      text: "Zion4Commerce is led by Arjun S, who spent 13+ years running eCommerce for brands, most recently as VP eCommerce at Ergode and Director eCommerce at California Design Den. We work with brands going global, brands new to marketplaces, and brands already on Amazon whose growth has stalled.",
+      bullets: ["13+ years running eCommerce for brands", "Amazon US, UK, CA, DE, UAE and TikTok Shop US", "Every account run on one rule: growth has to show up in the margin"],
+      link: { label: "Meet the team", href: "/team" },
+      visual: "image",
+      image: { src: IMAGES.summit, alt: "View from a summit over layered red canyon ridges and a river valley" },
+      flip: false,
+      field: "paper",
     }),
-    section("two_words", {
-      heading: "Two channels, one system",
-      paragraph:
-        "TikTok Shop creates demand. Amazon catches it: shoppers who saw you on TikTok search for you on Amazon, and that lifts your organic rank. We call it the Halo Effect, and it is why we run both channels together.",
-      leftWord: "TikTok",
-      rightWord: "Amazon",
-      strikeLeft: false,
-      field: "mist",
-    }),
-    section("verb_panels"),
-    section("cta_choice"),
+    section("stats", { field: "mist" }),
+    section("split"),
+    section("steps"),
+    section("cta_band"),
   ],
 };
 
 const team: PageContent = {
   slug: "team",
   title: "Team",
-  seo: {
-    title: "Team",
-    description: "The Zion4Commerce team: performance marketing, partner success, social commerce and marketplace operations.",
-  },
+  seo: { title: "Team", description: "The Zion4Commerce team: performance marketing, partner success, social commerce and marketplace operations." },
   sections: [
     section("page_intro", {
-      title: "The team",
+      eyebrow: "Team",
+      title: "The people who run your account",
       sentence: "Marketplace operators, ad specialists and content leads who run your Amazon and TikTok Shop accounts.",
-      field: "mist",
     }),
-    section("team_grid", { heading: "Who runs your account", intro: "" }),
-    section("cta_choice"),
+    section("team_grid", { eyebrow: "", heading: "", intro: "" }),
+    section("cta_band"),
   ],
 };
 
 const contact: PageContent = {
   slug: "contact",
   title: "Contact",
-  seo: {
-    title: "Get a free audit",
-    description: "Request a free Amazon and TikTok Shop audit from Zion4Commerce. We reply within 24 hours.",
-  },
+  seo: { title: "Get a free audit", description: "Request a free Amazon and TikTok Shop audit from Zion4Commerce. We reply within 24 hours." },
   sections: [section("contact_form")],
 };
 
@@ -164,15 +159,15 @@ export const DEFAULT_SITE: SiteContent = {
       { label: "About", href: "/about" },
       { label: "Team", href: "/team" },
     ],
-    headerAction: { label: "Free audit", href: "/contact" },
+    headerAction: { label: "Get a free audit", href: "/contact" },
     colors: {
-      paper: "#f5f7f8",
-      mist: "#dce8ef",
+      paper: "#ffffff",
+      mist: "#f3f7fa",
       steel: "#9cbccd",
       navy: "#002845",
       night: "#001a2e",
-      accent: "#002845",
-      ink: "#0b1620",
+      accent: "#0e6ba8",
+      ink: "#0f1b2a",
     },
     contact: {
       email: "zion4commerce@gmail.com",
@@ -182,36 +177,16 @@ export const DEFAULT_SITE: SiteContent = {
     footer: {
       tagline: "Amazon and TikTok Shop growth, judged by margin.",
       columns: [
-        {
-          title: "Site",
-          links: [
-            { label: "Services", href: "/#services" },
-            { label: "Results", href: "/#results" },
-            { label: "About", href: "/about" },
-            { label: "Team", href: "/team" },
-          ],
-        },
-        {
-          title: "Start",
-          links: [
-            { label: "Free audit", href: "/contact" },
-            { label: "Questions", href: "/#questions" },
-          ],
-        },
-        {
-          title: "Legal",
-          links: [
-            { label: "Privacy policy", href: "/privacy" },
-            { label: "Terms", href: "/terms" },
-          ],
-        },
+        { title: "Company", links: [{ label: "About", href: "/about" }, { label: "Team", href: "/team" }, { label: "Results", href: "/#results" }] },
+        { title: "Services", links: [{ label: "Amazon advertising", href: "/#services" }, { label: "TikTok Shop", href: "/#services" }, { label: "Marketplace expansion", href: "/#services" }] },
+        { title: "Get started", links: [{ label: "Free audit", href: "/contact" }, { label: "FAQ", href: "/#questions" }] },
+        { title: "Legal", links: [{ label: "Privacy policy", href: "/privacy" }, { label: "Terms", href: "/terms" }] },
       ],
-      copyright: "© 2026 Zion4Commerce",
+      copyright: "© 2026 Zion4Commerce. All rights reserved.",
     },
     seo: {
       titleSuffix: " · Zion4Commerce",
-      defaultDescription:
-        "Zion4Commerce grows Amazon and TikTok Shop brands on profit: lower TACoS, higher organic rank, healthier margins.",
+      defaultDescription: "Zion4Commerce grows Amazon and TikTok Shop brands on profit: lower TACoS, higher organic rank, healthier margins.",
     },
   },
   pages: [home, about, team, contact, privacy, terms],

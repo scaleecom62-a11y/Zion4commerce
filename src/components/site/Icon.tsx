@@ -1,0 +1,58 @@
+import {
+  Award,
+  BadgeCheck,
+  ChartColumn,
+  ChartLine,
+  ChartPie,
+  ClipboardList,
+  Globe,
+  Handshake,
+  LayoutTemplate,
+  Megaphone,
+  Package,
+  Repeat,
+  Rocket,
+  Search,
+  ShieldCheck,
+  ShoppingBag,
+  Star,
+  Store,
+  Target,
+  TrendingUp,
+  Users,
+  Wrench,
+  Zap,
+  type LucideIcon,
+} from "lucide-react";
+
+/** Icons an editor can pick for cards and steps. Keys are stored in content. */
+export const ICONS: Record<string, { label: string; Icon: LucideIcon }> = {
+  megaphone: { label: "Advertising", Icon: Megaphone },
+  shop: { label: "Shop", Icon: ShoppingBag },
+  store: { label: "Store front", Icon: Store },
+  layout: { label: "Listing / content", Icon: LayoutTemplate },
+  globe: { label: "Global", Icon: Globe },
+  trend: { label: "Growth", Icon: TrendingUp },
+  chart: { label: "Bar chart", Icon: ChartColumn },
+  line: { label: "Line chart", Icon: ChartLine },
+  pie: { label: "Pie chart", Icon: ChartPie },
+  search: { label: "Search", Icon: Search },
+  target: { label: "Target", Icon: Target },
+  package: { label: "Inventory", Icon: Package },
+  star: { label: "Reviews", Icon: Star },
+  repeat: { label: "Retention", Icon: Repeat },
+  shield: { label: "Account health", Icon: ShieldCheck },
+  users: { label: "Team", Icon: Users },
+  zap: { label: "Speed", Icon: Zap },
+  clipboard: { label: "Audit", Icon: ClipboardList },
+  wrench: { label: "Fix", Icon: Wrench },
+  rocket: { label: "Scale", Icon: Rocket },
+  handshake: { label: "Partnership", Icon: Handshake },
+  award: { label: "Award", Icon: Award },
+  badge: { label: "Verified", Icon: BadgeCheck },
+};
+
+export function Icon({ name, size = 22, className }: { name: string; size?: number; className?: string }) {
+  const I = ICONS[name]?.Icon ?? BadgeCheck;
+  return <I size={size} strokeWidth={1.75} className={className} aria-hidden="true" />;
+}

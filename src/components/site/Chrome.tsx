@@ -1,7 +1,8 @@
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import type { SiteSettings } from "@/lib/content/schema";
 import { MobileMenu } from "./MobileMenu";
-import { HexMark, Pic } from "./shared";
+import { Pic } from "./shared";
 
 function A({ href, className, children }: { href: string; className?: string; children: React.ReactNode }) {
   return href.startsWith("/") ? (
@@ -18,63 +19,65 @@ function A({ href, className, children }: { href: string; className?: string; ch
 export function SiteHeader({ site }: { site: SiteSettings }) {
   return (
     <header className="site-header" data-region="header">
-      <Link href="/" className="wordmark" aria-label={`${site.siteName} home`}>
-        <Pic src={site.logo.src} alt="" width={88} height={88} sizes="44px" priority />
-        <span translate="no">{site.siteName}</span>
-      </Link>
-      <nav className="site-nav" aria-label="Main">
-        <ul className="site-nav__links">
-          {site.nav.map((n) => (
-            <li key={n.href + n.label}>
-              <A href={n.href}>{n.label}</A>
-            </li>
-          ))}
-        </ul>
-        <MobileMenu items={site.nav} />
-        <A href={site.headerAction.href} className="btn btn--small">
-          {site.headerAction.label}
-        </A>
-      </nav>
+      <div className="container site-header__inner">
+        <Link href="/" className="wordmark" aria-label={`${site.siteName} home`}>
+          <Pic src={site.logo.src} alt="" width={80} height={80} sizes="40px" priority />
+          <span translate="no">{site.siteName}</span>
+        </Link>
+        <nav className="site-nav" aria-label="Main">
+          <ul className="site-nav__links">
+            {site.nav.map((n) => (
+              <li key={n.href + n.label}>
+                <A href={n.href}>{n.label}</A>
+              </li>
+            ))}
+          </ul>
+          <MobileMenu items={site.nav} />
+          <A href={site.headerAction.href} className="btn btn--primary btn--sm">
+            {site.headerAction.label}
+          </A>
+        </nav>
+      </div>
     </header>
   );
 }
 
 export function SiteFooter({ site }: { site: SiteSettings }) {
   return (
-    <footer className="site-footer f-navy" data-region="footer">
-      <div className="site-footer__mark" aria-hidden="true">
-        <HexMark />
-        <p className="site-footer__name display" translate="no">
-          {site.siteName}
-        </p>
-      </div>
-      <div className="site-footer__cols">
-        {site.footer.columns.map((c) => (
-          <nav key={c.title} className="site-footer__col" aria-label={c.title}>
-            <h2>{c.title}</h2>
-            <ul>
-              {c.links.map((l) => (
-                <li key={l.href + l.label}>
-                  <A href={l.href}>{l.label}</A>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        ))}
-        <div className="site-footer__contact">
-          <p>{site.footer.tagline}</p>
-          <p>
-            <a className="link" href={`mailto:${site.contact.email}`}>
+    <footer className="site-footer" data-region="footer">
+      <div className="container">
+        <div className="site-footer__top">
+          <div className="site-footer__brand">
+            <Link href="/" className="wordmark wordmark--light" aria-label={`${site.siteName} home`}>
+              <Pic src={site.logo.src} alt="" width={80} height={80} sizes="40px" />
+              <span translate="no">{site.siteName}</span>
+            </Link>
+            <p>{site.footer.tagline}</p>
+            <a className="site-footer__mail" href={`mailto:${site.contact.email}`}>
               {site.contact.email}
             </a>
-          </p>
+            <A href={site.headerAction.href} className="btn btn--light btn--sm">
+              {site.headerAction.label}
+              <ArrowRight size={16} aria-hidden="true" />
+            </A>
+          </div>
+          {site.footer.columns.map((c) => (
+            <nav key={c.title} className="site-footer__col" aria-label={c.title}>
+              <h2>{c.title}</h2>
+              <ul>
+                {c.links.map((l) => (
+                  <li key={l.href + l.label}>
+                    <A href={l.href}>{l.label}</A>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          ))}
         </div>
-      </div>
-      <div className="site-footer__base">
-        <p>{site.footer.copyright}</p>
-        <A href={site.headerAction.href} className="btn btn--small btn--ink">
-          {site.headerAction.label}
-        </A>
+        <div className="site-footer__base">
+          <p>{site.footer.copyright}</p>
+          <p>Amazon and TikTok Shop are trademarks of their owners.</p>
+        </div>
       </div>
     </footer>
   );

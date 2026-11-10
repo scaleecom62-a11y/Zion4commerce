@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-public-sans), system-ui, sans-serif;
-  --font-display: var(--font-big-shoulders), "Arial Narrow", sans-serif;
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
 }
 
 body {

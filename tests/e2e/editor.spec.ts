@@ -9,13 +9,13 @@ test.beforeEach(async ({ page }) => {
 });
 
 test("clicking the preview selects the field, and typing updates the page", async ({ page }) => {
-  await preview(page).getByText("profit", { exact: true }).click();
-  const field = page.getByRole("textbox", { name: "Headline line 2" });
+  await preview(page).locator("h1").click();
+  const field = page.getByRole("textbox", { name: "Headline", exact: true });
   await expect(field).toBeFocused();
-  await field.fill("margin");
-  await expect(preview(page).locator("h1")).toHaveText(/grow on\s*margin/i);
+  await field.fill("Grow your Amazon sales");
+  await expect(preview(page).locator("h1")).toHaveText("Grow your Amazon sales");
   await page.keyboard.press("Control+z");
-  await expect(preview(page).locator("h1")).toHaveText(/grow on\s*profit/i);
+  await expect(preview(page).locator("h1")).toHaveText(/grow your marketplace sales, profitably/i);
 });
 
 test("sections can be added, hidden and removed", async ({ page }) => {
@@ -24,12 +24,12 @@ test("sections can be added, hidden and removed", async ({ page }) => {
   await page.getByRole("button", { name: "+ Add section" }).click();
   await page.getByRole("button", { name: /^Text A heading/ }).click();
   await expect(sections).toHaveCount(before + 1);
-  await page.getByRole("listitem").filter({ hasText: "Questions (bands)" }).hover();
-  await page.getByRole("button", { name: "Hide Questions" }).click();
+  await page.getByRole("listitem").filter({ hasText: "Frequently asked questions" }).hover();
+  await page.getByRole("button", { name: "Hide Frequently asked questions" }).click();
   await expect(sections).toHaveCount(before);
   page.once("dialog", (d) => d.accept());
-  await page.getByRole("listitem").filter({ hasText: "One big figure" }).hover();
-  await page.getByRole("button", { name: "Delete Revenue we manage" }).click();
+  await page.getByRole("listitem").filter({ hasText: "Stats bar" }).hover();
+  await page.getByRole("button", { name: "Delete Stats bar" }).click();
   await expect(sections).toHaveCount(before - 1);
 });
 

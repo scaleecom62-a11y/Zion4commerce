@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 
 test("home page says what it is and leads to the audit form", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator("h1")).toHaveText(/grow on\s*profit/i);
+  await expect(page.locator("h1")).toHaveText(/grow your marketplace sales, profitably/i);
   await expect(page.getByText("runs Amazon and TikTok Shop")).toBeVisible();
   await page.getByRole("link", { name: "Get a free audit" }).first().click();
   await expect(page).toHaveURL(/\/contact$/);
@@ -14,7 +14,7 @@ test("TACoS calculator updates as numbers change", async ({ page }) => {
   const calc = page.locator("#calculator");
   await calc.getByLabel(/monthly sales/i).fill("100000");
   await calc.getByLabel(/monthly ad spend/i).fill("25000");
-  await expect(calc.getByText("Your TACoS today:")).toContainText("25.0%");
+  await expect(calc.locator(".calc__now strong")).toHaveText("25.0%");
   await expect(calc.locator(".calc__figure")).toHaveText(/\$10,000/);
 });
 

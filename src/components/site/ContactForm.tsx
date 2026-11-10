@@ -22,7 +22,7 @@ export function ContactForm(props: {
   if (state.status === "ok") {
     return (
       <div className="cform__done" role="status">
-        <h2 className="display">{props.successHeading}</h2>
+        <h2 className="h3">{props.successHeading}</h2>
         <p>{props.successText}</p>
       </div>
     );
@@ -106,7 +106,7 @@ export function ContactForm(props: {
           {state.message}
         </p>
       )}
-      <button className="btn cform__submit" type="submit" disabled={pending}>
+      <button className="btn btn--primary cform__submit" type="submit" disabled={pending}>
         {pending ? "Sending…" : props.submitLabel}
       </button>
     </form>

@@ -111,7 +111,7 @@ export function HexMark({ className }: { className?: string }) {
   );
 }
 
-const OPTIMISED_HOSTS = ["d8j0ntlcm91z4.cloudfront.net", ".supabase.co"];
+const OPTIMISED_HOSTS = [".supabase.co"];
 
 /** One image component for every picture on the site. Optimised when the host is known. */
 export function Pic({

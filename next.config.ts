@@ -16,8 +16,6 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [
-      // Generated photography (Higgsfield). Replace with local copies via scripts/localise-images.mjs.
-      { protocol: "https", hostname: "d8j0ntlcm91z4.cloudfront.net", pathname: "/**" },
       // Media uploaded in the editor.
       ...(supabaseHost ? [{ protocol: "https" as const, hostname: supabaseHost, pathname: "/storage/v1/object/public/**" }] : []),
     ],
