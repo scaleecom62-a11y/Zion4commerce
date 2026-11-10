@@ -1,295 +1,359 @@
 ---
 name: Zion4Commerce
-description: Marketplace growth agency site, set as a loud flat street poster held in check by a strict grid.
+description: Marketplace growth agency site in a calm, professional B2B SaaS register, built from the logo's navy.
 colors:
-  accent-navy: "#002845"
-  accent-ink: "#ffffff"
-  accent-on-dark: "#9cbccd"
-  field-mist: "#dce8ef"
-  field-steel: "#9cbccd"
-  field-navy: "#002845"
-  field-night: "#001a2e"
-  paper: "#f5f7f8"
-  ink: "#0b1620"
-  soft-on-paper: "#44535f"
-  soft-on-mist: "#33495a"
-  soft-on-steel: "#16344b"
-  soft-on-navy: "#b6cbd8"
-  soft-on-night: "#a9bfcc"
-  input-white: "#ffffff"
-  error-red: "#a3112f"
+  paper: "#ffffff"
+  mist: "#f3f7fa"
+  tint: "#e8f1f7"
+  steel: "#9cbccd"
+  navy: "#002845"
+  navy-hover: "#0a3a60"
+  night: "#001a2e"
+  accent: "#0e6ba8"
+  ink: "#0f1b2a"
+  body: "#3d4b5c"
+  muted: "#627284"
+  line: "#e2e8ee"
+  line-strong: "#cfd9e2"
+  good: "#137a4d"
+  good-bg: "#e7f5ee"
+  error: "#b42318"
+  chart-amber: "#e0a23a"
 typography:
   display:
-    fontFamily: "Big Shoulders, Arial Narrow, sans-serif"
-    fontSize: "min(20vw, 30svh)"
+    fontFamily: "Plus Jakarta Sans, Segoe UI, system-ui, sans-serif"
+    fontSize: "clamp(2.25rem, 1.5rem + 2.6vw, 3.5rem)"
     fontWeight: 800
-    lineHeight: 0.86
-    letterSpacing: "-0.005em"
+    lineHeight: 1.12
+    letterSpacing: "-0.025em"
   headline:
-    fontFamily: "Big Shoulders, Arial Narrow, sans-serif"
-    fontSize: "clamp(2.5rem, 1.2rem + 5vw, 5.5rem)"
-    fontWeight: 800
-    lineHeight: 0.9
-    letterSpacing: "-0.005em"
+    fontFamily: "Plus Jakarta Sans, Segoe UI, system-ui, sans-serif"
+    fontSize: "clamp(1.75rem, 1.3rem + 1.5vw, 2.5rem)"
+    fontWeight: 750
+    lineHeight: 1.18
+    letterSpacing: "-0.02em"
   title:
-    fontFamily: "Big Shoulders, Arial Narrow, sans-serif"
-    fontSize: "clamp(2rem, 1.4rem + 2vw, 3.25rem)"
-    fontWeight: 800
-    lineHeight: 0.95
-  title-text:
-    fontFamily: "Public Sans, system-ui, sans-serif"
-    fontSize: "clamp(1.5rem, 1.1rem + 1vw, 2rem)"
-    fontWeight: 600
-    lineHeight: 1.2
-  lead:
-    fontFamily: "Public Sans, system-ui, sans-serif"
-    fontSize: "clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem)"
-    fontWeight: 400
+    fontFamily: "Plus Jakarta Sans, Segoe UI, system-ui, sans-serif"
+    fontSize: "1.1875rem"
+    fontWeight: 700
     lineHeight: 1.35
+    letterSpacing: "-0.01em"
+  figure:
+    fontFamily: "Plus Jakarta Sans, Segoe UI, system-ui, sans-serif"
+    fontSize: "clamp(1.75rem, 1.4rem + 1vw, 2.25rem)"
+    fontWeight: 800
+    lineHeight: 1.1
+    letterSpacing: "-0.02em"
+    fontFeature: "\"tnum\", \"lnum\""
+  lead:
+    fontFamily: "Plus Jakarta Sans, Segoe UI, system-ui, sans-serif"
+    fontSize: "1.125rem"
+    fontWeight: 400
+    lineHeight: 1.65
   body:
-    fontFamily: "Public Sans, system-ui, sans-serif"
-    fontSize: "clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem)"
+    fontFamily: "Plus Jakarta Sans, Segoe UI, system-ui, sans-serif"
+    fontSize: "1rem"
     fontWeight: 400
-    lineHeight: 1.5
-  label:
-    fontFamily: "Public Sans, system-ui, sans-serif"
+    lineHeight: 1.65
+  body-sm:
+    fontFamily: "Plus Jakarta Sans, Segoe UI, system-ui, sans-serif"
     fontSize: "0.9375rem"
-    fontWeight: 600
-    lineHeight: 1.4
-  small:
-    fontFamily: "Public Sans, system-ui, sans-serif"
-    fontSize: "clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem)"
     fontWeight: 400
+    lineHeight: 1.65
+  label:
+    fontFamily: "Plus Jakarta Sans, Segoe UI, system-ui, sans-serif"
+    fontSize: "0.875rem"
+    fontWeight: 700
+    lineHeight: 1.4
+  caption:
+    fontFamily: "Plus Jakarta Sans, Segoe UI, system-ui, sans-serif"
+    fontSize: "0.8125rem"
+    fontWeight: 600
     lineHeight: 1.5
 rounded:
-  none: "0px"
+  sm: "8px"
+  control: "10px"
+  md: "12px"
+  lg: "20px"
+  band: "24px"
+  pill: "999px"
 spacing:
-  margin: "clamp(1rem, 2vw, 1.75rem)"
-  gutter: "clamp(1rem, 2vw, 2rem)"
-  section: "clamp(6rem, 12vw, 13rem)"
-  panel: "56px"
-  tile-gap: "12px"
+  gutter: "24px"
+  grid-gap: "1.5rem"
+  card: "1.75rem"
+  section: "clamp(4rem, 3rem + 4vw, 6.5rem)"
+  section-tight: "clamp(2.5rem, 2rem + 2vw, 4rem)"
+  container: "1200px"
+  container-narrow: "760px"
 components:
   button-primary:
-    backgroundColor: "{colors.accent-navy}"
-    textColor: "{colors.accent-ink}"
-    rounded: "{rounded.none}"
-    padding: "0 1.5rem"
-    height: "3.25rem"
-  button-small:
-    backgroundColor: "{colors.accent-navy}"
-    textColor: "{colors.accent-ink}"
-    rounded: "{rounded.none}"
-    padding: "0 1.1rem"
-    height: "2.75rem"
-  button-ink:
-    backgroundColor: "{colors.ink}"
+    backgroundColor: "{colors.navy}"
     textColor: "{colors.paper}"
-    rounded: "{rounded.none}"
-    padding: "0 1.5rem"
-    height: "3.25rem"
-  button-ink-on-night:
+    typography: "{typography.label}"
+    rounded: "{rounded.control}"
+    padding: "0 1.375rem"
+    height: "3rem"
+  button-primary-hover:
+    backgroundColor: "{colors.navy-hover}"
+  button-secondary:
     backgroundColor: "{colors.paper}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.none}"
-  input-field:
-    backgroundColor: "{colors.input-white}"
+    rounded: "{rounded.control}"
+    padding: "0 1.375rem"
+    height: "3rem"
+  button-light:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.navy}"
+    rounded: "{rounded.control}"
+    padding: "0 1.375rem"
+    height: "3rem"
+  button-light-hover:
+    backgroundColor: "{colors.tint}"
+  button-sm:
+    rounded: "{rounded.control}"
+    padding: "0 1rem"
+    height: "2.5rem"
+  card:
+    backgroundColor: "{colors.paper}"
+    rounded: "{rounded.lg}"
+    padding: "{spacing.card}"
+  icon-tile:
+    backgroundColor: "{colors.tint}"
+    textColor: "{colors.navy}"
+    rounded: "{rounded.md}"
+    size: "48px"
+  chip:
+    backgroundColor: "{colors.tint}"
+    textColor: "{colors.navy}"
+    rounded: "{rounded.pill}"
+    padding: "0.2rem 0.6rem"
+  pill:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.pill}"
+    padding: "0.5rem 0.875rem"
+  input:
+    backgroundColor: "{colors.paper}"
     textColor: "{colors.ink}"
     typography: "{typography.body}"
-    rounded: "{rounded.none}"
-    padding: "0.7rem 0.9rem"
-    height: "3.25rem"
-  input-calculator:
+    rounded: "{rounded.control}"
+    padding: "0.625rem 0.875rem"
+    height: "2.875rem"
+  metric:
+    backgroundColor: "{colors.good-bg}"
+    textColor: "{colors.good}"
+    rounded: "{rounded.sm}"
+    padding: "0.75rem"
+  faq-item:
     backgroundColor: "{colors.paper}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.none}"
-    padding: "0.6rem 0.9rem"
-    height: "3.25rem"
-  menu-panel:
-    backgroundColor: "{colors.ink}"
+    rounded: "{rounded.md}"
+    padding: "1.125rem 1.25rem"
+  cta-band:
+    backgroundColor: "{colors.navy}"
     textColor: "{colors.paper}"
-    rounded: "{rounded.none}"
-    padding: "0.5rem"
-    width: "13rem"
-  caption-plate:
+    rounded: "{rounded.band}"
+    padding: "clamp(2rem, 1.5rem + 2vw, 3.5rem)"
+  site-header:
     backgroundColor: "{colors.paper}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.none}"
-    padding: "1.1rem 1.25rem"
-    width: "34rem"
-  report-card:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.none}"
-    padding: "clamp(1.5rem, 3vw, 2.5rem)"
+    height: "72px"
+  site-footer:
+    backgroundColor: "{colors.night}"
+    padding: "4rem 0 2rem"
 ---
 
 # Design System: Zion4Commerce
 
 ## Overview
 
-**Creative North Star: "The Street Poster With a Ledger Underneath"**
+**Creative North Star: "The Navy Ledger"**
 
-The public site talks like a poster pasted on a wall: flat saturated fields, one tall condensed gothic at full weight, and statements short enough to read from across the street. Each section is a single solid panel of colour, and panels meet edge to edge, so the page reads as a stack of posters rather than a document with sections. The volume is the surface. Underneath it the grid is strict (12 columns, one margin, one gutter) and the numbers are exact, because the product is profit: TACoS, margin, organic rank. Loud type carries the claim and quiet text carries the evidence.
+The public site reads like the dashboard of a well-run account: calm white and pale blue-grey sections, a centred 1200px column, and content set in bordered cards that sit just above the page on a soft haze of shadow. One colour does the work. The logo's navy (#002845) is the only brand fill and the only action colour; everything else is ink, slate greys and hairline borders, so the navy buttons, the navy CTA band and the navy calculator result are always where the eye goes. The register is professional B2B SaaS (the client's reference is hectorai.live): trustworthy, legible, unhurried, more operations report than advertisement.
 
-Density is low. A panel holds one idea: one verb, one figure, one question, one comparison. Display type is sized to the viewport, not to a scale. Body text stays plain and readable at 17 to 19px. Depth comes only from colour change and from the occasional overlap: the printed card cut off by its panel's bottom edge, a caption plate sitting on a photograph, a folder tab rising off its band.
+Density is moderate. Sections breathe (64 to 104px of vertical padding), cards are generous inside (28px), and copy runs in measured lines (62ch for leads). Plus Jakarta Sans carries everything, from 800-weight headings with tight tracking down to 13px captions, so hierarchy comes from weight and size rather than from a second face. Proof is shown as numbers: a dashboard panel in the hero, a stats row, case-study metric tiles in green. Motion is small and functional: a 16px fade-up reveal, a 3px lift on feature cards, a chevron that turns.
 
-The direction is "Loud and flat" (taste-skill seed 790916004), type "Big Shoulders / Public Sans". The dealt orange/sky/lime palette was replaced on 2 Nov 2026, at the client's request, by the colours of the Zion4Commerce logo: deep navy, steel blue and near-white, plus two tints. The composition, type and rules are unchanged. Site editors can change every colour in settings, so the roles below matter more than the exact hexes.
+The site's colours are editable. The seven site colours live in site settings (`settings.colors`) and arrive as `--c-paper`, `--c-mist`, `--c-steel`, `--c-navy`, `--c-night`, `--c-accent`, `--c-ink`, which `.site` maps to `--paper`, `--mist`, `--steel`, `--navy`, `--night`, `--accent`, `--ink`. The values in the frontmatter are the shipped defaults. The secondary tokens (`--body`, `--muted`, `--line`, `--line-strong`, `--good`, `--good-bg`, `--tint`) are fixed in `site.css`.
 
 **Key Characteristics:**
-- Flat colour fields from the logo, one per panel, butted edge to edge
-- One condensed heavy uppercase display face at poster scale; one plain grotesk for everything else
-- Square corners everywhere; separation by colour and space, never by lines
-- Navy is the action colour on light panels; steel is the action colour on dark panels
-- No shadows, gradients, glass or outlines on the public site
-- Motion is one masked headline reveal plus quiet rise-ins, and every bit of it is optional
+- One brand colour: logo navy for every button, band and selected state.
+- White and mist (#f3f7fa) sections alternating inside a centred 1200px container.
+- Cards with a 20px radius, a 1px #e2e8ee border and a soft two-layer shadow.
+- Plus Jakarta Sans throughout; weight 800 headings with negative tracking.
+- Lucide line icons set in pale-blue 48px tiles.
+- Numbers as proof: tabular figures, green for positive movement.
+- A dark night footer and a navy CTA band close every page.
 
 ## Colors
 
-Two light fields, two dark fields and paper, all taken from the logo badge. Ink type on light fields, paper type on dark fields.
+A cool, low-chroma palette of white, blue-greys and slate, with the logo navy as the one saturated anchor and a single green reserved for good news.
 
 ### Primary
-- **Logo Navy** (accent-navy, field-navy): the badge outline. Primary buttons on light panels (white text), the hero's lower field and first headline line, the services table panel, the footer.
-- **Logo Steel** (field-steel, accent-on-dark): the badge sky. Buttons on navy and night panels (navy text), the second hero line on navy, the printed-list panel, page intros, question bands.
+- **Logo Navy** (#002845): the brand and action colour. Primary buttons, the CTA band, the calculator result panel, the final step of the halo diagram, the contact step numbers, checked checkbox borders, chart revenue line, stat values and the wordmark. Hover deepens it to **Navy Hover** (#0a3a60).
+- **Night** (#001a2e): the footer field and the `night` section tone. A darker floor under the navy, never a button.
 
 ### Secondary
-- **Mist** (field-mist): a light tint of steel. The calculator panel, the "sent" message, light folders and team tiles.
-- **Night** (field-night): the deepest navy. The big-figure panel and the closing question.
+- **Link Blue** (#0e6ba8): text-level accent only. Section labels, text links, the highlighted word in a heading (`.hl`), input focus borders and the 2px focus outline. It is never a fill behind content.
+- **Logo Steel** (#9cbccd): the logo's light blue, used as quiet ink on dark fields (labels on navy, the calculator's secondary line) and for decorative glyphs on light fields (halo arrows, quote marks).
+
+### Tertiary
+- **Growth Green** (#137a4d) on **Green Wash** (#e7f5ee): positive metrics only. Case-study metric tiles, the dashboard change figures, tick icons in lists and badges, the live dot in the dashboard header.
+- **Chart Amber** (#e0a23a): the second data series in the hero chart (the dashed TACoS line and its legend swatch). Data only.
 
 ### Neutral
-- **Paper** (paper): the near-white of the badge. The site ground, the upper hero field, and every object sitting on a coloured field: the printed card, the caption plate, the case report.
-- **Ink** (ink): a navy-black for all type on paper, mist and steel; the focus ring on light fields.
-- **Soft inks** (soft-on-*): one quieter tone per field for secondary text such as notes, table heads, list metadata and footer column titles. A field always uses its own soft ink.
-- **Input White** (input-white): the contact form's inputs, the only pure white surface.
-- **Error Red** (error-red): error text under contact fields only. The one non-logo colour, kept because errors must not look like brand.
+- **Paper** (#ffffff): default section field, card and input fill.
+- **Mist** (#f3f7fa): alternate section field, the top of the hero gradient, KPI tiles, quote boxes, halo steps, menu hover.
+- **Pale Tint** (#e8f1f7): icon tiles, chips, the hero label chip, the `steel` section tone, checked checkbox fill, image-frame fallback, text selection.
+- **Ink** (#0f1b2a): headings, labels, form text, strong UI copy.
+- **Slate Body** (#3d4b5c): running text and leads.
+- **Muted Slate** (#627284): captions, KPI labels, member roles, chart axis text.
+- **Hairline** (#e2e8ee): card borders, header and section dividers, stat separators.
+- **Hairline Strong** (#cfd9e2): input and secondary-button borders, hovered card and opened FAQ borders.
+- **Error Red** (#b42318): form error text.
 
 ### Named Rules
-**The One Field, One Ink Rule.** Every panel is one flat colour and its text is one other colour (ink on light fields, paper on navy and night), plus that field's soft ink. No tints or washes inside a panel except a paper object sitting on it.
+**The One Navy Rule.** Navy is the only colour that fills an action or a band. A second filled brand colour does not exist; if something needs to stand out, it gets navy or it gets a border.
 
-**The Act Colour Rule.** Navy marks what you press on light panels; steel marks it on dark panels (`.f-navy .btn`, `.f-night .btn`). The hero's navy first line and the navy strike through the rejected word are the only typographic uses of the action colour.
+**The Blue Is Ink Rule.** Link Blue (#0e6ba8) colours text, focus rings and nothing else. It never becomes a button, a card fill or a section field.
 
-**The Editable Palette Rule.** Field colours come from site settings (`--c-paper`, `--c-mist`, `--c-steel`, `--c-navy`, `--c-night`, `--c-accent`, `--c-ink`). Components reference those variables, never the hex. A new section picks a field by role (paper, mist, steel, navy, night). Old names in stored content (orange, sky, lime) are mapped to navy, steel and mist.
+**The Green Means Up Rule.** Green appears only where a number improved or a promise is ticked. It is never decoration and never a call to action.
+
+**The Settings Rule.** Never hard-code the seven site colours in components. Use `var(--navy)`, `var(--mist)` and the rest, so an editor's colour change reaches every surface.
 
 ## Typography
 
-**Display Font:** Big Shoulders 800 (with Arial Narrow, sans-serif)
-**Body Font:** Public Sans 400 and 600 (with system-ui, sans-serif)
+**Display Font:** Plus Jakarta Sans (with Segoe UI, system-ui, sans-serif), loaded at 400, 500, 600, 700 and 800 as `--font-jakarta`.
+**Body Font:** the same family.
 
-**Character:** A tall civic gothic from city signage, always in capitals and always at 800, over a plain public-service sans that never raises its voice. The gap between them is the point: often 12:1 or more.
+**Character:** a single geometric-humanist sans used across the range. Heavy, tightly tracked headings give the confidence; open 1.65 line-height in body text keeps long service copy easy.
 
 ### Hierarchy
-- **Display** (800, uppercase, sized to the viewport, line-height 0.82 to 0.95, tracking -0.005em): the poster words. Waterline hero at `min(20vw, 30svh)` (about 270px on a 1440 desktop); verb panels `clamp(7rem, 26vw, 24rem)`; the big figure `clamp(11rem, 28vw, 26rem)`; page intros `clamp(5rem, 15vw, 15rem)`; the CTA lines `clamp(5.5rem, 13vw, 12rem)`; the footer wordmark `clamp(3.5rem, 11.4vw, 13rem)`. Phones move to plain vw (19vw to 31vw).
-- **Headline** (800, uppercase, `clamp(2.5rem, 1.2rem + 5vw, 5.5rem)`, line-height 0.9, balanced wrap): section heads for the table, the comparison, case results, about and team.
-- **Title** (800, uppercase, `clamp(2rem, 1.4rem + 2vw, 3.25rem)`, line-height 0.95): heads inside paper objects (printed card, case report head at up to 4.5rem), the folder tab at 1.6rem, metric values at up to 3.5rem.
-- **Title, text face** (Public Sans 600, `clamp(1.5rem, 1.1rem + 1vw, 2rem)`, line-height 1.2): FAQ questions, rich-text subheads (1.375rem), list titles (1rem). Questions and long subheads are sentences, so they are never set in the display face.
-- **Lead** (400, `clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem)`, line-height 1.35): the sentence that follows a headline.
-- **Body** (400, `clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem)`, line-height 1.5, max 62ch): running text. Emphasis is 600, never italic.
-- **Label** (600, 0.9375rem): definition terms, footer column titles, metric names, form labels (at body size). Sentence case.
-- **Small** (400, `clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem)`): notes and table column heads. The table column heads are the one place the text face goes uppercase, because they head columns of data.
-
-Numbers that are compared or computed use tabular lining figures.
+- **Display** (800, `clamp(2.25rem, 1.5rem + 2.6vw, 3.5rem)`, 1.12, -0.025em, `text-wrap: balance`): the one `h1` per page, in the hero and page intros (max 22ch in intros).
+- **Headline** (750, `clamp(1.75rem, 1.3rem + 1.5vw, 2.5rem)`, 1.18, -0.02em, balanced): section headings and the CTA band heading.
+- **Title** (700, 1.1875rem, 1.35, -0.01em): card titles, step titles. Case headlines use 1.3125rem.
+- **Figure** (800, `clamp(1.75rem, 1.4rem + 1vw, 2.25rem)`, 1.1, -0.02em, tabular lining numerals): stat values. The calculator figure scales to `clamp(2.25rem, 1.8rem + 1.5vw, 3rem)` and dashboard values sit at 1.625rem in the same treatment.
+- **Lead** (400, 1.125rem, 1.65, max 62ch): the paragraph under a section heading. The hero subtitle runs larger (1.1875rem, 1.6, max 34rem).
+- **Body** (400, 1rem, 1.65): default running text. Text inside cards drops to 0.9375rem.
+- **Label** (700, 0.875rem): form labels, small buttons, field legends. Buttons use 700 at 0.9375rem.
+- **Caption** (600, 0.8125rem): KPI labels, case categories, chart captions, footer base line.
+- **Small caps labels** (700, 0.75 to 0.8125rem, uppercase, 0.04 to 0.08em tracking): metric tile labels and footer column headings.
 
 ### Named Rules
-**The Two Faces Rule.** Big Shoulders 800 and Public Sans 400/600. No third face, no other weights, no italics, no monospace on the public site.
+**The One Family Rule.** Plus Jakarta Sans is the only typeface on the public site. Hierarchy comes from weight (400 to 800), size and tracking.
 
-**The Two-Line Rule.** No headline runs past two lines at its set size. At poster scale that means three to six words; the copy gets shorter, the type never gets smaller to fit.
-
-**The Shout or Speak Rule.** Big Shoulders is always uppercase and always a statement, a word or a figure. Public Sans is always sentence case (column heads excepted) and carries every sentence, question and label.
+**The Tabular Proof Rule.** Every figure that claims a result uses tabular lining numerals (`.nums`) at weight 800, so columns of numbers align and read as data.
 
 ## Layout
 
-A 12-column grid with one outer margin (`spacing.margin`, 16 to 28px) and one gutter (`spacing.gutter`, 16 to 32px). Text-led panels pair a heading in columns 1 to 5 with its paragraph in columns 7 to 12, leaving column 6 empty; the calculator, FAQ bands, contact form and rich text all use that split. Page intros take 1 to 8 for the title and 9 to 12 for the lead. Tables use a 28% / rest split.
+A centred column: `.container` is 1200px wide with 24px side gutters; `.container--narrow` (760px) holds rich text and the contact form context. Every section is full-width with its own tone (`f-paper`, `f-mist`, `f-steel` mapped to Pale Tint, `f-navy`, `f-night`) and the content sits in the container inside it.
 
-Panels are full-bleed and stack with no gap. Vertical padding is `spacing.section` (96 to 208px) for content panels; poster panels instead take a viewport height (hero 100svh, verbs 78svh, CTA 86svh, big figure 72svh, FAQ title 40svh) and push their content to the edges with flex. Paper objects use 56px inner padding (`spacing.panel`), 28px on phones. Team tiles sit on a 12px gap, four across, three below 64em, two below 48em.
+Vertical rhythm: standard sections pad `clamp(4rem, 3rem + 4vw, 6.5rem)`; tight sections (stats, CTA wrapper) pad `clamp(2.5rem, 2rem + 2vw, 4rem)`. Section heads are capped at 720px, left-aligned by default or centred with `.sec-head--center`, and sit `clamp(2rem, 1.5rem + 2vw, 3.5rem)` above their content.
 
-One breakpoint does most of the work: below 48em every split grid collapses to a single column, display sizes switch to vw, and the nav collapses into the menu.
+Grids: three-column card grids with a 24px gap (two columns under 960px, one under 640px); a two-column hero (1.05fr / 1fr) and split sections (1fr / 1fr, `--flip` swaps the visual to the left) that stack under 960px; calculator and FAQ at 0.8fr / 1.2fr; contact at 0.85fr / 1.15fr; a four-column team grid (three under 1024px, two under 720px); a five-up stats row (two-up under 900px); footer at 1.6fr plus four columns (two under 960px). The FAQ heading is sticky at 104px on wide screens. The header is sticky at 72px tall; anchored sections scroll to 88px below the top.
+
+Breakpoints in use: 480, 640, 720, 899/900, 960, 1024px.
 
 ## Elevation & Depth
 
-The public site is flat. There are no box shadows anywhere, including on the mobile menu, which floats as a solid ink block with no shadow. Depth comes from three things only: a change of field colour, a paper object overlapping or being cut off by its panel (the printed card, the caption plate, the case report), and a 28% black scrim laid over full-bleed photographs so the verb reads in paper.
+Layered and soft. Raised surfaces always pair a 1px hairline border with a low, cool, two-layer shadow tinted from ink, so cards sit just off the page without floating. Elevation increases only for things that are meant to lead: the hero dashboard, image frames, the open mobile menu, and feature cards on hover. Section fields themselves are flat; depth between sections comes from alternating paper and mist, plus the mist-to-paper hero gradient.
+
+### Shadow Vocabulary
+- **Hairline lift** (`box-shadow: 0 1px 2px rgb(15 27 42 / 0.05)`): defined as `--shadow-sm`; the primary button uses its navy variant `0 1px 2px rgb(0 40 69 / 0.2)`.
+- **Card** (`box-shadow: 0 1px 2px rgb(15 27 42 / 0.04), 0 8px 24px rgb(15 27 42 / 0.06)`): every `.card` at rest and the opened FAQ item.
+- **Raised** (`box-shadow: 0 2px 4px rgb(15 27 42 / 0.04), 0 24px 48px rgb(15 27 42 / 0.1)`): hero dashboard, image frames, mobile menu panel, feature card hover.
+- **Focus halo** (`box-shadow: 0 0 0 3px rgb(14 107 168 / 0.15)`): inputs on focus, with the border turning Link Blue.
 
 ### Named Rules
-**The Flat At Rest Rule.** No shadow, gradient, blur, glass or glow on the public site. A floating menu is the only element allowed to take a shadow, and the current build ships none, so there is no shadow value to reuse.
+**The Border And Haze Rule.** A raised surface has both a 1px Hairline border and a soft shadow. Never a shadow without the border, never a hard or offset shadow.
 
-**The Overlap Not Shadow Rule.** To lift something, put a paper object on a coloured field, or let a panel edge cut it. Never draw a shadow.
+**The Earned Lift Rule.** Only the hero dashboard, image frames and menus rest at the Raised level. Cards rise to it on hover (with a 3px translate), not at rest.
 
 ## Shapes
 
-Every corner is square (`rounded.none`): buttons, inputs, cards, menu, photographs, tiles. Borders appear only as a control state (a 2px ink border on a focused contact input, error red when invalid), and a 3px ink focus outline, offset 3px, marks keyboard focus everywhere (paper on Night).
-
-Three shapes break the rectangle, and each is tied to the brand or an object:
-- **The hexagon mark**: the Zion mountain badge, rebuilt from flat polygons with 4px gaps, set large beside the footer wordmark.
-- **The folder tab**: a filing-folder tab cut by `clip-path` with a 14px chamfer on the left and a 26px slope on the right, 44px tall, sitting on its own coloured band.
-- **The ridge drawing**: flat night-and-paper mountain silhouettes that stand in for a missing photograph.
-
-Tilt is reserved for objects. The printed card turns -1.5deg (-1deg on phones), as a printed programme lying on the panel, and the direction allows two or three photographs to tilt 3 to 6 degrees. Headlines, paragraphs, buttons and panels never rotate.
+Friendly, consistent rounding on a small scale: 8px for small inner tiles (metric tiles, menu links, skip link), 10px for every control (buttons, inputs, checkbox rows, the menu toggle), 12px for nested panels (icon tiles, KPI tiles, FAQ items, quote boxes, halo steps, the menu panel), 20px for cards, image frames and the dashboard, 24px for the CTA band, and full pills for chips, label pills and the hero label chip. Avatars and the contact step numbers are circles. Borders are 1px throughout; there are no heavier strokes, no clipped corners and no decorative geometry. Icons are Lucide line icons at their default 2px stroke.
 
 ## Components
 
 ### Buttons
-Solid, blunt rectangles with no border and no icon.
-- **Shape:** square corners (0px); height 3.25rem, small 2.75rem.
-- **Primary:** Logo Navy fill with white Public Sans 600 at 1.0625rem, 1.5rem side padding, on light panels. On navy and night panels the fill is Logo Steel with navy text. One per panel at most.
-- **Ink:** Ink fill with paper text on light panels; paper fill with navy text on navy and night. Used as the second choice in the CTA and in the footer.
-- **Hover / Active:** fill darkens (navy mixed with 14% black; steel lightens to #b7cfdc; paper goes to white) over 180ms; press scales to 0.97 over 140ms.
-- **Links:** text links underline at 0.08em thickness, 0.2em offset; on fine pointers the underline appears only on hover.
+Solid, compact, unmistakable.
+- **Shape:** gently rounded (10px), 3rem tall, 1.375rem side padding, 700 weight at 0.9375rem, optional leading or trailing icon with a 0.5rem gap.
+- **Primary:** Logo Navy fill, white text, navy hairline shadow. Hover deepens to #0a3a60.
+- **Secondary:** white fill, Ink text, Hairline Strong border; hover turns the border navy.
+- **Light / Outline light (on navy):** white fill with navy text (hover Pale Tint), or transparent with white text and a 40% white border (hover full white border).
+- **Small:** 2.5rem tall, 1rem padding, 0.875rem text (header CTA).
+- **States:** colour transitions at 160ms; `:active` presses down 1px; disabled drops to 60% opacity. Focus uses the site-wide 2px Link Blue outline at 2px offset.
 
-### Cards / Containers (paper objects)
-- **Corner Style:** square.
-- **Background:** Paper on a coloured field; never a card on paper.
-- **Shadow Strategy:** none (see Elevation & Depth).
-- **Border:** none.
-- **Internal Padding:** 56px for the printed card, `clamp(1.5rem, 3vw, 2.5rem)` for the case report, 1.1rem by 1.25rem for the caption plate.
+### Chips and Pills
+- **Chip:** Pale Tint fill, navy 700 text at 0.75rem, full pill, used for small tags inside cards.
+- **Pill:** white fill, Hairline border, Ink 600 text at 0.875rem, used in the marketplace strip.
+
+### Cards / Containers
+- **Corner Style:** 20px.
+- **Background:** white on any section tone.
+- **Shadow Strategy:** Card level at rest; feature cards lift to Raised and Hairline Strong on hover (200ms, `cubic-bezier(0.22, 1, 0.36, 1)`).
+- **Border:** 1px Hairline (#e2e8ee).
+- **Internal Padding:** 1.75rem (28px); team members 1.75rem by 1.5rem; the contact card `clamp(1.5rem, 1rem + 2vw, 2.25rem)`.
+- **Anatomy:** icon tile, title, 0.9375rem body, then an optional tick list pushed to the bottom behind a Hairline rule.
+
+### Icon Tiles
+Lucide line icons in a Pale Tint square (48px, 12px radius; small variant 40px, 10px radius) with navy stroke. Editors choose from a fixed set (`src/components/site/Icon.tsx`). On navy surfaces the tile becomes 12% white with a white icon.
 
 ### Inputs / Fields
-- **Style:** contact inputs are white, square, 3.25rem tall, with a 2px transparent border; calculator inputs are paper on mist at 1.25rem tabular figures, no border. Range sliders and checkboxes take ink as their accent colour.
-- **Focus:** the 2px border turns ink, replacing the outline.
-- **Error:** border turns error red; message below in Error Red, 600, 0.9375rem. Focus moves to the first invalid field, and typed values are kept.
+- **Style:** white fill, 1px Hairline Strong border, 10px radius, 2.875rem minimum height, 1rem Ink text; textareas start at 7rem and resize vertically. Labels sit above in Label style.
+- **Focus:** border turns Link Blue with a 3px 15% blue halo; no outline.
+- **Choice rows:** checkboxes live in 2.75rem bordered rows (10px radius) in a two-column grid; a checked row turns its border navy and its fill Pale Tint.
+- **Error:** invalid fields take a red border; messages in Error Red, 600 at 0.875rem.
 
 ### Navigation
-- **Header:** sits over the first panel, absolute, with the logo and wordmark (Big Shoulders 1.6rem) top-left and Public Sans 600 links plus a small navy button top-right, on the page margin.
-- **Hover:** links underline at 0.25em offset and rise 1px.
-- **Mobile:** below 48em the links become a "Menu" summary in an ink block; it opens a 13rem ink panel with paper links, 0.75rem by 0.9rem padding, no shadow. The wordmark text hides, the badge stays.
+- **Header:** sticky, 72px, 96% white with a Hairline bottom border. Wordmark (40px logo plus navy 800 name) at left; text links in Slate Body 600 at 0.9375rem, hovering to navy; a small primary button at the end.
+- **Mobile (under 900px):** links collapse into a `<details>` "Menu" toggle styled as a 10px bordered control, opening a white 12px-radius panel with the Raised shadow and Mist hover rows. Under 480px the wordmark drops its text.
+- **Footer:** Night field, #a9bccb text at 0.9375rem; brand column plus four link columns with small uppercase white headings; links brighten to white on hover; a 12%-white rule above the base line.
 
-### Waterline Hero (signature)
-Two flat fields meet at half height (46% on phones): paper above, a chosen field below (navy by default). A two-line uppercase headline is centred across the seam, the first line in navy on paper and the second in steel on navy (ink if the lower field is light), with one lead sentence and one steel button centred near the bottom. No image.
+### Hero Dashboard (signature)
+A white 20px card at the Raised level showing a live-account view: a green live dot with a green halo ring, a title, a 2x2 grid of Mist KPI tiles (caption label, 800 tabular value, green change), and an SVG line chart with a navy revenue line over an 8% navy area and a dashed amber TACoS line. It sits beside the hero copy on a mist-to-paper gradient, with green-ticked badges under the buttons.
 
-### Verb Panels (signature)
-Each step of the process is one full-height panel holding one huge verb, centred, over a photograph with a scrim or a flat ridge drawing, with a paper caption plate at the bottom-left margin carrying the explanatory sentence.
+### Stats Row
+Five figures in navy Figure style above muted captions, divided by Hairline vertical rules, directly below the hero.
 
-### Case Folders (signature)
-Each case is a coloured band with a chamfered display-face tab; inside, a paper report card (headline, logo, metric list in display-face figures) sits beside the story and quote in columns 9 to 12.
+### Case Study Card
+A card with a logo or name header (navy 800) above a Hairline rule, a Title-scale headline, a Mist italic quote box with a steel quote icon, and a two-up grid of green metric tiles pinned to the bottom.
+
+### FAQ Accordion
+Native `<details>` items: white, 1px Hairline, 12px radius, 0.75rem apart. The summary is Ink 700 with a muted chevron that rotates 180 degrees on open; an open item gains Hairline Strong and the Card shadow. The heading column is sticky beside the list on wide screens.
+
+### Calculator (signature)
+A card split in two: a white form (number inputs and a navy-accented range slider with an 800-weight output) and a navy result panel with steel and white figures, the large result in display-weight tabular numerals, and a muted note at the foot.
+
+### CTA Band
+A navy block with 24px radius inside a tight paper section: white Headline, #c3d3df supporting line (max 46ch), and Light / Outline-light buttons, wrapping on small screens.
 
 ### Motion
-On load, each hero line rises from behind its own baseline (700ms, `cubic-bezier(0.22, 1, 0.36, 1)`, 90ms stagger), then the hero foot fades in. Other blocks rise 24px and fade as they enter (700ms opacity, 900ms transform, 80ms stagger). Photographs in verb panels drift with a slow 22s scale. Everything sits under `prefers-reduced-motion: no-preference` and only applies once the script has run, so content is never hidden without JavaScript.
+Content is visible without JavaScript. With JS and no reduced-motion preference, `[data-reveal]` elements fade up 16px (600ms opacity, 700ms transform, `cubic-bezier(0.22, 1, 0.36, 1)`), staggered by 70ms per index.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** give every new section exactly one field colour from settings and let it meet its neighbours edge to edge.
-- **Do** set statements, single words and big figures in Big Shoulders 800 uppercase at viewport scale, and keep them to two lines.
-- **Do** put quiet text in that field's own soft ink, and evidence (numbers) in tabular lining figures.
-- **Do** lift content by placing a paper object on a coloured field, or by letting the panel edge cut it.
-- **Do** keep the 1 to 5 / 7 to 12 split for heading-plus-text panels, and collapse to one column below 48em.
-- **Do** reference colours through the settings variables so site editors can recolour the site.
+- **Do** use Logo Navy (#002845) for every primary action and every filled band, through `var(--navy)`.
+- **Do** put content in white cards with a 20px radius, a 1px #e2e8ee border and the Card shadow.
+- **Do** alternate Paper and Mist section tones inside the 1200px container, and close pages with the navy CTA band and the Night footer.
+- **Do** use 10px radius on every button and input, and 12px on nested tiles and panels.
+- **Do** set results in tabular 800-weight figures, and colour positive movement Growth Green on Green Wash.
+- **Do** set card and step icons as Lucide line icons inside Pale Tint icon tiles; bare icons appear only as green ticks in lists and badges.
+- **Do** use the 2px Link Blue focus outline and the 3px blue input halo; keep focus visible on every control.
 
 ### Don't:
-- **Don't** use the action colour for anything but actions and their states (the hero's first line and the struck word are the only typographic exceptions, and they are not a pattern to extend). Don't add colours from outside the logo palette, except error red for errors.
-- **Don't** add eyebrow labels or kickers above headlines.
-- **Don't** number sections, steps or items as decoration (01, 02, 03).
-- **Don't** draw thin rules, hairlines or divider lines; separate with colour and space.
-- **Don't** use gradients, glass, blur or glow, or any shadow at rest.
-- **Don't** round a corner. Radius is 0.
-- **Don't** add a third typeface, an italic, another weight, or monospace on the public site.
-- **Don't** rotate text, buttons or panels; tilt only the printed card and, at most, two or three photographs.
-- **Don't** outline type, add offset shadows or scatter stickers.
+- **Don't** introduce a second filled brand colour; Link Blue is for text and focus only, green for good numbers only, amber for chart data only.
+- **Don't** hard-code the seven settings colours in components; they must follow `settings.colors`.
+- **Don't** use hard, offset or coloured drop shadows, or a shadow without the hairline border.
+- **Don't** mix in other typefaces or use a weight below 400 on the public site.
+- **Don't** use square corners on cards or controls, or radii outside the 8 / 10 / 12 / 20 / 24 / pill scale.
+- **Don't** apply editor chrome (neutral greys, 6px controls) to the public site.
 
 ## Editor (app screen)
 
-The editor at `/admin` (`src/components/editor/*`, Tailwind) is a work tool for site editors and deliberately does not wear the poster. It is quiet so the live preview carries the brand.
+The editor at `/admin` (`src/components/editor/*`, Tailwind) is a work tool for site editors and does not wear the site's card system. It stays quiet so the live preview carries the brand.
 
-- **Type:** Public Sans only (Tailwind `font-sans`), small and dense: 13px for controls, 12px for secondary controls and tabs, 11px for hints, 14px for primary actions. Weights 500 and 600. Hex colour values use a monospace input, the one place monospace appears, because a hex is code.
-- **Colour:** neutral greys on white and neutral-100 (`#f5f5f5`) chrome; neutral-900 for primary buttons, active tabs and toasts (hover to black); blue-50 fill with a blue-300 ring for the selected section or field; blue-700 for add actions; red-700 for destructive actions and error toasts; amber-50 and amber-900 for warnings. The publish button is Logo Navy. Field colours appear only inside the preview.
-- **Shape:** small rounding (6px on controls, 12px on the media dialog), 1px neutral-200 or neutral-300 borders, dashed borders for "add" targets.
+- **Type:** Plus Jakarta Sans via Tailwind `font-sans` (`--font-jakarta`), small and dense: 13px for controls, 12px for secondary controls and tabs, 11px for hints, 14px for primary actions. Weights 500 and 600. Hex colour values use a monospace input, the one place monospace appears.
+- **Colour:** neutral greys on white and neutral-100 chrome; neutral-900 for primary buttons, active tabs and toasts; blue-50 fill with a blue ring for the selected section or field; blue for add actions; red for destructive actions and error toasts; amber for warnings. The publish button is Logo Navy (#002845, hover Night). Site colours otherwise appear only inside the preview.
+- **Shape:** small rounding (6px `rounded-md` on controls, 8 to 12px on panels and the media dialog), 1px neutral-200 or neutral-300 borders, dashed borders for "add" targets.
 - **Depth:** a small shadow on the selected device toggle and a large shadow on the floating toast; the media dialog uses a 40% black backdrop. No other shadows.
-- **Rule:** never import site classes (`.site`, `.btn`, `.f-*`) into editor chrome, and never bring editor rounding, borders or greys into the public site.
+- **Rule:** never import site classes (`.site`, `.btn`, `.card`, `.f-*`) into editor chrome, and never bring editor rounding, borders or greys into the public site.

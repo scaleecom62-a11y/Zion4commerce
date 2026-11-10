@@ -1,305 +1,375 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-02T09:20:14.243918+00:00",
+  "generatedAt": "2026-11-10T15:32:01.716332+00:00",
   "title": "Design System: Zion4Commerce",
   "extensions": {
     "colorMeta": {
-      "accent-crimson": {
-        "role": "primary",
-        "displayName": "Signal Crimson",
-        "tonalRamp": [
-          "oklch(15% 0.105 16)",
-          "oklch(25% 0.131 16)",
-          "oklch(35% 0.157 16)",
-          "oklch(48% 0.190 16)",
-          "oklch(60% 0.221 16)",
-          "oklch(72% 0.190 16)",
-          "oklch(84% 0.159 16)",
-          "oklch(95% 0.131 16)"
-        ],
-        "canonical": "oklch(57.9% 0.221 16)"
-      },
-      "accent-ink": {
-        "role": "neutral",
-        "displayName": "Accent Ink White",
-        "tonalRamp": [
-          "oklch(15% 0.000 0)",
-          "oklch(25% 0.000 0)",
-          "oklch(35% 0.000 0)",
-          "oklch(48% 0.000 0)",
-          "oklch(60% 0.000 0)",
-          "oklch(72% 0.000 0)",
-          "oklch(84% 0.000 0)",
-          "oklch(95% 0.000 0)"
-        ],
-        "canonical": "oklch(100% 0 0)"
-      },
-      "field-orange": {
-        "role": "secondary",
-        "displayName": "Hazard Orange",
-        "tonalRamp": [
-          "oklch(15% 0.086 50.4)",
-          "oklch(25% 0.106 50.4)",
-          "oklch(35% 0.127 50.4)",
-          "oklch(48% 0.155 50.4)",
-          "oklch(60% 0.180 50.4)",
-          "oklch(72% 0.155 50.4)",
-          "oklch(84% 0.130 50.4)",
-          "oklch(95% 0.106 50.4)"
-        ],
-        "canonical": "oklch(73.5% 0.180 50.4)"
-      },
-      "field-sky": {
-        "role": "secondary",
-        "displayName": "Pool Sky",
-        "tonalRamp": [
-          "oklch(15% 0.069 244.3)",
-          "oklch(25% 0.086 244.3)",
-          "oklch(35% 0.103 244.3)",
-          "oklch(48% 0.125 244.3)",
-          "oklch(60% 0.145 244.3)",
-          "oklch(72% 0.125 244.3)",
-          "oklch(84% 0.104 244.3)",
-          "oklch(95% 0.086 244.3)"
-        ],
-        "canonical": "oklch(74% 0.145 244.3)"
-      },
-      "field-lime": {
-        "role": "secondary",
-        "displayName": "Acid Lime",
-        "tonalRamp": [
-          "oklch(15% 0.097 123.6)",
-          "oklch(25% 0.121 123.6)",
-          "oklch(35% 0.145 123.6)",
-          "oklch(48% 0.176 123.6)",
-          "oklch(60% 0.205 123.6)",
-          "oklch(72% 0.176 123.6)",
-          "oklch(84% 0.148 123.6)",
-          "oklch(95% 0.121 123.6)"
-        ],
-        "canonical": "oklch(90.5% 0.205 123.6)"
-      },
-      "field-night": {
-        "role": "secondary",
-        "displayName": "Night",
-        "tonalRamp": [
-          "oklch(15% 0.002 106.6)",
-          "oklch(25% 0.002 106.6)",
-          "oklch(35% 0.003 106.6)",
-          "oklch(48% 0.003 106.6)",
-          "oklch(60% 0.004 106.6)",
-          "oklch(72% 0.003 106.6)",
-          "oklch(84% 0.003 106.6)",
-          "oklch(95% 0.002 106.6)"
-        ],
-        "canonical": "oklch(20% 0.002 106.6)"
-      },
       "paper": {
         "role": "neutral",
-        "displayName": "Poster Paper",
+        "displayName": "Paper",
+        "canonical": "oklch(100.0% 0.000 0.0)",
         "tonalRamp": [
-          "oklch(15% 0.004 106.5)",
-          "oklch(25% 0.005 106.5)",
-          "oklch(35% 0.006 106.5)",
-          "oklch(48% 0.007 106.5)",
-          "oklch(60% 0.008 106.5)",
-          "oklch(72% 0.007 106.5)",
-          "oklch(84% 0.006 106.5)",
-          "oklch(95% 0.005 106.5)"
-        ],
-        "canonical": "oklch(96% 0.004 106.5)"
+          "oklch(15% 0.000 0.0)",
+          "oklch(25% 0.000 0.0)",
+          "oklch(35% 0.000 0.0)",
+          "oklch(48% 0.000 0.0)",
+          "oklch(60% 0.000 0.0)",
+          "oklch(72% 0.000 0.0)",
+          "oklch(84% 0.000 0.0)",
+          "oklch(95% 0.000 0.0)"
+        ]
+      },
+      "mist": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "canonical": "oklch(97.4% 0.006 239.8)",
+        "tonalRamp": [
+          "oklch(15% 0.005 239.8)",
+          "oklch(25% 0.009 239.8)",
+          "oklch(35% 0.013 239.8)",
+          "oklch(48% 0.014 239.8)",
+          "oklch(60% 0.016 239.8)",
+          "oklch(72% 0.017 239.8)",
+          "oklch(84% 0.015 239.8)",
+          "oklch(95% 0.005 239.8)"
+        ]
+      },
+      "tint": {
+        "role": "neutral",
+        "displayName": "Pale Tint",
+        "canonical": "oklch(95.3% 0.013 236.6)",
+        "tonalRamp": [
+          "oklch(15% 0.005 236.6)",
+          "oklch(25% 0.010 236.6)",
+          "oklch(35% 0.013 236.6)",
+          "oklch(48% 0.014 236.6)",
+          "oklch(60% 0.016 236.6)",
+          "oklch(72% 0.017 236.6)",
+          "oklch(84% 0.015 236.6)",
+          "oklch(95% 0.005 236.6)"
+        ]
+      },
+      "steel": {
+        "role": "secondary",
+        "displayName": "Logo Steel",
+        "canonical": "oklch(77.7% 0.042 231.2)",
+        "tonalRamp": [
+          "oklch(15% 0.013 231.2)",
+          "oklch(25% 0.024 231.2)",
+          "oklch(35% 0.031 231.2)",
+          "oklch(48% 0.035 231.2)",
+          "oklch(60% 0.038 231.2)",
+          "oklch(72% 0.041 231.2)",
+          "oklch(84% 0.033 231.2)",
+          "oklch(95% 0.009 231.2)"
+        ]
+      },
+      "navy": {
+        "role": "primary",
+        "displayName": "Logo Navy",
+        "canonical": "oklch(26.8% 0.069 245.8)",
+        "tonalRamp": [
+          "oklch(15% 0.032 245.8)",
+          "oklch(25% 0.057 245.8)",
+          "oklch(35% 0.065 245.8)",
+          "oklch(48% 0.060 245.8)",
+          "oklch(60% 0.055 245.8)",
+          "oklch(72% 0.050 245.8)",
+          "oklch(84% 0.036 245.8)",
+          "oklch(95% 0.010 245.8)"
+        ]
+      },
+      "navy-hover": {
+        "role": "primary",
+        "displayName": "Navy Hover",
+        "canonical": "oklch(33.9% 0.083 247.9)",
+        "tonalRamp": [
+          "oklch(15% 0.037 247.9)",
+          "oklch(25% 0.065 247.9)",
+          "oklch(35% 0.082 247.9)",
+          "oklch(48% 0.076 247.9)",
+          "oklch(60% 0.070 247.9)",
+          "oklch(72% 0.064 247.9)",
+          "oklch(84% 0.046 247.9)",
+          "oklch(95% 0.013 247.9)"
+        ]
+      },
+      "night": {
+        "role": "primary",
+        "displayName": "Night",
+        "canonical": "oklch(21.0% 0.052 244.0)",
+        "tonalRamp": [
+          "oklch(15% 0.025 244.0)",
+          "oklch(25% 0.042 244.0)",
+          "oklch(35% 0.047 244.0)",
+          "oklch(48% 0.043 244.0)",
+          "oklch(60% 0.040 244.0)",
+          "oklch(72% 0.036 244.0)",
+          "oklch(84% 0.026 244.0)",
+          "oklch(95% 0.007 244.0)"
+        ]
+      },
+      "accent": {
+        "role": "secondary",
+        "displayName": "Link Blue",
+        "canonical": "oklch(51.0% 0.124 245.3)",
+        "tonalRamp": [
+          "oklch(15% 0.049 245.3)",
+          "oklch(25% 0.087 245.3)",
+          "oklch(35% 0.112 245.3)",
+          "oklch(48% 0.122 245.3)",
+          "oklch(60% 0.118 245.3)",
+          "oklch(72% 0.109 245.3)",
+          "oklch(84% 0.080 245.3)",
+          "oklch(95% 0.023 245.3)"
+        ]
       },
       "ink": {
         "role": "neutral",
-        "displayName": "Print Black",
+        "displayName": "Ink",
+        "canonical": "oklch(21.9% 0.034 254.6)",
         "tonalRamp": [
-          "oklch(15% 0.000 0)",
-          "oklch(25% 0.000 0)",
-          "oklch(35% 0.000 0)",
-          "oklch(48% 0.000 0)",
-          "oklch(60% 0.000 0)",
-          "oklch(72% 0.000 0)",
-          "oklch(84% 0.000 0)",
-          "oklch(95% 0.000 0)"
-        ],
-        "canonical": "oklch(17.8% 0 0)"
-      },
-      "soft-on-paper": {
-        "role": "neutral",
-        "displayName": "Soft Ink on Paper",
-        "tonalRamp": [
-          "oklch(15% 0.005 106.5)",
-          "oklch(25% 0.006 106.5)",
-          "oklch(35% 0.007 106.5)",
-          "oklch(48% 0.009 106.5)",
-          "oklch(60% 0.010 106.5)",
-          "oklch(72% 0.009 106.5)",
-          "oklch(84% 0.007 106.5)",
-          "oklch(95% 0.006 106.5)"
+          "oklch(15% 0.016 254.6)",
+          "oklch(25% 0.028 254.6)",
+          "oklch(35% 0.032 254.6)",
+          "oklch(48% 0.029 254.6)",
+          "oklch(60% 0.026 254.6)",
+          "oklch(72% 0.024 254.6)",
+          "oklch(84% 0.017 254.6)",
+          "oklch(95% 0.005 254.6)"
         ]
       },
-      "soft-on-orange": {
+      "body": {
         "role": "neutral",
-        "displayName": "Soft Ink on Orange",
+        "displayName": "Slate Body",
+        "canonical": "oklch(40.8% 0.034 253.5)",
         "tonalRamp": [
-          "oklch(15% 0.043 50.4)",
-          "oklch(25% 0.053 50.4)",
-          "oklch(35% 0.064 50.4)",
-          "oklch(48% 0.077 50.4)",
-          "oklch(60% 0.090 50.4)",
-          "oklch(72% 0.077 50.4)",
-          "oklch(84% 0.065 50.4)",
-          "oklch(95% 0.053 50.4)"
+          "oklch(15% 0.014 253.5)",
+          "oklch(25% 0.026 253.5)",
+          "oklch(35% 0.033 253.5)",
+          "oklch(48% 0.032 253.5)",
+          "oklch(60% 0.030 253.5)",
+          "oklch(72% 0.028 253.5)",
+          "oklch(84% 0.020 253.5)",
+          "oklch(95% 0.006 253.5)"
         ]
       },
-      "soft-on-sky": {
+      "muted": {
         "role": "neutral",
-        "displayName": "Soft Ink on Sky",
+        "displayName": "Muted Slate",
+        "canonical": "oklch(54.5% 0.034 251.5)",
         "tonalRamp": [
-          "oklch(15% 0.038 244.3)",
-          "oklch(25% 0.047 244.3)",
-          "oklch(35% 0.057 244.3)",
-          "oklch(48% 0.069 244.3)",
-          "oklch(60% 0.080 244.3)",
-          "oklch(72% 0.069 244.3)",
-          "oklch(84% 0.058 244.3)",
-          "oklch(95% 0.047 244.3)"
+          "oklch(15% 0.013 251.5)",
+          "oklch(25% 0.023 251.5)",
+          "oklch(35% 0.030 251.5)",
+          "oklch(48% 0.033 251.5)",
+          "oklch(60% 0.033 251.5)",
+          "oklch(72% 0.031 251.5)",
+          "oklch(84% 0.022 251.5)",
+          "oklch(95% 0.006 251.5)"
         ]
       },
-      "soft-on-lime": {
+      "line": {
         "role": "neutral",
-        "displayName": "Soft Ink on Lime",
+        "displayName": "Hairline",
+        "canonical": "oklch(92.8% 0.010 247.9)",
         "tonalRamp": [
-          "oklch(15% 0.043 123.6)",
-          "oklch(25% 0.053 123.6)",
-          "oklch(35% 0.064 123.6)",
-          "oklch(48% 0.077 123.6)",
-          "oklch(60% 0.090 123.6)",
-          "oklch(72% 0.077 123.6)",
-          "oklch(84% 0.065 123.6)",
-          "oklch(95% 0.053 123.6)"
+          "oklch(15% 0.005 247.9)",
+          "oklch(25% 0.010 247.9)",
+          "oklch(35% 0.013 247.9)",
+          "oklch(48% 0.015 247.9)",
+          "oklch(60% 0.016 247.9)",
+          "oklch(72% 0.018 247.9)",
+          "oklch(84% 0.015 247.9)",
+          "oklch(95% 0.005 247.9)"
         ]
       },
-      "soft-on-night": {
+      "line-strong": {
         "role": "neutral",
-        "displayName": "Soft Ink on Night",
+        "displayName": "Hairline Strong",
+        "canonical": "oklch(88.0% 0.016 245.1)",
         "tonalRamp": [
-          "oklch(15% 0.005 106.5)",
-          "oklch(25% 0.006 106.5)",
-          "oklch(35% 0.007 106.5)",
-          "oklch(48% 0.009 106.5)",
-          "oklch(60% 0.010 106.5)",
-          "oklch(72% 0.009 106.5)",
-          "oklch(84% 0.007 106.5)",
-          "oklch(95% 0.006 106.5)"
+          "oklch(15% 0.006 245.1)",
+          "oklch(25% 0.010 245.1)",
+          "oklch(35% 0.014 245.1)",
+          "oklch(48% 0.015 245.1)",
+          "oklch(60% 0.017 245.1)",
+          "oklch(72% 0.018 245.1)",
+          "oklch(84% 0.016 245.1)",
+          "oklch(95% 0.005 245.1)"
         ]
       },
-      "input-white": {
-        "role": "neutral",
-        "displayName": "Input White",
+      "good": {
+        "role": "tertiary",
+        "displayName": "Growth Green",
+        "canonical": "oklch(51.3% 0.114 158.0)",
         "tonalRamp": [
-          "oklch(15% 0.000 0)",
-          "oklch(25% 0.000 0)",
-          "oklch(35% 0.000 0)",
-          "oklch(48% 0.000 0)",
-          "oklch(60% 0.000 0)",
-          "oklch(72% 0.000 0)",
-          "oklch(84% 0.000 0)",
-          "oklch(95% 0.000 0)"
-        ],
-        "canonical": "oklch(100% 0 0)"
+          "oklch(15% 0.045 158.0)",
+          "oklch(25% 0.080 158.0)",
+          "oklch(35% 0.103 158.0)",
+          "oklch(48% 0.112 158.0)",
+          "oklch(60% 0.108 158.0)",
+          "oklch(72% 0.100 158.0)",
+          "oklch(84% 0.073 158.0)",
+          "oklch(95% 0.021 158.0)"
+        ]
       },
-      "error-crimson-deep": {
-        "role": "primary",
-        "displayName": "Deep Crimson",
+      "good-bg": {
+        "role": "tertiary",
+        "displayName": "Green Wash",
+        "canonical": "oklch(95.8% 0.017 164.7)",
         "tonalRamp": [
-          "oklch(15% 0.083 18.6)",
-          "oklch(25% 0.104 18.6)",
-          "oklch(35% 0.124 18.6)",
-          "oklch(48% 0.150 18.6)",
-          "oklch(60% 0.175 18.6)",
-          "oklch(72% 0.150 18.6)",
-          "oklch(84% 0.126 18.6)",
-          "oklch(95% 0.104 18.6)"
-        ],
-        "canonical": "oklch(46% 0.175 18.6)"
+          "oklch(15% 0.005 164.7)",
+          "oklch(25% 0.010 164.7)",
+          "oklch(35% 0.013 164.7)",
+          "oklch(48% 0.014 164.7)",
+          "oklch(60% 0.016 164.7)",
+          "oklch(72% 0.017 164.7)",
+          "oklch(84% 0.015 164.7)",
+          "oklch(95% 0.005 164.7)"
+        ]
+      },
+      "error": {
+        "role": "error",
+        "displayName": "Error Red",
+        "canonical": "oklch(50.0% 0.182 29.5)",
+        "tonalRamp": [
+          "oklch(15% 0.072 29.5)",
+          "oklch(25% 0.129 29.5)",
+          "oklch(35% 0.166 29.5)",
+          "oklch(48% 0.180 29.5)",
+          "oklch(60% 0.171 29.5)",
+          "oklch(72% 0.158 29.5)",
+          "oklch(84% 0.116 29.5)",
+          "oklch(95% 0.033 29.5)"
+        ]
+      },
+      "chart-amber": {
+        "role": "tertiary",
+        "displayName": "Chart Amber",
+        "canonical": "oklch(75.4% 0.137 76.3)",
+        "tonalRamp": [
+          "oklch(15% 0.044 76.3)",
+          "oklch(25% 0.080 76.3)",
+          "oklch(35% 0.104 76.3)",
+          "oklch(48% 0.114 76.3)",
+          "oklch(60% 0.124 76.3)",
+          "oklch(72% 0.134 76.3)",
+          "oklch(84% 0.104 76.3)",
+          "oklch(95% 0.030 76.3)"
+        ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Poster words, single verbs, big figures; sized to the viewport per section."
+        "purpose": "The one h1 per page: hero and page intros."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section heads."
+        "purpose": "Section headings and the CTA band heading."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Heads inside paper objects, folder tabs, metric values."
+        "purpose": "Card and step titles."
       },
-      "title-text": {
-        "displayName": "Title (text face)",
-        "purpose": "FAQ questions and rich-text subheads."
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Stat values and result numbers, tabular lining numerals."
       },
       "lead": {
         "displayName": "Lead",
-        "purpose": "Sentence after a headline."
+        "purpose": "Paragraph under a section heading, max 62ch."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Running text, max 62ch."
+        "purpose": "Default running text."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Text inside cards."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Definition terms, footer column titles, metric names."
+        "purpose": "Form labels, legends, small buttons."
       },
-      "small": {
-        "displayName": "Small",
-        "purpose": "Notes and table column heads."
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "KPI labels, categories, chart captions, footer base."
       }
     },
-    "shadows": [],
+    "shadows": [
+      {
+        "name": "hairline-lift",
+        "value": "0 1px 2px rgb(15 27 42 / 0.05)",
+        "purpose": "--shadow-sm; navy variant 0 1px 2px rgb(0 40 69 / 0.2) under the primary button."
+      },
+      {
+        "name": "card",
+        "value": "0 1px 2px rgb(15 27 42 / 0.04), 0 8px 24px rgb(15 27 42 / 0.06)",
+        "purpose": "Every .card at rest and the opened FAQ item."
+      },
+      {
+        "name": "raised",
+        "value": "0 2px 4px rgb(15 27 42 / 0.04), 0 24px 48px rgb(15 27 42 / 0.1)",
+        "purpose": "Hero dashboard, image frames, mobile menu panel, feature card hover."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px rgb(14 107 168 / 0.15)",
+        "purpose": "Input focus, with a Link Blue border."
+      }
+    ],
     "motion": [
       {
-        "name": "ease-out",
+        "name": "ease",
         "value": "cubic-bezier(0.22, 1, 0.36, 1)",
-        "purpose": "Headline line reveal, rise-ins, button press."
+        "purpose": "Card lift, chevron turn, button press, reveal."
       },
       {
-        "name": "ease-in-out",
-        "value": "cubic-bezier(0.76, 0, 0.24, 1)",
-        "purpose": "Declared for symmetric transitions."
+        "name": "state",
+        "value": "160ms ease",
+        "purpose": "Colour and border transitions on buttons, links, inputs, FAQ."
       },
       {
-        "name": "ease-soft",
-        "value": "cubic-bezier(0.33, 1, 0.68, 1)",
-        "purpose": "Slow photo drift and ridge-art hover scale."
-      },
-      {
-        "name": "line-reveal",
-        "value": "700ms ease-out, 90ms stagger per line",
-        "purpose": "Hero lines rising from behind their baselines."
+        "name": "lift",
+        "value": "200ms",
+        "purpose": "Feature card hover: translateY(-3px) plus raised shadow."
       },
       {
         "name": "reveal",
-        "value": "opacity 700ms, translateY(24px) 900ms, 80ms stagger",
-        "purpose": "Blocks entering the viewport."
-      },
-      {
-        "name": "press",
-        "value": "scale(0.97) over 140ms",
-        "purpose": "Button active state."
+        "value": "opacity 600ms, transform 700ms, translateY(16px), 70ms stagger",
+        "purpose": "[data-reveal] fade-up with JS and no reduced-motion preference."
       }
     ],
     "breakpoints": [
       {
-        "name": "phone",
-        "value": "47.99em"
+        "name": "xs",
+        "value": "480px"
       },
       {
-        "name": "tablet",
-        "value": "63.99em"
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "team-2",
+        "value": "720px"
+      },
+      {
+        "name": "nav",
+        "value": "900px"
+      },
+      {
+        "name": "md",
+        "value": "960px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "container",
+        "value": "1200px"
       }
     ]
   },
@@ -308,129 +378,145 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "The one crimson action per panel.",
-      "html": "<a class=\"ds-btn\" href=\"#\">Get a free audit</a>",
-      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 3.25rem; padding: 0 1.5rem; background: #002845; color: #ffffff; font-family: 'Public Sans', system-ui, sans-serif; font-weight: 600; font-size: 1.0625rem; text-decoration: none; border-radius: 0; white-space: nowrap; transition: transform 140ms cubic-bezier(0.22, 1, 0.36, 1), background-color 180ms ease; } .ds-btn:hover { background: color-mix(in srgb, #002845 86%, #000); } .ds-btn:active { transform: scale(0.97); } .ds-btn:focus-visible { outline: 3px solid #0b1620; outline-offset: 3px; }"
+      "description": "The one action colour: navy fill for every primary call to action.",
+      "html": "<button class=\"ds-btn-primary\">Get a free audit <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn-primary{font-family:'Plus Jakarta Sans','Segoe UI',system-ui,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;min-height:3rem;padding:0 1.375rem;border-radius:10px;border:1px solid transparent;font-weight:700;font-size:0.9375rem;text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color 160ms ease,border-color 160ms ease,color 160ms ease,transform 120ms cubic-bezier(0.22,1,0.36,1);background:#002845;color:#fff;box-shadow:0 1px 2px rgb(0 40 69 / 0.2);} .ds-btn-primary:hover{background:#0a3a60;} .ds-btn-primary:active{transform:translateY(1px);} .ds-btn-primary:focus-visible{outline:2px solid #0e6ba8;outline-offset:2px;}"
     },
     {
-      "name": "Ink Button",
+      "name": "Secondary Button",
       "kind": "button",
-      "refersTo": "button-ink",
-      "description": "Secondary action where crimson would compete; inverts to paper on Night.",
-      "html": "<a class=\"ds-btn-ink\" href=\"#\">See the calculator</a>",
-      "css": ".ds-btn-ink { display: inline-flex; align-items: center; justify-content: center; min-height: 3.25rem; padding: 0 1.5rem; background: #0b1620; color: #f5f7f8; font-family: 'Public Sans', system-ui, sans-serif; font-weight: 600; font-size: 1.0625rem; text-decoration: none; border-radius: 0; transition: transform 140ms cubic-bezier(0.22, 1, 0.36, 1), background-color 180ms ease; } .ds-btn-ink:hover { background: #000; } .ds-btn-ink:active { transform: scale(0.97); } .ds-btn-ink:focus-visible { outline: 3px solid #0b1620; outline-offset: 3px; }"
+      "refersTo": "button-secondary",
+      "description": "White button with a strong hairline border, paired beside the primary.",
+      "html": "<button class=\"ds-btn-secondary\">See our results</button>",
+      "css": ".ds-btn-secondary{font-family:'Plus Jakarta Sans','Segoe UI',system-ui,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;min-height:3rem;padding:0 1.375rem;border-radius:10px;border:1px solid transparent;font-weight:700;font-size:0.9375rem;text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color 160ms ease,border-color 160ms ease,color 160ms ease,transform 120ms cubic-bezier(0.22,1,0.36,1);background:#fff;color:#0f1b2a;border-color:#cfd9e2;} .ds-btn-secondary:hover{border-color:#002845;} .ds-btn-secondary:active{transform:translateY(1px);} .ds-btn-secondary:focus-visible{outline:2px solid #0e6ba8;outline-offset:2px;}"
     },
     {
-      "name": "Contact Input",
+      "name": "Text Input",
       "kind": "input",
-      "refersTo": "input-field",
-      "description": "White square field; focus swaps the transparent border to ink, invalid to crimson.",
-      "html": "<label class=\"ds-field\"><span>Work email</span><input class=\"ds-input\" type=\"email\" placeholder=\"you@brand.com\"></label>",
-      "css": ".ds-field { display: grid; gap: 0.4rem; font-family: 'Public Sans', system-ui, sans-serif; font-weight: 600; color: #0b1620; background: #f5f7f8; padding: 1.5rem; } .ds-input { width: 100%; min-height: 3.25rem; padding: 0.7rem 0.9rem; background: #ffffff; color: #0b1620; border: 2px solid transparent; border-radius: 0; font: inherit; font-weight: 400; } .ds-input:focus, .ds-input:focus-visible { border-color: #0b1620; outline: none; } .ds-input[aria-invalid=\"true\"] { border-color: #002845; }"
+      "refersTo": "input",
+      "description": "Contact and calculator fields: hairline-strong border, blue border and halo on focus.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">Work email</span><input class=\"ds-input\" type=\"email\" placeholder=\"you@brand.com\"></label>",
+      "css": ".ds-field{font-family:'Plus Jakarta Sans','Segoe UI',system-ui,sans-serif;display:grid;gap:0.375rem;max-width:22rem;} .ds-field-label{font-size:0.875rem;font-weight:700;color:#0f1b2a;} .ds-input{font-family:'Plus Jakarta Sans','Segoe UI',system-ui,sans-serif;width:100%;min-height:2.875rem;padding:0.625rem 0.875rem;border:1px solid #cfd9e2;border-radius:10px;font-size:1rem;color:#0f1b2a;background:#fff;transition:border-color 160ms ease,box-shadow 160ms ease;} .ds-input:hover{border-color:#9cbccd;} .ds-input:focus,.ds-input:focus-visible{outline:none;border-color:#0e6ba8;box-shadow:0 0 0 3px rgb(14 107 168 / 0.15);}"
     },
     {
-      "name": "Header and Menu",
+      "name": "Site Header",
       "kind": "nav",
-      "refersTo": "menu-panel",
-      "description": "Wordmark left, text links and small crimson action right; ink menu block on phones.",
-      "html": "<header class=\"ds-nav\"><span class=\"ds-nav__mark\">Zion4Commerce</span><nav class=\"ds-nav__links\"><a href=\"#\">Services</a><a href=\"#\">Results</a><a href=\"#\">About</a><a class=\"ds-nav__btn\" href=\"#\">Free audit</a></nav></header>",
-      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.25rem 1.75rem; background: #f5f7f8; color: #0b1620; font-family: 'Public Sans', system-ui, sans-serif; } .ds-nav__mark { font-family: 'Big Shoulders', 'Arial Narrow', sans-serif; font-weight: 800; text-transform: uppercase; font-size: 1.6rem; line-height: 1; } .ds-nav__links { display: flex; align-items: center; gap: 1.75rem; font-weight: 600; } .ds-nav__links a { color: inherit; text-decoration: none; transition: transform 140ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-nav__links a:hover { text-decoration: underline; text-underline-offset: 0.25em; transform: translateY(-1px); } .ds-nav__links a:focus-visible { outline: 3px solid #0b1620; outline-offset: 3px; } .ds-nav__links .ds-nav__btn { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 1.1rem; background: #002845; color: #ffffff; } .ds-nav__links .ds-nav__btn:hover { text-decoration: none; background: color-mix(in srgb, #002845 86%, #000); }"
+      "refersTo": "site-header",
+      "description": "Sticky 72px white bar: wordmark, slate links that hover to navy, small primary CTA.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-wordmark\" href=\"#\"><span class=\"ds-logo\"></span>Zion4Commerce</a><nav class=\"ds-nav\"><a href=\"#\">Services</a><a href=\"#\">Results</a><a href=\"#\">About</a><a class=\"ds-nav-cta\" href=\"#\">Free audit</a></nav></header>",
+      "css": ".ds-header{font-family:'Plus Jakarta Sans','Segoe UI',system-ui,sans-serif;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:72px;padding:0 24px;background:rgb(255 255 255 / 0.96);border-bottom:1px solid #e2e8ee;} .ds-wordmark{display:inline-flex;align-items:center;gap:0.625rem;font-weight:800;font-size:1.125rem;letter-spacing:-0.01em;color:#002845;text-decoration:none;} .ds-logo{width:40px;height:40px;border-radius:50%;background:#002845;} .ds-nav{display:flex;align-items:center;gap:1.75rem;} .ds-nav a{font-size:0.9375rem;font-weight:600;color:#3d4b5c;text-decoration:none;transition:color 160ms ease;} .ds-nav a:hover{color:#002845;} .ds-nav a:focus-visible{outline:2px solid #0e6ba8;outline-offset:2px;border-radius:4px;} .ds-nav .ds-nav-cta{display:inline-flex;align-items:center;min-height:2.5rem;padding:0 1rem;border-radius:10px;background:#002845;color:#fff;font-size:0.875rem;font-weight:700;} .ds-nav .ds-nav-cta:hover{background:#0a3a60;color:#fff;}"
     },
     {
-      "name": "Caption Plate",
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Small pale-tint tag inside cards.",
+      "html": "<span class=\"ds-chip\">Amazon Ads</span>",
+      "css": ".ds-chip{font-family:'Plus Jakarta Sans','Segoe UI',system-ui,sans-serif;display:inline-flex;align-items:center;padding:0.2rem 0.6rem;border-radius:999px;font-size:0.75rem;font-weight:700;background:#e8f1f7;color:#002845;}"
+    },
+    {
+      "name": "Feature Card",
       "kind": "card",
-      "refersTo": "caption-plate",
-      "description": "Paper plate on a full-bleed verb panel carrying the explanatory sentence.",
-      "html": "<div class=\"ds-verb\"><p class=\"ds-verb__word\">Audit</p><p class=\"ds-plate\">We read your ads, listings, pricing and margin before we touch anything.</p></div>",
-      "css": ".ds-verb { position: relative; min-height: 22rem; background: #001a2e; overflow: hidden; } .ds-verb__word { margin: 0; padding-top: 2rem; text-align: center; font-family: 'Big Shoulders', 'Arial Narrow', sans-serif; font-weight: 800; text-transform: uppercase; font-size: 9rem; line-height: 0.95; color: #f5f7f8; } .ds-plate { position: absolute; left: 1.75rem; bottom: 1.75rem; max-width: 34rem; margin: 0; padding: 1.1rem 1.25rem; background: #f5f7f8; color: #0b1620; font-family: 'Public Sans', system-ui, sans-serif; font-size: 1.125rem; line-height: 1.45; }"
+      "refersTo": "card",
+      "description": "White 20px card with hairline border and soft shadow; icon tile, title, body, ticked list; lifts on hover.",
+      "html": "<article class=\"ds-card\" tabindex=\"0\"><span class=\"ds-icon-tile\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M16 7h6v6\"/><path d=\"m22 7-8.5 8.5-5-5L2 17\"/></svg></span><h3 class=\"ds-card-title\">Advertising</h3><p class=\"ds-card-body\">Sponsored campaigns run against a TACoS target, reviewed weekly.</p><ul class=\"ds-ticks\"><li><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg>Weekly bid reviews</li><li><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg>Search term mining</li></ul></article>",
+      "css": ".ds-card{font-family:'Plus Jakarta Sans','Segoe UI',system-ui,sans-serif;max-width:22rem;padding:1.75rem;display:flex;flex-direction:column;gap:0.75rem;background:#fff;border:1px solid #e2e8ee;border-radius:20px;box-shadow:0 1px 2px rgb(15 27 42 / 0.04),0 8px 24px rgb(15 27 42 / 0.06);transition:transform 200ms cubic-bezier(0.22,1,0.36,1),box-shadow 200ms ease,border-color 200ms ease;} .ds-card:hover,.ds-card:focus-visible{transform:translateY(-3px);box-shadow:0 2px 4px rgb(15 27 42 / 0.04),0 24px 48px rgb(15 27 42 / 0.1);border-color:#cfd9e2;} .ds-card:focus-visible{outline:2px solid #0e6ba8;outline-offset:2px;} .ds-icon-tile{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:12px;background:#e8f1f7;color:#002845;margin-bottom:0.25rem;} .ds-card-title{margin:0;font-size:1.1875rem;line-height:1.35;letter-spacing:-0.01em;font-weight:700;color:#0f1b2a;} .ds-card-body{margin:0;font-size:0.9375rem;line-height:1.65;color:#3d4b5c;} .ds-ticks{list-style:none;margin:0;padding:0.75rem 0 0;display:grid;gap:0.5rem;border-top:1px solid #e2e8ee;} .ds-ticks li{display:flex;gap:0.5rem;align-items:flex-start;font-size:0.9375rem;color:#3d4b5c;} .ds-ticks svg{color:#137a4d;flex:none;margin-top:0.2rem;}"
     },
     {
-      "name": "Case Folder",
+      "name": "Metric Tile",
       "kind": "custom",
-      "refersTo": "report-card",
-      "description": "Coloured band with a chamfered display-face tab and a paper report card of metrics.",
-      "html": "<article class=\"ds-folder\"><h3 class=\"ds-folder__tab\">Skincare</h3><div class=\"ds-folder__band\"><div class=\"ds-folder__report\"><p class=\"ds-folder__head\">$50K to $192K a month</p><dl class=\"ds-folder__metrics\"><div><dt>ROAS</dt><dd>4.8x</dd></div><div><dt>TACoS</dt><dd>12%</dd></div></dl></div></div></article>",
-      "css": ".ds-folder { position: relative; padding-top: 44px; font-family: 'Public Sans', system-ui, sans-serif; color: #0b1620; } .ds-folder__tab { position: absolute; top: 0; left: 1.75rem; height: 44px; min-width: 15rem; margin: 0; padding: 0 2.25rem 0 1.25rem; display: flex; align-items: center; background: #9cbccd; font-family: 'Big Shoulders', 'Arial Narrow', sans-serif; font-weight: 800; text-transform: uppercase; font-size: 1.6rem; line-height: 1; clip-path: polygon(0 100%, 0 14px, 14px 0, calc(100% - 26px) 0, 100% 100%); } .ds-folder__band { background: #9cbccd; padding: 1.25rem 1.75rem 3rem; } .ds-folder__report { background: #f5f7f8; padding: 2rem; display: grid; gap: 2rem; } .ds-folder__head { margin: 0; font-family: 'Big Shoulders', 'Arial Narrow', sans-serif; font-weight: 800; text-transform: uppercase; font-size: 3rem; line-height: 0.9; } .ds-folder__metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 1.5rem; margin: 0; } .ds-folder__metrics dt { font-weight: 600; color: #55554f; font-size: 0.9375rem; } .ds-folder__metrics dd { margin: 0.25rem 0 0; font-family: 'Big Shoulders', 'Arial Narrow', sans-serif; font-weight: 800; text-transform: uppercase; font-size: 3rem; line-height: 1; font-variant-numeric: tabular-nums lining-nums; }"
+      "refersTo": "metric",
+      "description": "Green-on-wash result figure used in case-study cards.",
+      "html": "<dl class=\"ds-metrics\"><div class=\"ds-metric\"><dt>Revenue</dt><dd>+184%</dd></div><div class=\"ds-metric\"><dt>TACoS</dt><dd>-6.2 pts</dd></div></dl>",
+      "css": ".ds-metrics{font-family:'Plus Jakarta Sans','Segoe UI',system-ui,sans-serif;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0.5rem;max-width:20rem;margin:0;} .ds-metric{padding:0.75rem;border-radius:8px;background:#e7f5ee;} .ds-metric dt{font-size:0.75rem;font-weight:700;color:#627284;text-transform:uppercase;letter-spacing:0.04em;} .ds-metric dd{margin:0.125rem 0 0;font-weight:800;color:#137a4d;font-size:1.0625rem;font-variant-numeric:tabular-nums lining-nums;}"
     },
     {
-      "name": "Waterline Hero",
+      "name": "FAQ Item",
       "kind": "custom",
-      "description": "Paper over a loud field at half height, two-line headline across the seam, first line crimson.",
-      "html": "<section class=\"ds-hero\"><div class=\"ds-hero__low\"></div><h1 class=\"ds-hero__h\"><span class=\"ds-hero__a\">Grow on</span><span class=\"ds-hero__b\">profit</span></h1></section>",
-      "css": ".ds-hero { position: relative; height: 22rem; background: #f5f7f8; overflow: hidden; } .ds-hero__low { position: absolute; inset: 50% 0 0 0; background: #002845; } .ds-hero__h { position: absolute; left: 0; right: 0; top: calc(50% - 6.2rem); margin: 0; text-align: center; font-family: 'Big Shoulders', 'Arial Narrow', sans-serif; font-weight: 800; text-transform: uppercase; font-size: 7rem; line-height: 0.86; letter-spacing: -0.005em; } .ds-hero__h span { display: block; } .ds-hero__a { color: #002845; } .ds-hero__b { color: #0b1620; margin-top: 0.06em; }"
+      "refersTo": "faq-item",
+      "description": "Native details accordion: hairline at rest, stronger border and card shadow when open.",
+      "html": "<details class=\"ds-faq\" open><summary>How fast will we see results? <svg class=\"ds-faq-chev\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m6 9 6 6 6-6\"/></svg></summary><p>Most accounts see cleaner spend within the first month, and growth compounds from there.</p></details>",
+      "css": ".ds-faq{font-family:'Plus Jakarta Sans','Segoe UI',system-ui,sans-serif;max-width:34rem;background:#fff;border:1px solid #e2e8ee;border-radius:12px;transition:border-color 160ms ease,box-shadow 160ms ease;} .ds-faq[open]{border-color:#cfd9e2;box-shadow:0 1px 2px rgb(15 27 42 / 0.04),0 8px 24px rgb(15 27 42 / 0.06);} .ds-faq summary{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.125rem 1.25rem;cursor:pointer;list-style:none;font-weight:700;color:#0f1b2a;} .ds-faq summary::-webkit-details-marker{display:none;} .ds-faq summary:hover{color:#002845;} .ds-faq summary:focus-visible{outline:2px solid #0e6ba8;outline-offset:2px;border-radius:12px;} .ds-faq-chev{flex:none;color:#627284;transition:transform 200ms cubic-bezier(0.22,1,0.36,1);} .ds-faq[open] .ds-faq-chev{transform:rotate(180deg);} .ds-faq p{margin:0;padding:0 1.25rem 1.25rem;font-size:0.9375rem;line-height:1.65;color:#3d4b5c;}"
+    },
+    {
+      "name": "CTA Band",
+      "kind": "custom",
+      "refersTo": "cta-band",
+      "description": "Navy 24px band that closes each page, with light and outline-light buttons.",
+      "html": "<section class=\"ds-cta\"><div><h2>Ready to grow your marketplace sales?</h2><p>Book a free account audit and get a clear plan within a week.</p></div><div class=\"ds-cta-row\"><a class=\"ds-btn-light\" href=\"#\">Book an audit</a><a class=\"ds-btn-outline\" href=\"#\">Email us</a></div></section>",
+      "css": ".ds-cta{font-family:'Plus Jakarta Sans','Segoe UI',system-ui,sans-serif;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;padding:clamp(2rem,1.5rem + 2vw,3.5rem);border-radius:24px;background:#002845;color:#c3d3df;} .ds-cta h2{margin:0;font-size:clamp(1.75rem,1.3rem + 1.5vw,2.5rem);line-height:1.18;letter-spacing:-0.02em;font-weight:800;color:#fff;} .ds-cta p{margin:0.625rem 0 0;font-size:1.0625rem;max-width:46ch;} .ds-cta-row{display:flex;flex-wrap:wrap;gap:0.75rem;} .ds-btn-light,.ds-btn-outline{font-family:'Plus Jakarta Sans','Segoe UI',system-ui,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;min-height:3rem;padding:0 1.375rem;border-radius:10px;border:1px solid transparent;font-weight:700;font-size:0.9375rem;text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color 160ms ease,border-color 160ms ease,color 160ms ease,transform 120ms cubic-bezier(0.22,1,0.36,1);} .ds-btn-light{background:#fff;color:#002845;} .ds-btn-light:hover{background:#e8f1f7;} .ds-btn-outline{background:transparent;color:#fff;border-color:rgb(255 255 255 / 0.4);} .ds-btn-outline:hover{border-color:#fff;} .ds-btn-light:focus-visible,.ds-btn-outline:focus-visible{outline:2px solid #9cbccd;outline-offset:2px;} .ds-btn-light:active,.ds-btn-outline:active{transform:translateY(1px);}"
     }
   ],
   "narrative": {
-    "northStar": "The Street Poster With a Ledger Underneath",
-    "overview": "The public site talks like a poster pasted on a wall: flat saturated fields, one tall condensed gothic at full weight, and statements short enough to read from across the street. Each section is a single solid panel of colour, and panels meet edge to edge, so the page reads as a stack of posters rather than a document with sections. The volume is the surface. Underneath it the grid is strict (12 columns, one margin, one gutter) and the numbers are exact, because the product is profit: TACoS, margin, organic rank. Loud type carries the claim and quiet text carries the evidence.\n\nDensity is low. A panel holds one idea: one verb, one figure, one question, one comparison. Display type is sized to the viewport, not to a scale. Body text stays plain and readable at 17 to 19px. Depth comes only from colour change and from the occasional overlap: the printed card cut off by its panel's bottom edge, a caption plate sitting on a photograph, a folder tab rising off its band.\n\nThe direction is \"Loud and flat\" (taste-skill seed 790916004), palette \"Orange, sky, lime\", type \"Big Shoulders / Public Sans\". Site editors can change every field colour in settings, so the roles below matter more than the exact hexes.",
+    "northStar": "The Navy Ledger",
+    "overview": "The public site reads like the dashboard of a well-run account: calm white and pale blue-grey sections, a centred 1200px column, and content set in bordered cards that sit just above the page on a soft haze of shadow. One colour does the work. The logo's navy (#002845) is the only brand fill and the only action colour; everything else is ink, slate greys and hairline borders, so the navy buttons, the navy CTA band and the navy calculator result are always where the eye goes. The register is professional B2B SaaS (the client's reference is hectorai.live): trustworthy, legible, unhurried, more operations report than advertisement.\n\nDensity is moderate. Sections breathe (64 to 104px of vertical padding), cards are generous inside (28px), and copy runs in measured lines (62ch for leads). Plus Jakarta Sans carries everything, from 800-weight headings with tight tracking down to 13px captions, so hierarchy comes from weight and size rather than from a second face. Proof is shown as numbers: a dashboard panel in the hero, a stats row, case-study metric tiles in green. Motion is small and functional: a 16px fade-up reveal, a 3px lift on feature cards, a chevron that turns.\n\nThe site's colours are editable. The seven site colours live in site settings (`settings.colors`) and arrive as `--c-paper`, `--c-mist`, `--c-steel`, `--c-navy`, `--c-night`, `--c-accent`, `--c-ink`, which `.site` maps to `--paper`, `--mist`, `--steel`, `--navy`, `--night`, `--accent`, `--ink`. The values in the frontmatter are the shipped defaults. The secondary tokens (`--body`, `--muted`, `--line`, `--line-strong`, `--good`, `--good-bg`, `--tint`) are fixed in `site.css`.",
     "keyCharacteristics": [
-      "Flat, full-strength colour fields, one per panel, butted edge to edge",
-      "One condensed heavy uppercase display face at poster scale; one plain grotesk for everything else",
-      "Square corners everywhere; separation by colour and space, never by lines",
-      "Crimson is the one accent, and it belongs to actions",
-      "No shadows, gradients, glass or outlines on the public site",
-      "Motion is one masked headline reveal plus quiet rise-ins, and every bit of it is optional"
+      "One brand colour: logo navy for every button, band and selected state.",
+      "White and mist (#f3f7fa) sections alternating inside a centred 1200px container.",
+      "Cards with a 20px radius, a 1px #e2e8ee border and a soft two-layer shadow.",
+      "Plus Jakarta Sans throughout; weight 800 headings with negative tracking.",
+      "Lucide line icons set in pale-blue 48px tiles.",
+      "Numbers as proof: tabular figures, green for positive movement.",
+      "A dark night footer and a navy CTA band close every page."
     ],
     "rules": [
       {
-        "name": "The One Field, One Ink Rule",
-        "body": "Every panel is one flat colour and its text is one other colour (ink, or paper on Night), plus that field's soft ink for quiet text. No tints, no washes, no second background inside a panel except a paper object sitting on it.",
+        "name": "The One Navy Rule",
+        "body": "Navy is the only colour that fills an action or a band. A second filled brand colour does not exist; if something needs to stand out, it gets navy or it gets a border.",
         "section": "colors"
       },
       {
-        "name": "The Crimson Means Act Rule",
-        "body": "Crimson is for things you press: buttons, and the error and selection states that belong to controls. The build carries exactly two typographic uses, and they come from the direction itself: the first line of the waterline hero is set in crimson, and the strike through the rejected word in the Two Words section is crimson. Those two stay as they are. No new surface adds a crimson headline, crimson link, crimson icon or crimson panel.",
+        "name": "The Blue Is Ink Rule",
+        "body": "Link Blue (#0e6ba8) colours text, focus rings and nothing else. It never becomes a button, a card fill or a section field.",
         "section": "colors"
       },
       {
-        "name": "The Editable Palette Rule",
-        "body": "Field colours come from site settings (`--c-paper`, `--c-orange`, `--c-sky`, `--c-lime`, `--c-night`, `--c-accent`, `--c-ink`). Components reference those variables, never the hex. A new section picks a field by role (paper, orange, sky, lime, night), not by value.",
+        "name": "The Green Means Up Rule",
+        "body": "Green appears only where a number improved or a promise is ticked. It is never decoration and never a call to action.",
         "section": "colors"
       },
       {
-        "name": "The Two Faces Rule",
-        "body": "Big Shoulders 800 and Public Sans 400/600. No third face, no other weights, no italics, no monospace on the public site.",
+        "name": "The Settings Rule",
+        "body": "Never hard-code the seven site colours in components. Use `var(--navy)`, `var(--mist)` and the rest, so an editor's colour change reaches every surface.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Plus Jakarta Sans is the only typeface on the public site. Hierarchy comes from weight (400 to 800), size and tracking.",
         "section": "typography"
       },
       {
-        "name": "The Two-Line Rule",
-        "body": "No headline runs past two lines at its set size. At poster scale that means three to six words; the copy gets shorter, the type never gets smaller to fit.",
+        "name": "The Tabular Proof Rule",
+        "body": "Every figure that claims a result uses tabular lining numerals (`.nums`) at weight 800, so columns of numbers align and read as data.",
         "section": "typography"
       },
       {
-        "name": "The Shout or Speak Rule",
-        "body": "Big Shoulders is always uppercase and always a statement, a word or a figure. Public Sans is always sentence case (column heads excepted) and carries every sentence, question and label.",
-        "section": "typography"
-      },
-      {
-        "name": "The Flat At Rest Rule",
-        "body": "No shadow, gradient, blur, glass or glow on the public site. A floating menu is the only element allowed to take a shadow, and the current build ships none, so there is no shadow value to reuse.",
+        "name": "The Border And Haze Rule",
+        "body": "A raised surface has both a 1px Hairline border and a soft shadow. Never a shadow without the border, never a hard or offset shadow.",
         "section": "elevation"
       },
       {
-        "name": "The Overlap Not Shadow Rule",
-        "body": "To lift something, put a paper object on a loud field, or let a panel edge cut it. Never draw a shadow.",
+        "name": "The Earned Lift Rule",
+        "body": "Only the hero dashboard, image frames and menus rest at the Raised level. Cards rise to it on hover (with a 3px translate), not at rest.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do give every new section exactly one field colour from settings and let it meet its neighbours edge to edge.",
-      "Do set statements, single words and big figures in Big Shoulders 800 uppercase at viewport scale, and keep them to two lines.",
-      "Do put quiet text in that field's own soft ink, and evidence (numbers) in tabular lining figures.",
-      "Do lift content by placing a paper object on a loud field, or by letting the panel edge cut it.",
-      "Do keep the 1 to 5 / 7 to 12 split for heading-plus-text panels, and collapse to one column below 48em.",
-      "Do reference colours through the settings variables so site editors can recolour the site."
+      "Do use Logo Navy (#002845) for every primary action and every filled band, through `var(--navy)`.",
+      "Do put content in white cards with a 20px radius, a 1px #e2e8ee border and the Card shadow.",
+      "Do alternate Paper and Mist section tones inside the 1200px container, and close pages with the navy CTA band and the Night footer.",
+      "Do use 10px radius on every button and input, and 12px on nested tiles and panels.",
+      "Do set results in tabular 800-weight figures, and colour positive movement Growth Green on Green Wash.",
+      "Do set card and step icons as Lucide line icons inside Pale Tint icon tiles; bare icons appear only as green ticks in lists and badges.",
+      "Do use the 2px Link Blue focus outline and the 3px blue input halo; keep focus visible on every control."
     ],
     "donts": [
-      "Don't use crimson for anything but actions and their states (the hero's first line and the struck word are the only typographic exceptions, and they are not a pattern to extend).",
-      "Don't add eyebrow labels or kickers above headlines.",
-      "Don't number sections, steps or items as decoration (01, 02, 03).",
-      "Don't draw thin rules, hairlines or divider lines; separate with colour and space.",
-      "Don't use gradients, glass, blur or glow, or any shadow at rest.",
-      "Don't round a corner. Radius is 0.",
-      "Don't add a third typeface, an italic, another weight, or monospace on the public site.",
-      "Don't rotate text, buttons or panels; tilt only the printed card and, at most, two or three photographs.",
-      "Don't outline type, add offset shadows or scatter stickers."
+      "Don't introduce a second filled brand colour; Link Blue is for text and focus only, green for good numbers only, amber for chart data only.",
+      "Don't hard-code the seven settings colours in components; they must follow `settings.colors`.",
+      "Don't use hard, offset or coloured drop shadows, or a shadow without the hairline border.",
+      "Don't mix in other typefaces or use a weight below 400 on the public site.",
+      "Don't use square corners on cards or controls, or radii outside the 8 / 10 / 12 / 20 / 24 / pill scale.",
+      "Don't apply editor chrome (neutral greys, 6px controls) to the public site."
     ]
   }
 }
