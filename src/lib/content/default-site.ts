@@ -59,7 +59,7 @@ const about: PageContent = {
       heading: "Led by operators, not account managers",
       text: "Zion4Commerce is led by Arjun S, who spent 13+ years running eCommerce for brands, most recently as VP eCommerce at Ergode and Director eCommerce at California Design Den. We work with brands going global, brands new to marketplaces, and brands already on Amazon whose growth has stalled.",
       bullets: ["13+ years running eCommerce for brands", "Amazon US, UK, CA, DE, UAE and TikTok Shop US", "Every account run on one rule: growth has to show up in the margin"],
-      link: { label: "Meet the team", href: "/team" },
+      link: { label: "Get a free audit", href: "/contact" },
       visual: "image",
       image: { src: IMAGES.teamReview, alt: "Growth team reviewing a marketplace sales dashboard on a wall screen" },
       flip: false,
@@ -68,21 +68,6 @@ const about: PageContent = {
     section("stats", { field: "mist" }),
     section("split"),
     section("steps"),
-    section("cta_band"),
-  ],
-};
-
-const team: PageContent = {
-  slug: "team",
-  title: "Team",
-  seo: { title: "Team", description: "The Zion4Commerce team: performance marketing, partner success, social commerce and marketplace operations." },
-  sections: [
-    section("page_intro", {
-      eyebrow: "Team",
-      title: "The people who run your account",
-      sentence: "Marketplace operators, ad specialists and content leads who run your Amazon and TikTok Shop accounts.",
-    }),
-    section("team_grid", { eyebrow: "", heading: "", intro: "" }),
     section("cta_band"),
   ],
 };
@@ -244,7 +229,6 @@ export const DEFAULT_SITE: SiteContent = {
       { label: "Results", href: "/#results" },
       { label: "Zion4TikTok", href: "/zion4tiktok" },
       { label: "About", href: "/about" },
-      { label: "Team", href: "/team" },
     ],
     headerAction: { label: "Get a free audit", href: "/contact" },
     colors: {
@@ -263,9 +247,9 @@ export const DEFAULT_SITE: SiteContent = {
       leadCc: "aditya@zion4commerce.com",
     },
     footer: {
-      tagline: "Amazon and TikTok Shop growth, judged by margin.",
+      tagline: "",
       columns: [
-        { title: "Company", links: [{ label: "About", href: "/about" }, { label: "Team", href: "/team" }, { label: "Results", href: "/#results" }] },
+        { title: "Company", links: [{ label: "About", href: "/about" }, { label: "Results", href: "/#results" }, { label: "Contact", href: "/contact" }] },
         { title: "Services", links: [{ label: "Amazon advertising", href: "/#services" }, { label: "TikTok Shop", href: "/#services" }, { label: "Marketplace expansion", href: "/#services" }, { label: "Zion4TikTok app", href: "/zion4tiktok" }] },
         { title: "Get started", links: [{ label: "Free audit", href: "/contact" }, { label: "FAQ", href: "/#questions" }] },
         { title: "Legal", links: [{ label: "Privacy policy", href: "/privacy" }, { label: "Terms", href: "/terms" }] },
@@ -277,5 +261,5 @@ export const DEFAULT_SITE: SiteContent = {
       defaultDescription: "Zion4Commerce grows Amazon and TikTok Shop brands on profit: lower TACoS, higher organic rank, healthier margins.",
     },
   },
-  pages: [home, about, team, zion4tiktok, contact, privacy, terms],
+  pages: [home, about, zion4tiktok, contact, privacy, terms],
 };

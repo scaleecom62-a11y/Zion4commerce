@@ -52,7 +52,7 @@ export function SiteFooter({ site }: { site: SiteSettings }) {
               <Pic src={site.logo.src} alt="" width={80} height={80} sizes="40px" />
               <span translate="no">{site.siteName}</span>
             </Link>
-            <p>{site.footer.tagline}</p>
+            {site.footer.tagline && <p>{site.footer.tagline}</p>}
             <a className="site-footer__mail" href={`mailto:${site.contact.email}`}>
               {site.contact.email}
             </a>

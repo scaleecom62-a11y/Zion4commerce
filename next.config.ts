@@ -22,7 +22,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     // Old site paths.
-    return [{ source: "/connect", destination: "/contact", permanent: true }];
+    return [
+      { source: "/connect", destination: "/contact", permanent: true },
+      // The team page is retired for now. Temporary, so it can come back.
+      { source: "/team", destination: "/about", permanent: false },
+      { source: "/team/:slug", destination: "/about", permanent: false },
+    ];
   },
 };
 
