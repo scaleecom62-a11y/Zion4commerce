@@ -1,4 +1,4 @@
--- Website content, editors, leads and team publishing.
+-- Website content, editors, leads and team publishing (team page currently retired).
 -- Applied to Tasqr's Supabase project (folwture). Additive only: new site_* objects
 -- plus website-only columns on public.profiles. No existing Tasqr data is changed.
 
@@ -36,8 +36,13 @@ create policy site_editors_add on public.site_editors
 create policy site_editors_remove on public.site_editors
   for delete to authenticated using (public.is_site_editor() and user_id <> auth.uid());
 
+-- Only Arjun and Aditya edit the website. Existing editors can add more later.
 insert into public.site_editors (user_id)
-select id from public.profiles where role in ('admin', 'superadmin') and is_active
+select u.id
+from auth.users u
+join public.profiles p on p.id = u.id
+where lower(u.email) in ('arjun@zion4commerce.com', 'aditya@zion4commerce.com')
+  and p.is_active
 on conflict do nothing;
 
 -- ── Site documents: one draft, one published ──────────────────────
