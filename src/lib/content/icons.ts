@@ -10,6 +10,8 @@ export const ICON_CHOICES: { value: string; label: string }[] = [
   { value: "line", label: "Line chart" },
   { value: "pie", label: "Pie chart" },
   { value: "search", label: "Search" },
+  { value: "send", label: "Send / invite" },
+  { value: "link", label: "Link" },
   { value: "target", label: "Target" },
   { value: "package", label: "Inventory" },
   { value: "star", label: "Reviews" },

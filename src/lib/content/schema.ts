@@ -82,6 +82,8 @@ export interface SiteSettings {
   colors: Record<FieldColor | "accent" | "ink", string>;
   contact: {
     email: string;
+    /** Registered company address. One line per row. */
+    address: string;
     leadTo: string;
     leadCc: string;
   };

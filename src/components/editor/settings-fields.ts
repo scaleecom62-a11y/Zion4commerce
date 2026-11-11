@@ -61,6 +61,7 @@ export const SETTINGS_GROUPS: { id: string; title: string; fields: Field[] }[] =
     title: "Contact and leads",
     fields: [
       { key: "contact.email", label: "Public email", type: "text", help: "Shown in the footer and used by 'Email us' buttons." },
+      { key: "contact.address", label: "Company address", type: "textarea", rows: 4, help: "Shown in the footer and on the contact page. One line per row." },
       { key: "contact.leadTo", label: "Send audit requests to", type: "text" },
       { key: "contact.leadCc", label: "Copy (CC) audit requests to", type: "text" },
     ],

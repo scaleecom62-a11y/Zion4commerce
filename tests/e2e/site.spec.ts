@@ -33,3 +33,14 @@ test("audit form keeps what the visitor typed when a field is missing", async ({
   await expect(page.getByLabel("Brand or company")).toHaveValue("Acme Linen");
   await expect(page.getByLabel("Work email")).toHaveValue("owner@acme.example");
 });
+
+test("Zion4TikTok app page is linked from the header and lists the app's features", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("navigation", { name: "Main" }).getByRole("link", { name: "Zion4TikTok" }).first().click();
+  await expect(page).toHaveURL(/\/zion4tiktok$/);
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Zion4TikTok");
+  for (const feature of ["Creator search", "Collaboration invites", "Affiliate links", "Creator sales"]) {
+    await expect(page.getByRole("heading", { name: feature, exact: true })).toBeVisible();
+  }
+  await expect(page.locator("footer address")).toContainText("8 The Green, Ste B");
+});

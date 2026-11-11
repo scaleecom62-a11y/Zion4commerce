@@ -4,7 +4,7 @@ import type { Settings } from "@/lib/content/schema";
 import { Calculator } from "./Calculator";
 import { ContactForm } from "./ContactForm";
 import { Icon } from "./Icon";
-import { H, Pic, ed, field, img, link, list, num, str, type SectionProps } from "./shared";
+import { Address, H, Pic, ed, field, img, link, list, num, str, type SectionProps } from "./shared";
 
 /* ---------- building blocks ---------- */
 
@@ -535,7 +535,7 @@ function TeamGrid({ section, isFirst, data }: SectionProps) {
   );
 }
 
-function ContactFormSection({ section, isFirst }: SectionProps) {
+function ContactFormSection({ section, site, isFirst }: SectionProps) {
   const s = section.settings;
   return (
     <section className={`sec contact ${field(s, "field", "mist")}`}>
@@ -560,6 +560,18 @@ function ContactFormSection({ section, isFirst }: SectionProps) {
               </li>
             ))}
           </ol>
+          <div className="contact__details">
+            <div>
+              <h2 className="contact__label">Email</h2>
+              <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
+            </div>
+            {site.contact.address && (
+              <div>
+                <h2 className="contact__label">Office</h2>
+                <Address text={site.contact.address} />
+              </div>
+            )}
+          </div>
         </div>
         <div className="card contact__card">
           <ContactForm

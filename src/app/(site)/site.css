@@ -146,8 +146,11 @@
 .sec-head--center { margin-inline: auto; text-align: center; }
 .sec-head--center .lead { margin-inline: auto; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+/* Exactly four items: one row of four, never three plus an orphan. */
+.grid-3:has(> :nth-child(4):last-child) { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 1100px) { .grid-3:has(> :nth-child(4):last-child) { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 960px) { .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 640px) { .grid-3 { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .grid-3, .grid-3:has(> :nth-child(4):last-child) { grid-template-columns: 1fr; } }
 
 /* hero */
 .hero { padding-block: clamp(3.5rem, 2.5rem + 4vw, 6rem) clamp(3rem, 2rem + 3vw, 5rem); background: linear-gradient(180deg, var(--mist) 0%, var(--paper) 100%); }
@@ -316,6 +319,10 @@
 .contact__steps { display: grid; gap: 1rem; margin-top: 2rem; }
 .contact__steps li { display: flex; gap: 0.875rem; align-items: flex-start; font-weight: 600; color: var(--ink); }
 .contact__n { flex: none; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: var(--navy); color: #fff; font-size: 0.8125rem; font-weight: 800; }
+.contact__details { display: grid; gap: 1.25rem; margin-top: 2.25rem; padding-top: 1.75rem; border-top: 1px solid var(--line); }
+.contact__label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--body); margin-bottom: 0.375rem; }
+.contact__details a { font-weight: 600; color: var(--navy); }
+.contact__details address { display: grid; font-style: normal; color: var(--ink); line-height: 1.6; }
 .contact__card { padding: clamp(1.5rem, 1rem + 2vw, 2.25rem); }
 @media (max-width: 960px) { .contact__grid { grid-template-columns: 1fr; } }
 
@@ -356,6 +363,7 @@
 .site-footer__brand p { margin-top: 1rem; max-width: 28ch; }
 .site-footer__mail { display: inline-block; margin: 0.75rem 0 1.25rem; color: #fff; font-weight: 600; text-decoration: none; }
 .site-footer__mail:hover { text-decoration: underline; }
+.site-footer__address { display: grid; margin: -0.5rem 0 1.25rem; font-style: normal; font-size: 0.875rem; line-height: 1.6; }
 .site-footer__col h2 { font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; margin-bottom: 1rem; }
 .site-footer__col li + li { margin-top: 0.625rem; }
 .site-footer__col a { text-decoration: none; transition: color 160ms ease; }

@@ -77,6 +77,19 @@ export function H({ first, className, children, ...rest }: { first: boolean; cla
   );
 }
 
+/** The company address, one line per row. */
+export function Address({ text, className }: { text: string; className?: string }) {
+  const lines = (text ?? "").split("\n").map((l) => l.trim()).filter(Boolean);
+  if (!lines.length) return null;
+  return (
+    <address className={className}>
+      {lines.map((l, i) => (
+        <span key={i}>{l}</span>
+      ))}
+    </address>
+  );
+}
+
 export function HexMark({ className }: { className?: string }) {
   // The Zion4Commerce badge, rebuilt from flat shapes with 4px gaps.
   return (

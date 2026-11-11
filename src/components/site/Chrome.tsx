@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import type { SiteSettings } from "@/lib/content/schema";
 import { MobileMenu } from "./MobileMenu";
-import { Pic } from "./shared";
+import { Address, Pic } from "./shared";
 
 function A({ href, className, children }: { href: string; className?: string; children: React.ReactNode }) {
   return href.startsWith("/") ? (
@@ -56,6 +56,7 @@ export function SiteFooter({ site }: { site: SiteSettings }) {
             <a className="site-footer__mail" href={`mailto:${site.contact.email}`}>
               {site.contact.email}
             </a>
+            <Address text={site.contact.address} className="site-footer__address" />
             <A href={site.headerAction.href} className="btn btn--light btn--sm">
               {site.headerAction.label}
               <ArrowRight size={16} aria-hidden="true" />
